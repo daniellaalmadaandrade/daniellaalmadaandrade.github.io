@@ -9,3 +9,6 @@ Versão estática para GitHub Pages. Todos os estilos e scripts essenciais estã
 
 ## Fotos
 A versão usa arte editorial conceitual no lugar das fotografias reais. Quando as fotos da Daniella, viagens e memória forem escolhidas, elas podem ser incorporadas sem alterar a estrutura.
+
+
+Atualização v3: Instagram @daniellaalmadadeandrade; TikTok @daniellaalmada; seção “Memória” renomeada para “Meu Pai”.
