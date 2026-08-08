@@ -1,27 +1,9 @@
-# Site Daniella Almada — versão 4
+# Site Daniella Almada — versão 6
 
-Versão estática para GitHub Pages. Todos os estilos e scripts essenciais estão dentro dos próprios arquivos HTML para evitar que o site apareça sem CSS caso uma pasta de assets não seja enviada.
+Direção visual revisada para uma linguagem editorial minimalista: fundo branco, tipografia sans-serif, navegação em preto, linhas pontilhadas e grids de matérias inspirados no ritmo de revistas digitais como o Service95, sem copiar código, marca ou ativos proprietários.
 
 ## Publicação
-1. Envie todo o conteúdo desta pasta para a raiz do repositório `daniellaalmadaandrade.github.io`.
-2. Em Settings > Pages: Deploy from a branch > main > /(root).
-3. Salve e aguarde o deploy.
+Envie todos os arquivos desta pasta para a raiz do repositório `daniellaalmadaandrade.github.io` e mantenha GitHub Pages em `main / (root)`.
 
 ## Fotos
-A versão usa arte editorial conceitual no lugar das fotografias reais. Quando as fotos da Daniella, viagens e memória forem escolhidas, elas podem ser incorporadas sem alterar a estrutura.
-
-
-Atualização v4: redes sociais corrigidas com ícones; Instagram @daniellaalmadaandrade; TikTok @daniellaalmada; YouTube @daniellaalmadaandrade; WhatsApp +55 32 99105-6226; seção “Memória” renomeada para “Meu Pai”.
-
-
-## Redes sociais
-- Instagram: https://www.instagram.com/daniellaalmadaandrade/
-- TikTok: https://www.tiktok.com/@daniellaalmada
-- YouTube: https://www.youtube.com/@daniellaalmadaandrade
-- WhatsApp: https://wa.me/5532991056226
-
-
-## Versão 5
-- Títulos e manchetes reduzidos para uma hierarquia editorial mais equilibrada.
-- Faixa de categorias agora usa um selo circular “DA” em vez do símbolo estrelado.
-- Ajustes de ritmo, espaçamento e escala inspirados na linguagem de revista digital do Service95, mantendo identidade própria.
+Os blocos cinza são placeholders editoriais. Substitua por fotografias próprias da Daniella, viagens, livros e imagens autorizadas.
