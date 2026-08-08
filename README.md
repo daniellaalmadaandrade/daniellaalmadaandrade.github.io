@@ -19,3 +19,9 @@ Atualização v4: redes sociais corrigidas com ícones; Instagram @daniellaalmad
 - TikTok: https://www.tiktok.com/@daniellaalmada
 - YouTube: https://www.youtube.com/@daniellaalmadaandrade
 - WhatsApp: https://wa.me/5532991056226
+
+
+## Versão 5
+- Títulos e manchetes reduzidos para uma hierarquia editorial mais equilibrada.
+- Faixa de categorias agora usa um selo circular “DA” em vez do símbolo estrelado.
+- Ajustes de ritmo, espaçamento e escala inspirados na linguagem de revista digital do Service95, mantendo identidade própria.
