@@ -1,14 +1,13 @@
-# Site Daniella Almada — versão 6
+# Site Daniella Almada — versão 8
 
-Direção visual revisada para uma linguagem editorial minimalista: fundo branco, tipografia sans-serif, navegação em preto, linhas pontilhadas e grids de matérias inspirados no ritmo de revistas digitais como o Service95, sem copiar código, marca ou ativos proprietários.
+Versão preparada para GitHub Pages com as três fotografias na raiz do repositório, evitando problemas de upload de pastas pelo navegador.
 
-## Publicação
-Envie todos os arquivos desta pasta para a raiz do repositório `daniellaalmadaandrade.github.io` e mantenha GitHub Pages em `main / (root)`.
+## Upload
+Selecione **todos** os arquivos desta pasta e envie em Add file → Upload files. As três fotos devem aparecer na mesma lista que index.html.
 
-## Fotos
-Os blocos cinza são placeholders editoriais. Substitua por fotografias próprias da Daniella, viagens, livros e imagens autorizadas.
+Arquivos de foto:
+- daniella-leitura-varanda.png
+- daniella-retrato.jpg
+- daniella-livro-retorica.png
 
-## Newsletter (v7)
-A home possui dois CTAs para a mesma inscrição: um botão/recorte flutuante e um bloco editorial na página. Ambos abrem o mesmo modal.
-
-O layout do formulário está pronto, mas GitHub Pages é hospedagem estática e não armazena contatos por conta própria. Para que os e-mails sejam salvos numa lista, conecte o formulário a um provedor como Brevo ou Mailchimp. O local está marcado no `index.html` no formulário `#newsletterForm`.
+O GitHub Pages hospeda o site; e-mail deve ser fornecido por outro serviço.
