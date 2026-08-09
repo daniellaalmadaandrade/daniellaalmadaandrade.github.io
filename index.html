@@ -22,8 +22,36 @@
 /* CTA recorte de revista */
 .cutout-cta{position:fixed;right:24px;bottom:20px;z-index:70;width:min(330px,30vw);transition:opacity .2s ease,transform .2s ease}.cutout-main{display:block;width:100%;cursor:pointer;background:transparent;border:0;padding:0}.cutout-main img{display:block;width:100%;height:auto;filter:drop-shadow(0 8px 16px rgba(0,0,0,.20));transition:transform .18s ease}.cutout-main:hover img{transform:translateY(-3px) scale(1.015)}.cutout-close{position:absolute;right:6px;top:6px;z-index:3;width:38px;height:38px;border-radius:50%;border:2px solid #111;background:#fff;color:#111;font:900 24px/1 Arial,sans-serif;cursor:pointer;display:grid;place-items:center;box-shadow:2px 2px 0 #111}.cutout-close:hover{background:#111;color:#fff}.cutout-cta.is-hidden{display:none}
 @media(max-width:900px){.wrap{width:min(100% - 28px,var(--max))}.head-main{height:72px;grid-template-columns:1fr auto}.brand{font-size:26px}.head-left,.head-right .head-link,.category-nav{display:none}.head-right{display:flex}.mobile-menu{display:inline-block}.intro{padding-top:34px}.intro h1{font-size:32px}.lead-grid{grid-template-columns:1fr}.lead-image{height:520px}.lead-copy{padding:10px 0 0}.lead-copy h2{font-size:34px}.cards{grid-template-columns:1fr}.card-image{height:470px}.project-grid,.newsletter-inline,.footer-grid{grid-template-columns:1fr}.project-image{height:520px}.newsletter-form-grid,.consents{grid-template-columns:1fr}.newsletter-modal{padding:24px 20px}.newsletter-modal h2{font-size:32px}.modal-photo{height:250px}.cutout-cta{width:min(230px,54vw);right:10px;bottom:12px}.cutout-close{right:2px;top:2px;width:32px;height:32px;font-size:20px}.footer-bottom{flex-direction:column}}
+
+/* Integração Brevo — mantém o visual editorial do site */
+.newsletter-modal .sib-form-message-panel{display:none;margin:0 0 16px;padding:11px 13px;border:1px solid #111;font-size:13px;line-height:1.35}
+.newsletter-modal .sib-form-message-panel--active{display:block}
+.newsletter-modal .sib-form-message-panel__text{display:flex;gap:8px;align-items:flex-start}
+.newsletter-modal .sib-form-message-panel svg{display:none}
+.newsletter-modal .brevo-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px 28px}
+.newsletter-modal .brevo-field{min-width:0}
+.newsletter-modal .brevo-field.full{grid-column:1/-1}
+.newsletter-modal .entry__label{display:block;font-size:14px;font-weight:800;margin:0 0 8px;text-transform:none}
+.newsletter-modal .entry__field{border:0;background:transparent}
+.newsletter-modal .entry__field input,.newsletter-modal .entry__field select{width:100%;border:0;border-bottom:1px solid #111;border-radius:0;background:#fff;padding:9px 2px 11px;outline:none;color:#111;font-size:16px;box-shadow:none}
+.newsletter-modal .wa-row{display:grid;grid-template-columns:76px 1fr;gap:10px}
+.newsletter-modal .wa-row select{appearance:none;text-align:center;padding-left:8px}
+.newsletter-modal .brevo-help{font-size:11px;line-height:1.35;color:#555;margin:7px 0 0}
+.newsletter-modal .brevo-consent{margin:20px 0 14px;padding-top:15px;border-top:1px dashed #111}
+.newsletter-modal .brevo-consent label{display:flex;align-items:flex-start;gap:9px;font-size:13px;line-height:1.35;cursor:pointer}
+.newsletter-modal .brevo-consent input{margin-top:2px;width:16px;height:16px;flex:0 0 auto}
+.newsletter-modal .brevo-privacy{font-size:11px;line-height:1.4;color:#555;margin:12px 0 18px}
+.newsletter-modal .sib-captcha{margin:6px 0 18px;overflow:auto}
+.newsletter-modal .entry__error{display:block;font-size:11px;color:#9d2020;margin-top:5px;min-height:0;background:transparent;border:0;padding:0}
+.newsletter-modal .sib-form-block__button{width:100%;min-height:50px;background:#fff;color:#111;border:1px solid #111;border-radius:0;font-size:18px;font-weight:900;text-align:center;cursor:pointer;text-transform:uppercase}
+.newsletter-modal .sib-form-block__button:hover{background:#111;color:#fff}
+.newsletter-modal .sib-hide-loader-icon{display:none}
+@media(max-width:700px){.newsletter-modal .brevo-grid{grid-template-columns:1fr}.newsletter-modal .brevo-field.full{grid-column:auto}.newsletter-modal .g-recaptcha{transform:scale(.88);transform-origin:left top;margin-bottom:-8px}}
+
 </style>
-<!-- Daniella site v11: CTA recorte fornecido pelo usuário -->
+<!-- Daniella site v13: formulário Brevo conectado -->
+
+<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
 </head>
 <body>
 <header class="site-header">
@@ -62,8 +90,72 @@
   </button>
 </div>
 
-<!-- Modal newsletter. O envio real será conectado ao Brevo/Mailchimp no endpoint indicado. -->
-<div class="modal-backdrop" id="newsletterModal" role="dialog" aria-modal="true" aria-labelledby="newsletterTitle" onclick="backdropClose(event)"><div class="newsletter-modal"><button class="modal-close" onclick="closeNewsletter()" aria-label="Fechar">×</button><h2 id="newsletterTitle">Receba o melhor de Daniella direto no seu e-mail.</h2><form id="newsletterForm" data-provider="pending"><div class="newsletter-form-grid"><div class="field"><label for="name">Nome</label><input id="name" name="name" type="text" autocomplete="name"></div><div class="field"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" required></div></div><div class="consents"><label><input type="checkbox" name="newsletter" checked> Quero receber a newsletter de Daniella.</label><label><input type="checkbox" name="bookclub"> Também quero receber novidades do Clube dos Doze.</label></div><p class="fine-print">Ao se inscrever, você autoriza o envio das comunicações selecionadas. A inscrição poderá ser cancelada a qualquer momento pelo link de descadastro nos e-mails.</p><button class="submit-btn" type="submit">Quero receber</button><div class="form-status" id="formStatus"></div></form><div class="modal-photo"><img src="./newsletter-modal-varanda-v10.png?v=10" alt="Daniella Almada lendo na varanda"></div></div></div>
+<!-- Modal newsletter conectado ao Brevo -->
+<div class="modal-backdrop" id="newsletterModal" role="dialog" aria-modal="true" aria-labelledby="newsletterTitle" onclick="backdropClose(event)">
+  <div class="newsletter-modal">
+    <button class="modal-close" onclick="closeNewsletter()" aria-label="Fechar">×</button>
+    <h2 id="newsletterTitle">Receba o melhor de Daniella direto no seu e-mail.</h2>
+
+    <div id="error-message" class="sib-form-message-panel" aria-live="polite">
+      <div class="sib-form-message-panel__text"><span class="sib-form-message-panel__inner-text">Não conseguimos concluir sua inscrição agora. Tente novamente em alguns instantes.</span></div>
+    </div>
+    <div id="success-message" class="sib-form-message-panel" aria-live="polite">
+      <div class="sib-form-message-panel__text"><span class="sib-form-message-panel__inner-text">Quase lá. Enviamos um e-mail para você confirmar sua inscrição. Confira sua caixa de entrada e, se necessário, a pasta de spam ou promoções.</span></div>
+    </div>
+
+    <div id="sib-form-container" class="sib-form-container"><div id="sib-container" class="sib-container--large sib-container--vertical">
+    <form id="sib-form" method="POST" action="https://68534ec1.sibforms.com/serve/MUIFADomVR_KGTcgmygzPD0Vk8h6exjYBCOnWuyM6R5S_XjycKqUe2yKBn9qoc93H0VNy8Ip8uoWH2fOTiGwNRdSIRMTdvVvAhLD0oGaAz-l4pFZ4kwGVINtqe6olDgftX3u9nzEbtnt93qeEILSbVlwrS89XLRokfdTgCJvdMJy2xrU2hm4-rLdv3ePu94iQaaJglRy4DPg9-jVuA==" data-type="subscription">
+      <p style="margin:-10px 0 24px;font-size:14px;line-height:1.4;max-width:620px">Textos sobre contratos, relações, livros e tudo o que vale a pena pensar com mais calma.</p>
+
+      <div class="brevo-grid">
+        <div class="brevo-field sib-input"><div class="form__entry entry_block">
+          <label class="entry__label" for="NOME" data-required="*">Nome</label>
+          <div class="entry__field"><input maxlength="200" type="text" id="NOME" name="NOME" autocomplete="name" placeholder="Seu nome" data-required="true" required></div>
+          <label class="entry__error entry__error--primary"></label>
+        </div></div>
+
+        <div class="brevo-field sib-input"><div class="form__entry entry_block">
+          <label class="entry__label" for="EMAIL" data-required="*">E-mail</label>
+          <div class="entry__field"><input type="email" id="EMAIL" name="EMAIL" autocomplete="email" placeholder="seu@email.com" data-required="true" required></div>
+          <label class="entry__error entry__error--primary"></label>
+        </div></div>
+
+        <div class="brevo-field full sib-sms-field"><div class="form__entry entry_block">
+          <label class="entry__label" for="WHATSAPP">WhatsApp <span style="font-weight:400">(opcional)</span></label>
+          <div class="sib-sms-input-wrapper" style="direction:ltr"><div class="sib-sms-input" data-placeholder="WHATSAPP" data-country-code="BR" data-value="" data-attributename="WHATSAPP">
+            <div class="wa-row">
+              <div class="entry__field"><select name="WHATSAPP__COUNTRY_CODE" aria-label="Código do país"><option value="+55" selected>🇧🇷 +55</option></select></div>
+              <div class="entry__field"><input type="tel" id="WHATSAPP" name="WHATSAPP" autocomplete="tel" placeholder="DDD + número"></div>
+            </div>
+          </div></div>
+          <label class="entry__error entry__error--primary"></label>
+          <label class="entry__error entry__error--secondary"></label>
+          <p class="brevo-help">Ao informar seu número, você concorda em receber avisos, conteúdos e novidades da Daniella pelo WhatsApp. Você poderá deixar de receber a qualquer momento.</p>
+        </div></div>
+      </div>
+
+      <div class="brevo-consent sib-optin" data-required="true"><div class="form__entry entry_mcq">
+        <label for="OPT_IN"><input type="checkbox" value="1" id="OPT_IN" name="OPT_IN" required> <span><strong>Consentimento por e-mail</strong><br>Quero receber por e-mail a newsletter da Daniella Almada. Sei que posso cancelar minha inscrição a qualquer momento.</span></label>
+        <label class="entry__error entry__error--primary"></label>
+      </div></div>
+
+      <p class="brevo-privacy">Seus dados serão utilizados para o envio das comunicações solicitadas e processados por meio da plataforma Brevo. Você poderá solicitar a atualização ou exclusão dos seus dados e cancelar o recebimento das comunicações a qualquer momento.</p>
+
+      <div class="sib-captcha"><div class="form__entry entry_block">
+        <script>function handleCaptchaResponse(){var event=new Event('captchaChange');document.getElementById('sib-captcha').dispatchEvent(event);}</script>
+        <div class="g-recaptcha sib-visible-recaptcha" id="sib-captcha" data-sitekey="6LcDoH0tAAAAAMQdjjkpYGrQFPSpJFYNUy3wyFuV" data-callback="handleCaptchaResponse"></div>
+        <label class="entry__error entry__error--primary"></label>
+      </div></div>
+
+      <button class="sib-form-block__button sib-form-block__button-with-loader" type="submit">QUERO RECEBER</button>
+      <input type="text" name="email_address_check" value="" class="input--hidden" tabindex="-1" autocomplete="off">
+      <input type="hidden" name="locale" value="pt">
+    </form>
+    </div></div>
+
+    <div class="modal-photo"><img src="./newsletter-modal-varanda-v10.png?v=10" alt="Daniella Almada lendo na varanda"></div>
+  </div>
+</div>
 <script>
 function toggleMenu(open){document.getElementById('mobilePanel').classList.toggle('open',open);document.body.style.overflow=open?'hidden':''}
 function openNewsletter(){document.getElementById('newsletterModal').classList.add('open');document.body.style.overflow='hidden';localStorage.setItem('daniella-newsletter-seen','1')}
@@ -72,6 +164,18 @@ function backdropClose(e){if(e.target.id==='newsletterModal')closeNewsletter()}
 function dismissCutout(e){e.preventDefault();e.stopPropagation();localStorage.setItem('daniella-cutout-dismissed','1');const cta=document.getElementById('cutoutCta');if(cta)cta.classList.add('is-hidden')}
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeNewsletter();toggleMenu(false)}})
 window.addEventListener('load',()=>{const cta=document.getElementById('cutoutCta');if(cta&&localStorage.getItem('daniella-cutout-dismissed')==='1')cta.classList.add('is-hidden');if(!localStorage.getItem('daniella-newsletter-seen'))setTimeout(openNewsletter,7000)})
-document.getElementById('newsletterForm').addEventListener('submit',function(e){e.preventDefault();const status=document.getElementById('formStatus');status.textContent='A parte visual está pronta. Para salvar o e-mail na lista, conecte este formulário ao Brevo ou Mailchimp.';});
+
+window.REQUIRED_CODE_ERROR_MESSAGE='Escolha um código de país';
+window.LOCALE='pt';
+window.EMAIL_INVALID_MESSAGE=window.SMS_INVALID_MESSAGE='Alguma informação parece estar incorreta. Confira os dados preenchidos e tente novamente.';
+window.REQUIRED_ERROR_MESSAGE='Preencha este campo para continuar.';
+window.GENERIC_INVALID_MESSAGE='Alguma informação parece estar incorreta. Confira os dados preenchidos e tente novamente.';
+window.INVALID_NUMBER='Alguma informação parece estar incorreta. Confira os dados preenchidos e tente novamente.';
+window.INVALID_DATE='Insira uma data válida';
+window.REQUIRED_MULTISELECT_MESSAGE='Selecione pelo menos 1 opção';
+window.translation={common:{selectedList:'{quantity} lista selecionada',selectedLists:'{quantity} listas selecionadas',selectedOption:'{quantity} selecionado',selectedOptions:'{quantity} selecionados'}};
+var AUTOHIDE=Boolean(0);
 </script>
+<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?hl=pt"></script>
 </body></html>
