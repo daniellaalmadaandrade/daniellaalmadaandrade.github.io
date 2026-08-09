@@ -1,3 +1,10 @@
+# Site Daniella Almada — versão 11
+
+- O CTA flutuante usa exatamente o arquivo `cta-newsletter-recorte-v11.png`.
+- O botão **×** fecha o recorte e guarda a escolha no navegador.
+- Clique em qualquer parte do recorte para abrir o mesmo formulário da newsletter.
+- A fotografia do formulário continua em `newsletter-modal-varanda-v10.png`.
+
 ## Versão 10
 
 CTA flutuante mantém o retrato atual com botão de fechar. O modal da newsletter usa a foto da varanda. Arquivos de imagem receberam nomes novos para evitar cache do navegador.
