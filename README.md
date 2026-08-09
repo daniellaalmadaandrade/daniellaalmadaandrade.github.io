@@ -11,3 +11,7 @@ Arquivos de foto:
 - daniella-livro-retorica.png
 
 O GitHub Pages hospeda o site; e-mail deve ser fornecido por outro serviço.
+
+
+## Ajuste v9
+O CTA flutuante da newsletter foi ampliado e ganhou um botão de fechar. Ao fechar, a preferência fica salva no navegador e o recorte não volta a aparecer nesse dispositivo/navegador.
