@@ -1,3 +1,7 @@
+## Versão 10
+
+CTA flutuante mantém o retrato atual com botão de fechar. O modal da newsletter usa a foto da varanda. Arquivos de imagem receberam nomes novos para evitar cache do navegador.
+
 # Site Daniella Almada — versão 8
 
 Versão preparada para GitHub Pages com as três fotografias na raiz do repositório, evitando problemas de upload de pastas pelo navegador.
