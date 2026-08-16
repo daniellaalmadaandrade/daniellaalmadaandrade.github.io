@@ -955,17 +955,17 @@ footer{
 
 
 /* =====================================
-   BOTÃO FLUTUANTE
+   BOTÃO FIXO
 ===================================== */
 
 .float{
   position:fixed;
-  z-index:100;
+  z-index:1000;
   right:18px;
   bottom:18px;
   padding:8px;
   border-radius:999px;
-  background:rgba(9,9,9,.94);
+  background:rgba(9,9,9,.95);
   box-shadow:0 15px 50px rgba(0,0,0,.28);
   opacity:0;
   pointer-events:none;
@@ -984,7 +984,7 @@ footer{
 
 .lightbox{
   position:fixed;
-  z-index:200;
+  z-index:2000;
   inset:0;
   display:none;
   align-items:center;
@@ -1070,10 +1070,15 @@ footer{
 
 
 /* =====================================
-   CELULAR — VERSÃO PRINCIPAL
+   CELULAR
+   BOTÃO VISÍVEL DESDE A PRIMEIRA TELA
 ===================================== */
 
 @media(max-width:680px){
+
+  body{
+    padding-bottom:82px;
+  }
 
   .container{
     width:calc(100% - 28px);
@@ -1325,26 +1330,47 @@ footer{
     padding:74px 0 105px;
   }
 
+
+  /* BOTÃO FIXO DESDE O PRIMEIRO SEGUNDO */
+
   .float{
+    display:block;
     left:10px;
     right:10px;
-    bottom:10px;
+    bottom:max(10px,env(safe-area-inset-bottom));
+
     padding:7px;
+
+    opacity:1 !important;
+    pointer-events:auto !important;
+
+    border-radius:999px;
+
+    background:rgba(9,9,9,.96);
+
+    box-shadow:
+      0 10px 35px
+      rgba(0,0,0,.34);
   }
 
   .float .btn{
     width:100%;
-    min-height:52px;
+    min-height:54px;
+    padding:13px 16px;
+    font-size:.72rem;
+    letter-spacing:.055em;
   }
 
   footer{
-    padding-bottom:92px;
+    padding-bottom:105px;
   }
 
 }
 
 
-/* CELULARES PEQUENOS */
+/* =====================================
+   CELULARES PEQUENOS
+===================================== */
 
 @media(max-width:390px){
 
@@ -1363,6 +1389,10 @@ footer{
 
   .numeros{
     grid-template-columns:1fr;
+  }
+
+  .float .btn{
+    font-size:.68rem;
   }
 
 }
@@ -2946,6 +2976,13 @@ footer{
 
 
 
+<!-- =====================================
+     BOTÃO FIXO
+
+     NO CELULAR ELE APARECE DESDE
+     A PRIMEIRA TELA E NÃO SOME.
+===================================== -->
+
 <div class="float" id="float">
 
   <a
@@ -2953,7 +2990,9 @@ footer{
     data-checkout
     href="#oferta"
   >
-    Quero entrar
+
+    Quero entrar para o DNA dos Contratos
+
   </a>
 
 </div>
@@ -2982,9 +3021,12 @@ footer{
 
 <script>
 
+
 /* =====================================
-   LINK DA HOTMART
-   COLE ENTRE AS ASPAS QUANDO TIVER
+   CHECKOUT DA HOTMART
+
+   QUANDO VOCÊ ME PASSAR O LINK,
+   COLOCAREMOS ELE AQUI.
 ===================================== */
 
 const CHECKOUT_URL = "";
@@ -3083,35 +3125,68 @@ videoStage.addEventListener(
 );
 
 
-/* BOTÃO FLUTUANTE */
+/* =====================================
+   BOTÃO FLUTUANTE
+
+   DESKTOP:
+   aparece após rolagem.
+
+   CELULAR:
+   o CSS acima força a exibição
+   desde a primeira tela.
+===================================== */
 
 const float =
 document.getElementById("float");
 
 
-window.addEventListener(
-  "scroll",
-  () => {
+function controlarBotao(){
 
-    if(
-      window.scrollY > 850
-    ){
+  if(
+    window.innerWidth <= 680
+  ){
 
-      float.classList.add("show");
+    float.classList.add("show");
 
-    }
-
-    else{
-
-      float.classList.remove("show");
-
-    }
+    return;
 
   }
+
+  if(
+    window.scrollY > 850
+  ){
+
+    float.classList.add("show");
+
+  }
+
+  else{
+
+    float.classList.remove("show");
+
+  }
+
+}
+
+
+controlarBotao();
+
+
+window.addEventListener(
+  "scroll",
+  controlarBotao
 );
 
 
-/* AMPLIAÇÃO DAS MENSAGENS */
+window.addEventListener(
+  "resize",
+  controlarBotao
+);
+
+
+/* =====================================
+   AMPLIAÇÃO DAS MENSAGENS
+===================================== */
 
 const lightbox =
 document.getElementById("lightbox");
@@ -3191,6 +3266,7 @@ document.addEventListener(
 
   }
 );
+
 
 </script>
 
