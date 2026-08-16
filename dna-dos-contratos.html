@@ -360,7 +360,6 @@ p{
   font-size:.8rem;
 }
 
-
 section{
   padding:105px 0;
 }
@@ -375,23 +374,12 @@ section{
 }
 
 .video-intro{
-  display:grid;
-
-  grid-template-columns:
-    .9fr
-    1.1fr;
-
-  gap:70px;
-
-  align-items:end;
-
+  max-width:760px;
   margin-bottom:40px;
 }
 
-.video-intro p{
-  color:var(--cinza);
-
-  font-size:1.05rem;
+.video-intro h2{
+  margin-bottom:0;
 }
 
 .video-box{
@@ -471,18 +459,6 @@ section{
   z-index:5;
 }
 
-.video-note{
-  max-width:780px;
-
-  margin:24px auto 0;
-
-  text-align:center;
-
-  color:var(--cinza);
-
-  font-size:.9rem;
-}
-
 
 /* ==============================
    PROVA SOCIAL
@@ -557,8 +533,6 @@ section{
   font-size:.72rem;
 
   font-weight:800;
-
-  letter-spacing:.04em;
 }
 
 .quote small strong{
@@ -669,8 +643,6 @@ section{
 }
 
 .pilar{
-  min-height:0;
-
   padding:30px;
 
   border:
@@ -685,9 +657,7 @@ section{
 
   flex-direction:column;
 
-  justify-content:flex-start;
-
-  gap:34px;
+  gap:30px;
 }
 
 .pilar-num{
@@ -728,7 +698,7 @@ section{
 
 
 /* ==============================
-   CONTEÚDO REAL DA HOTMART
+   CONTEÚDO
 ============================== */
 
 .conteudo{
@@ -844,49 +814,6 @@ section{
   margin:0;
 }
 
-.conteudos-numeros{
-  display:grid;
-
-  grid-template-columns:
-    repeat(3,1fr);
-
-  gap:14px;
-
-  margin-top:45px;
-}
-
-.conteudo-numero{
-  padding:24px;
-
-  border-radius:18px;
-
-  background:var(--creme);
-
-  border:
-    1px solid
-    var(--linha);
-}
-
-.conteudo-numero strong{
-  display:block;
-
-  font-family:Georgia,serif;
-
-  font-size:2.4rem;
-
-  font-weight:500;
-
-  line-height:1;
-
-  margin-bottom:8px;
-}
-
-.conteudo-numero span{
-  color:var(--cinza);
-
-  font-size:.85rem;
-}
-
 
 /* ==============================
    STORIES
@@ -962,6 +889,18 @@ section{
   background:var(--creme);
 }
 
+.para-quem-intro{
+  max-width:760px;
+
+  margin-bottom:40px;
+}
+
+.para-quem-intro p{
+  color:var(--cinza);
+
+  font-size:1.05rem;
+}
+
 .grid-quem{
   display:grid;
 
@@ -970,18 +909,16 @@ section{
     1fr;
 
   gap:16px;
-
-  margin-top:45px;
 }
 
 .card-quem{
   padding:30px;
 
-  border-top:
-    1px solid #111;
+  border:1px solid var(--linha);
 
-  background:
-    rgba(255,255,255,.4);
+  border-radius:20px;
+
+  background:#fff;
 }
 
 .card-quem span{
@@ -998,6 +935,10 @@ section{
   letter-spacing:.12em;
 
   text-transform:uppercase;
+}
+
+.card-quem h3{
+  margin-bottom:14px;
 }
 
 .card-quem p{
@@ -1366,7 +1307,6 @@ footer{
 @media(max-width:960px){
 
   .hero-grid,
-  .video-intro,
   .manifesto-grid,
   .modulos-intro,
   .daniella-grid,
@@ -1484,10 +1424,6 @@ footer{
     max-width:205px;
   }
 
-  .video-intro{
-    gap:18px;
-  }
-
   .video-box{
     padding:7px;
   }
@@ -1520,10 +1456,6 @@ footer{
 
   .modulo p{
     grid-column:1;
-  }
-
-  .conteudos-numeros{
-    grid-template-columns:1fr;
   }
 
   .numeros{
@@ -1643,8 +1575,9 @@ footer{
 
       <p class="hero-note">
 
-        Antes de decidir se o DNA faz sentido para você,
-        conheça a proposta da formação diretamente com a Daniella.
+        Para quem quer sair do modelo pronto
+        e aprender a trabalhar com contratos
+        de forma técnica, estratégica e profissional.
 
       </p>
 
@@ -1704,28 +1637,13 @@ footer{
 
     <div class="video-intro">
 
-
-      <div>
-
-        <p class="eyebrow">
-          Comece por aqui
-        </p>
-
-        <h2>
-          Conheça o DNA dos Contratos.
-        </h2>
-
-      </div>
-
-
-      <p>
-
-        Daniella apresenta a proposta da formação,
-        como o curso foi construído
-        e o que você vai encontrar ao entrar para o DNA.
-
+      <p class="eyebrow">
+        Comece por aqui
       </p>
 
+      <h2>
+        Conheça o DNA dos Contratos.
+      </h2>
 
     </div>
 
@@ -1812,7 +1730,7 @@ footer{
         </div>
 
         <small>
-          <strong>Marina S.</strong> · advogada · nome alterado
+          <strong>Aluna do DNA</strong> · advogada
         </small>
 
       </article>
@@ -1838,7 +1756,7 @@ footer{
         </div>
 
         <small>
-          <strong>Camila R.</strong> · advogada · nome alterado
+          <strong>Aluna do DNA</strong> · advogada
         </small>
 
       </article>
@@ -1856,15 +1774,15 @@ footer{
           <blockquote>
 
             Seu curso me ajudou a me recolocar no mercado.
-            Comecei com revisões contratuais e depois
-            fui chamado para uma vaga na área.
+            Comecei com revisões contratuais
+            e depois fui chamada para uma vaga na área.
 
           </blockquote>
 
         </div>
 
         <small>
-          <strong>Rafael M.</strong> · advogado · nome alterado
+          <strong>Aluna do DNA</strong> · advogada
         </small>
 
       </article>
@@ -2041,7 +1959,8 @@ footer{
 
       O advogado contratualista precisa dominar o documento,
       entender a operação do cliente
-      e saber construir uma entrega profissional rentável.
+      e saber transformar esse conhecimento
+      em uma entrega profissional valorizada.
 
     </p>
 
@@ -2144,7 +2063,7 @@ footer{
 
 
 <!-- ==============================
-     MÓDULOS REAIS
+     MÓDULOS
 ============================== -->
 
 <section class="conteudo">
@@ -2163,7 +2082,7 @@ footer{
 
 
         <h2>
-          Uma formação contratual completa.
+          Do fundamento à prática.
         </h2>
 
       </div>
@@ -2171,13 +2090,10 @@ footer{
 
       <p>
 
-        A estrutura abaixo corresponde aos módulos
-        disponíveis na formação.
-
-        Você começa pelos fundamentos
-        e avança até análise prática,
-        contratos específicos,
-        precificação e construção comercial.
+        A formação acompanha o caminho que o advogado
+        precisa percorrer para compreender,
+        elaborar, revisar, negociar
+        e vender um trabalho contratual.
 
       </p>
 
@@ -2201,7 +2117,7 @@ footer{
 
         <p>
 
-          O ponto de partida para compreender
+          A base para compreender
           função, natureza e lógica contratual
           antes de entrar na redação das cláusulas.
 
@@ -2225,8 +2141,8 @@ footer{
 
           Como a relação contratual nasce,
           quando produz efeitos
-          e quais elementos precisam existir
-          para sustentar o negócio jurídico.
+          e quais elementos sustentam
+          o negócio jurídico.
 
         </p>
 
@@ -2248,7 +2164,7 @@ footer{
 
           Riscos relacionados ao objeto contratado,
           responsabilidade das partes
-          e mecanismos de proteção contratual.
+          e mecanismos de proteção.
 
         </p>
 
@@ -2270,8 +2186,7 @@ footer{
 
           Rescisão, resolução,
           distrato, inadimplemento
-          e os diferentes caminhos
-          para o encerramento da relação.
+          e encerramento da relação contratual.
 
         </p>
 
@@ -2291,10 +2206,9 @@ footer{
 
         <p>
 
-          Como responsabilidade,
-          dano, descumprimento
-          e alocação de riscos
-          se relacionam dentro do contrato.
+          Responsabilidade, dano,
+          descumprimento e alocação de riscos
+          dentro da relação contratual.
 
         </p>
 
@@ -2322,14 +2236,12 @@ footer{
 
       <p>
 
-        Um dos maiores módulos da formação,
-        com 16 conteúdos.
-
-        Aqui o aluno entra de fato na construção do documento:
+        Aqui o aluno entra na construção do documento:
         organização, estrutura,
         cláusulas e elementos necessários
         para transformar o raciocínio jurídico
-        em um contrato claro e funcional.
+        em um contrato claro, coerente
+        e funcional.
 
       </p>
 
@@ -2354,7 +2266,7 @@ footer{
 
           Como extrair informações,
           compreender a operação,
-          descobrir os interesses envolvidos
+          descobrir interesses
           e organizar o atendimento contratual.
 
         </p>
@@ -2398,10 +2310,10 @@ footer{
 
         <p>
 
-          Critérios para construir honorários,
-          compreender o valor da entrega
-          e parar de tratar elaboração contratual
-          como simples preenchimento de documento.
+          Como pensar honorários
+          e compreender o valor da entrega
+          sem reduzir o trabalho contratual
+          ao número de páginas.
 
         </p>
 
@@ -2421,10 +2333,10 @@ footer{
 
         <p>
 
-          Modelos utilizados como instrumentos de trabalho
+          Modelos como instrumentos de trabalho
           e repertório prático,
-          sempre associados ao raciocínio
-          necessário para adaptação.
+          sempre acompanhados
+          do raciocínio necessário para adaptação.
 
         </p>
 
@@ -2452,13 +2364,13 @@ footer{
 
       <p>
 
-        17 conteúdos voltados à aplicação prática.
+        O momento de colocar o raciocínio em prática.
 
         O aluno acompanha contratos,
         identifica fragilidades,
         observa escolhas de redação
-        e desenvolve a capacidade
-        de analisar o documento como um todo.
+        e aprende a analisar
+        o documento como um todo.
 
       </p>
 
@@ -2483,7 +2395,7 @@ footer{
 
           Aplicação do raciocínio contratual
           em contratos específicos
-          e situações concretas da prática.
+          e situações da prática.
 
         </p>
 
@@ -2525,57 +2437,11 @@ footer{
 
         <p>
 
-          Conteúdo complementar voltado
-          à comunicação e apresentação
-          da atuação profissional ao mercado.
+          Conteúdo complementar
+          para comunicar e apresentar
+          a atuação profissional ao mercado.
 
         </p>
-
-      </div>
-
-
-    </div>
-
-
-
-    <div class="conteudos-numeros">
-
-
-      <div class="conteudo-numero">
-
-        <strong>
-          13
-        </strong>
-
-        <span>
-          módulos principais da formação
-        </span>
-
-      </div>
-
-
-      <div class="conteudo-numero">
-
-        <strong>
-          17
-        </strong>
-
-        <span>
-          conteúdos somente no módulo de análises contratuais
-        </span>
-
-      </div>
-
-
-      <div class="conteudo-numero">
-
-        <strong>
-          24 meses
-        </strong>
-
-        <span>
-          de acesso para estudar e revisar
-        </span>
 
       </div>
 
@@ -2608,15 +2474,16 @@ footer{
 
       <h2>
 
-        Um curso começa nas aulas.
-        O resultado aparece na prática.
+        Quem aprende a enxergar contratos
+        de outro jeito começa a trabalhar
+        de outro jeito.
 
       </h2>
 
 
       <p>
 
-        Alguns dos relatos que chegaram
+        Alguns relatos recebidos
         ao longo das turmas do DNA dos Contratos.
 
       </p>
@@ -2820,17 +2687,32 @@ footer{
   <div class="container">
 
 
-    <p class="eyebrow">
-      Para quem é
-    </p>
+    <div class="para-quem-intro">
+
+      <p class="eyebrow">
+        O DNA é para você?
+      </p>
 
 
-    <h2>
+      <h2>
 
-      Para quem quer fazer dos contratos
-      uma atuação profissional de verdade.
+        Se você quer trabalhar melhor
+        com contratos, provavelmente
+        vai se reconhecer aqui.
 
-    </h2>
+      </h2>
+
+
+      <p>
+
+        O DNA foi criado para advogados
+        que querem desenvolver segurança técnica
+        e transformar contratos
+        em uma atuação profissional estruturada.
+
+      </p>
+
+    </div>
 
 
 
@@ -2840,21 +2722,22 @@ footer{
       <article class="card-quem">
 
         <span>
-          Prática
+          Você está começando
         </span>
 
         <h3>
 
-          “Eu estudei contratos,
-          mas ainda travo diante de um documento real.”
+          Quer atuar com contratos,
+          mas ainda não sabe por onde começar.
 
         </h3>
 
         <p>
 
-          Você quer desenvolver método de análise
-          e aprender a decidir o que precisa
-          entrar ou sair de um contrato.
+          O DNA organiza o caminho:
+          fundamentos, estrutura,
+          análise, interpretação
+          e prática contratual.
 
         </p>
 
@@ -2865,20 +2748,23 @@ footer{
       <article class="card-quem">
 
         <span>
-          Estrutura
+          Você já faz contratos
         </span>
 
         <h3>
 
-          “Eu ainda dependo demais de modelos.”
+          Elabora documentos,
+          mas ainda depende demais
+          de modelos prontos.
 
         </h3>
 
         <p>
 
-          Você quer compreender a função das cláusulas
-          e construir documentos adequados
-          à operação concreta do cliente.
+          A formação ajuda você
+          a entender o motivo de cada cláusula
+          e adaptar o contrato
+          ao caso concreto.
 
         </p>
 
@@ -2889,21 +2775,23 @@ footer{
       <article class="card-quem">
 
         <span>
-          Honorários
+          Você quer cobrar melhor
         </span>
 
         <h3>
 
-          “Eu não sei quanto cobrar
-          por um trabalho contratual.”
+          Sabe fazer o trabalho,
+          mas ainda tem dificuldade
+          para precificar e apresentar o serviço.
 
         </h3>
 
         <p>
 
-          Você quer aprender a estruturar
-          e precificar a entrega
-          sem reduzir o serviço ao número de páginas.
+          O DNA também trabalha
+          comercial, honorários,
+          tratativas com o cliente
+          e percepção de valor.
 
         </p>
 
@@ -2914,21 +2802,23 @@ footer{
       <article class="card-quem">
 
         <span>
-          Consultivo
+          Você quer ampliar o escritório
         </span>
 
         <h3>
 
-          “Quero construir receita
-          fora do contencioso.”
+          Quer criar uma atuação consultiva
+          e depender menos
+          do contencioso.
 
         </h3>
 
         <p>
 
-          Você quer desenvolver elaboração,
-          revisão, análise e acompanhamento
-          de contratos como uma área do escritório.
+          Elaboração, revisão
+          e análise contratual podem se tornar
+          uma nova frente de atuação
+          dentro do seu escritório.
 
         </p>
 
@@ -3062,29 +2952,28 @@ footer{
 
       <h2>
 
-        Agora você já sabe
-        o que existe por trás do DNA.
+        Entre para o DNA dos Contratos.
 
       </h2>
 
 
       <p>
 
-        Uma formação que começa
-        nos fundamentos dos contratos
-        e chega à estrutura,
-        interpretação, análise prática,
-        relacionamento com o cliente,
-        comercial e precificação.
+        Você não precisa continuar tentando montar
+        sua atuação contratual
+        juntando modelos, aulas soltas
+        e informações desconectadas.
 
       </p>
 
 
       <p>
 
-        O objetivo é que você tenha repertório
-        para trabalhar com contratos
-        como uma área real da sua atuação profissional.
+        O DNA organiza esse caminho
+        em uma formação voltada à prática:
+        técnica contratual,
+        raciocínio negocial
+        e construção comercial.
 
       </p>
 
@@ -3109,19 +2998,19 @@ footer{
       <ul>
 
         <li>
-          13 módulos principais
-        </li>
-
-        <li>
           Formação técnica contratual
         </li>
 
         <li>
-          Módulo completo de estrutura dos contratos
+          Estrutura dos contratos
         </li>
 
         <li>
           Análises contratuais práticas
+        </li>
+
+        <li>
+          Tratativas com o cliente
         </li>
 
         <li>
@@ -3206,7 +3095,8 @@ footer{
 
           A formação atende tanto quem está iniciando
           quanto quem já elabora ou revisa contratos
-          e quer ampliar o repertório e a segurança na prática.
+          e quer ampliar o repertório
+          e a segurança na prática.
 
         </p>
 
@@ -3224,7 +3114,7 @@ footer{
 
           Sim.
 
-          Existe um módulo próprio de modelos contratuais
+          Existe conteúdo próprio de modelos contratuais
           e materiais de apoio.
 
           Mas a proposta do DNA é que você saiba
@@ -3248,7 +3138,8 @@ footer{
           Sim.
 
           O DNA possui um módulo específico de precificação,
-          além de conteúdo comercial e tratativas com o cliente.
+          além de conteúdo comercial
+          e tratativas com o cliente.
 
         </p>
 
@@ -3266,9 +3157,12 @@ footer{
 
           Sim.
 
-          O módulo de Análises Contratuais possui
-          17 conteúdos destinados à aplicação prática
-          do raciocínio desenvolvido ao longo da formação.
+          Existe um módulo dedicado
+          à análise contratual,
+          no qual o aluno acompanha documentos,
+          identifica fragilidades
+          e desenvolve o raciocínio
+          necessário para revisar contratos.
 
         </p>
 
@@ -3415,24 +3309,10 @@ footer{
 <script>
 
 
-/* ==============================
-   CHECKOUT
-============================== */
-
 const CHECKOUT_URL = "";
 
+const VIDEO_ID = "7bw6hv2zOcI";
 
-
-/* ==============================
-   VÍDEO
-============================== */
-
-const VIDEO_ID =
-"7bw6hv2zOcI";
-
-
-
-/* ANO */
 
 document
 .getElementById("ano")
@@ -3440,8 +3320,6 @@ document
 new Date().getFullYear();
 
 
-
-/* CHECKOUT */
 
 document
 .querySelectorAll(
@@ -3468,8 +3346,6 @@ document
 });
 
 
-
-/* VÍDEO */
 
 const videoStage =
 document.getElementById(
@@ -3539,8 +3415,6 @@ videoStage
 
 
 
-/* BOTÃO FLUTUANTE */
-
 const float =
 document.getElementById(
   "float"
@@ -3574,8 +3448,6 @@ window
 );
 
 
-
-/* LIGHTBOX */
 
 const lightbox =
 document.getElementById(
