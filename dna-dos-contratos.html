@@ -126,20 +126,23 @@ p{
 }
 
 .btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:9px;
-  min-height:58px;
-  padding:16px 27px;
-  border-radius:999px;
-  border:1px solid transparent;
-  font-size:.78rem;
-  font-weight:900;
-  letter-spacing:.08em;
-  text-transform:uppercase;
-  text-align:center;
-  transition:.2s;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:9px !important;
+  min-height:58px !important;
+  padding:16px 27px !important;
+  border-radius:999px !important;
+  border:1px solid transparent !important;
+  font-family:Arial,Helvetica,sans-serif !important;
+  font-size:.78rem !important;
+  font-weight:900 !important;
+  letter-spacing:.08em !important;
+  text-transform:uppercase !important;
+  text-align:center !important;
+  text-decoration:none !important;
+  transition:.2s !important;
+  cursor:pointer !important;
 }
 
 .btn:hover{
@@ -147,28 +150,27 @@ p{
 }
 
 .btn-malbec{
-  background:var(--malbec);
-  color:#fff;
+  background:var(--malbec) !important;
+  color:#fff !important;
 }
 
 .btn-malbec:hover{
-  background:var(--malbec2);
+  background:var(--malbec2) !important;
 }
 
 .btn-branco{
-  background:#fff;
-  color:#111;
+  background:#fff !important;
+  color:#111 !important;
 }
 
 .btn-outline{
-  border-color:rgba(255,255,255,.32);
-  color:#fff;
+  border-color:rgba(255,255,255,.32) !important;
+  color:#fff !important;
+  background:transparent !important;
 }
 
 
-/* =====================================
-   CABEÇALHO
-===================================== */
+/* CABEÇALHO */
 
 .topo{
   position:absolute;
@@ -211,9 +213,7 @@ p{
 }
 
 
-/* =====================================
-   HERO
-===================================== */
+/* HERO */
 
 .hero{
   min-height:100vh;
@@ -309,9 +309,7 @@ section{
 }
 
 
-/* =====================================
-   VÍDEO
-===================================== */
+/* VÍDEO */
 
 .video-section{
   background:var(--creme);
@@ -376,9 +374,7 @@ section{
 }
 
 
-/* =====================================
-   RELATOS
-===================================== */
+/* RELATOS */
 
 .relatos{
   background:#fff;
@@ -436,9 +432,7 @@ section{
 }
 
 
-/* =====================================
-   CONTENCIOSO
-===================================== */
+/* CONTENCIOSO */
 
 .realidade{
   background:var(--preto);
@@ -496,9 +490,7 @@ section{
 }
 
 
-/* =====================================
-   CONSULTIVO
-===================================== */
+/* CONSULTIVO */
 
 .consultivo{
   background:var(--creme);
@@ -545,9 +537,7 @@ section{
 }
 
 
-/* =====================================
-   PILARES
-===================================== */
+/* PILARES */
 
 .metodo{
   background:#fff;
@@ -599,9 +589,7 @@ section{
 }
 
 
-/* =====================================
-   MÓDULOS
-===================================== */
+/* MÓDULOS */
 
 .conteudo{
   background:var(--creme);
@@ -673,9 +661,7 @@ section{
 }
 
 
-/* =====================================
-   MENSAGENS
-===================================== */
+/* MENSAGENS */
 
 .mensagens{
   background:linear-gradient(180deg,#68152f,#480b1e);
@@ -716,9 +702,7 @@ section{
 }
 
 
-/* =====================================
-   IDENTIFICAÇÃO
-===================================== */
+/* IDENTIFICAÇÃO */
 
 .para-quem{
   background:var(--creme);
@@ -772,9 +756,7 @@ section{
 }
 
 
-/* =====================================
-   DANIELLA
-===================================== */
+/* DANIELLA */
 
 .apresentacao{
   background:#fff;
@@ -834,9 +816,7 @@ section{
 }
 
 
-/* =====================================
-   OFERTA
-===================================== */
+/* OFERTA */
 
 .oferta{
   background:var(--preto);
@@ -879,6 +859,36 @@ section{
   width:100%;
 }
 
+.preco-bloco{
+  margin:24px 0 5px;
+  padding:22px 0;
+  border-top:1px solid rgba(255,255,255,.2);
+  border-bottom:1px solid rgba(255,255,255,.2);
+}
+
+.preco-label{
+  margin:0 0 3px;
+  color:rgba(255,255,255,.65);
+  font-size:.72rem;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.preco{
+  margin:0;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:3rem;
+  line-height:1;
+  color:#fff;
+}
+
+.parcelamento{
+  margin:9px 0 0;
+  color:rgba(255,255,255,.73);
+  font-size:.84rem;
+}
+
 .checkout-info{
   margin:13px 0 0;
   text-align:center;
@@ -887,9 +897,7 @@ section{
 }
 
 
-/* =====================================
-   FAQ
-===================================== */
+/* FAQ */
 
 .faq{
   background:#fff;
@@ -924,9 +932,7 @@ details p{
 }
 
 
-/* =====================================
-   FINAL
-===================================== */
+/* FINAL */
 
 .final{
   padding:105px 0 125px;
@@ -945,6 +951,13 @@ details p{
   color:var(--cinza);
 }
 
+.final-preco{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:2rem;
+  color:var(--preto) !important;
+  margin-bottom:24px !important;
+}
+
 footer{
   padding:25px 0 90px;
   background:var(--creme);
@@ -954,9 +967,7 @@ footer{
 }
 
 
-/* =====================================
-   BOTÃO FIXO
-===================================== */
+/* BOTÃO FIXO */
 
 .float{
   position:fixed;
@@ -978,9 +989,7 @@ footer{
 }
 
 
-/* =====================================
-   LIGHTBOX
-===================================== */
+/* LIGHTBOX */
 
 .lightbox{
   position:fixed;
@@ -1018,9 +1027,7 @@ footer{
 }
 
 
-/* =====================================
-   TABLET
-===================================== */
+/* TABLET */
 
 @media(max-width:960px){
 
@@ -1069,10 +1076,7 @@ footer{
 }
 
 
-/* =====================================
-   CELULAR
-   BOTÃO VISÍVEL DESDE A PRIMEIRA TELA
-===================================== */
+/* CELULAR */
 
 @media(max-width:680px){
 
@@ -1151,8 +1155,8 @@ footer{
   }
 
   .btn{
-    min-height:56px;
-    padding:15px 20px;
+    min-height:56px !important;
+    padding:15px 20px !important;
   }
 
   .hero-photo{
@@ -1318,6 +1322,10 @@ footer{
     border-radius:20px;
   }
 
+  .preco{
+    font-size:2.65rem;
+  }
+
   .faq-list{
     margin-top:28px;
   }
@@ -1331,7 +1339,7 @@ footer{
   }
 
 
-  /* BOTÃO FIXO DESDE O PRIMEIRO SEGUNDO */
+  /* CTA FIXO SEMPRE VISÍVEL */
 
   .float{
     display:block;
@@ -1354,11 +1362,11 @@ footer{
   }
 
   .float .btn{
-    width:100%;
-    min-height:54px;
-    padding:13px 16px;
-    font-size:.72rem;
-    letter-spacing:.055em;
+    width:100% !important;
+    min-height:54px !important;
+    padding:13px 16px !important;
+    font-size:.72rem !important;
+    letter-spacing:.055em !important;
   }
 
   footer{
@@ -1368,9 +1376,7 @@ footer{
 }
 
 
-/* =====================================
-   CELULARES PEQUENOS
-===================================== */
+/* CELULARES PEQUENOS */
 
 @media(max-width:390px){
 
@@ -1392,7 +1398,7 @@ footer{
   }
 
   .float .btn{
-    font-size:.68rem;
+    font-size:.67rem !important;
   }
 
 }
@@ -1431,9 +1437,7 @@ footer{
 <main>
 
 
-<!-- =====================================
-     HERO
-===================================== -->
+<!-- HERO -->
 
 <section class="hero" id="inicio">
 
@@ -1520,9 +1524,7 @@ footer{
 
 
 
-<!-- =====================================
-     VÍDEO
-===================================== -->
+<!-- VÍDEO -->
 
 <section class="video-section" id="video">
 
@@ -1570,9 +1572,7 @@ footer{
 
 
 
-<!-- =====================================
-     RELATOS
-===================================== -->
+<!-- RELATOS -->
 
 <section class="relatos" id="relatos">
 
@@ -1680,9 +1680,7 @@ footer{
 
 
 
-<!-- =====================================
-     CONTENCIOSO
-===================================== -->
+<!-- CONTENCIOSO -->
 
 <section class="realidade">
 
@@ -1811,9 +1809,7 @@ footer{
 
 
 
-<!-- =====================================
-     CONSULTIVO
-===================================== -->
+<!-- CONSULTIVO -->
 
 <section class="consultivo">
 
@@ -1928,9 +1924,7 @@ footer{
 
 
 
-<!-- =====================================
-     EIXOS
-===================================== -->
+<!-- EIXOS -->
 
 <section class="metodo">
 
@@ -2045,9 +2039,7 @@ footer{
 
 
 
-<!-- =====================================
-     MÓDULOS
-===================================== -->
+<!-- MÓDULOS -->
 
 <section class="conteudo">
 
@@ -2340,9 +2332,7 @@ footer{
 
 
 
-<!-- =====================================
-     MENSAGENS DOS ALUNOS
-===================================== -->
+<!-- MENSAGENS -->
 
 <section class="mensagens">
 
@@ -2448,9 +2438,7 @@ footer{
 
 
 
-<!-- =====================================
-     IDENTIFICAÇÃO
-===================================== -->
+<!-- IDENTIFICAÇÃO -->
 
 <section class="para-quem">
 
@@ -2597,9 +2585,7 @@ footer{
 
 
 
-<!-- =====================================
-     DANIELLA
-===================================== -->
+<!-- DANIELLA -->
 
 <section class="apresentacao">
 
@@ -2689,9 +2675,7 @@ footer{
 
 
 
-<!-- =====================================
-     OFERTA
-===================================== -->
+<!-- OFERTA -->
 
 <section class="oferta" id="oferta">
 
@@ -2777,21 +2761,35 @@ footer{
 
       </ul>
 
+
+      <div class="preco-bloco">
+
+        <p class="preco-label">
+          Investimento
+        </p>
+
+        <p class="preco">
+          R$ 957,77
+        </p>
+
+        <p class="parcelamento">
+          Parcelamento em até 12x disponível no checkout.
+        </p>
+
+      </div>
+
+
       <a
-        class="btn btn-branco"
-        data-checkout
-        href="#oferta"
+        onclick="return false;"
+        href="https://pay.hotmart.com/P103421770X?checkoutMode=2&off=i0qcmbyf"
+        class="btn btn-branco hotmart-fb hotmart__button-checkout"
       >
-
         Quero entrar para a 3ª turma →
-
       </a>
 
+
       <p class="checkout-info">
-
-        O valor e as condições
-        serão exibidos no checkout.
-
+        Pagamento processado pela Hotmart.
       </p>
 
     </aside>
@@ -2803,9 +2801,7 @@ footer{
 
 
 
-<!-- =====================================
-     DÚVIDAS
-===================================== -->
+<!-- FAQ -->
 
 <section class="faq">
 
@@ -2900,8 +2896,22 @@ footer{
         </summary>
 
         <p>
-
           O acesso desta oferta é de 24 meses.
+        </p>
+
+      </details>
+
+
+      <details>
+
+        <summary>
+          Posso parcelar?
+        </summary>
+
+        <p>
+
+          Sim. O checkout disponibiliza
+          parcelamento em até 12 vezes no cartão.
 
         </p>
 
@@ -2916,9 +2926,7 @@ footer{
 
 
 
-<!-- =====================================
-     FINAL
-===================================== -->
+<!-- FINAL -->
 
 <section class="final">
 
@@ -2943,14 +2951,18 @@ footer{
 
     </p>
 
+
+    <p class="final-preco">
+      R$ 957,77
+    </p>
+
+
     <a
-      class="btn btn-malbec"
-      data-checkout
-      href="#oferta"
+      onclick="return false;"
+      href="https://pay.hotmart.com/P103421770X?checkoutMode=2&off=i0qcmbyf"
+      class="btn btn-malbec hotmart-fb hotmart__button-checkout"
     >
-
       Quero entrar para o DNA dos Contratos →
-
     </a>
 
   </div>
@@ -2976,28 +2988,23 @@ footer{
 
 
 
-<!-- =====================================
-     BOTÃO FIXO
-
-     NO CELULAR ELE APARECE DESDE
-     A PRIMEIRA TELA E NÃO SOME.
-===================================== -->
+<!-- BOTÃO FIXO -->
 
 <div class="float" id="float">
 
   <a
-    class="btn btn-malbec"
-    data-checkout
-    href="#oferta"
+    onclick="return false;"
+    href="https://pay.hotmart.com/P103421770X?checkoutMode=2&off=i0qcmbyf"
+    class="btn btn-malbec hotmart-fb hotmart__button-checkout"
   >
-
     Quero entrar para o DNA dos Contratos
-
   </a>
 
 </div>
 
 
+
+<!-- LIGHTBOX -->
 
 <div class="lightbox" id="lightbox">
 
@@ -3019,22 +3026,50 @@ footer{
 
 
 
+<!-- =====================================
+     HOTMART CHECKOUT
+===================================== -->
+
+<script type="text/javascript">
+
+function importHotmart(){
+
+  var imported = document.createElement('script');
+
+  imported.src =
+    'https://static.hotmart.com/checkout/widget.min.js';
+
+  document.head.appendChild(imported);
+
+
+  var link =
+    document.createElement('link');
+
+  link.rel =
+    'stylesheet';
+
+  link.type =
+    'text/css';
+
+  link.href =
+    'https://static.hotmart.com/css/hotmart-fb.min.css';
+
+  document.head.appendChild(link);
+
+}
+
+importHotmart();
+
+</script>
+
+
+
 <script>
-
-
-/* =====================================
-   CHECKOUT DA HOTMART
-
-   QUANDO VOCÊ ME PASSAR O LINK,
-   COLOCAREMOS ELE AQUI.
-===================================== */
-
-const CHECKOUT_URL = "";
-
 
 /* VÍDEO */
 
-const VIDEO_ID = "7bw6hv2zOcI";
+const VIDEO_ID =
+"7bw6hv2zOcI";
 
 
 /* ANO */
@@ -3043,25 +3078,6 @@ document
 .getElementById("ano")
 .textContent =
 new Date().getFullYear();
-
-
-/* CHECKOUT */
-
-document
-.querySelectorAll("[data-checkout]")
-.forEach(link => {
-
-  if(
-    CHECKOUT_URL.startsWith("http")
-  ){
-
-    link.href = CHECKOUT_URL;
-    link.target = "_blank";
-    link.rel = "noopener noreferrer";
-
-  }
-
-});
 
 
 /* VÍDEO */
@@ -3125,16 +3141,7 @@ videoStage.addEventListener(
 );
 
 
-/* =====================================
-   BOTÃO FLUTUANTE
-
-   DESKTOP:
-   aparece após rolagem.
-
-   CELULAR:
-   o CSS acima força a exibição
-   desde a primeira tela.
-===================================== */
+/* BOTÃO FIXO */
 
 const float =
 document.getElementById("float");
@@ -3184,9 +3191,7 @@ window.addEventListener(
 );
 
 
-/* =====================================
-   AMPLIAÇÃO DAS MENSAGENS
-===================================== */
+/* AMPLIAÇÃO DAS MENSAGENS */
 
 const lightbox =
 document.getElementById("lightbox");
@@ -3206,7 +3211,8 @@ document
     "click",
     () => {
 
-      lightboxImg.src = img.src;
+      lightboxImg.src =
+        img.src;
 
       lightbox.classList.add("open");
 
@@ -3266,7 +3272,6 @@ document.addEventListener(
 
   }
 );
-
 
 </script>
 
