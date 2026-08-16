@@ -1,0 +1,17 @@
+DNA DOS CONTRATOS — PÁGINA DE VENDAS ATUALIZADA
+
+Arquivos:
+- dna-dos-contratos.html
+- assets/ (logo, foto, thumbnail e depoimentos)
+
+O vídeo já está configurado com o ID do YouTube: 7bw6hv2zOcI
+
+PARA ATIVAR A COMPRA:
+1. Abra dna-dos-contratos.html.
+2. Procure: const CHECKOUT_URL = "";
+3. Cole o link da Hotmart entre as aspas.
+
+NO GITHUB:
+- Substitua apenas o arquivo dna-dos-contratos.html.
+- Envie a pasta assets inteira para a mesma pasta onde está o HTML.
+- Isso não altera as demais páginas do site.
