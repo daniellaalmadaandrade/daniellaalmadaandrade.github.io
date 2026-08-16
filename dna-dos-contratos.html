@@ -11,1096 +11,1485 @@
 
 <meta
   name="description"
-  content="Conheça o DNA dos Contratos, formação criada por Daniella Almada para desenvolver técnica contratual, visão negocial e atuação comercial."
+  content="Conheça o DNA dos Contratos, formação criada por Daniella Almada para desenvolver técnica contratual, visão negocial e uma atuação comercial mais estruturada."
 >
 
 <style>
 
 :root {
-  --preto:#090909;
-  --preto2:#151515;
-  --branco:#ffffff;
-  --creme:#f4efe7;
-  --creme2:#eae1d5;
-  --malbec:#67162f;
-  --malbec2:#470d20;
-  --cinza:#6d6863;
-  --linha:rgba(9,9,9,.12);
-  --max:1180px;
+  --preto: #090909;
+  --preto2: #151515;
+  --branco: #ffffff;
+  --creme: #f4efe7;
+  --creme2: #eae1d5;
+  --malbec: #67162f;
+  --malbec2: #470d20;
+  --cinza: #6d6863;
+  --linha: rgba(9,9,9,.12);
+  --max: 1180px;
 }
 
-*{
-  box-sizing:border-box;
+* {
+  box-sizing: border-box;
 }
 
-html{
-  scroll-behavior:smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-  margin:0;
-  background:var(--creme);
-  color:var(--preto);
-  font-family:Arial,Helvetica,sans-serif;
-  line-height:1.65;
+body {
+  margin: 0;
+  background: var(--creme);
+  color: var(--preto);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
 }
 
-img{
-  display:block;
-  max-width:100%;
+body.no-scroll {
+  overflow: hidden;
 }
 
-a{
-  color:inherit;
-  text-decoration:none;
+img {
+  display: block;
+  max-width: 100%;
 }
 
-.container{
-  width:min(calc(100% - 40px),var(--max));
-  margin:auto;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-h1,h2,h3{
-  font-family:Georgia,"Times New Roman",serif;
-  font-weight:500;
-  line-height:1.04;
-  letter-spacing:-.035em;
-  margin-top:0;
+button {
+  font: inherit;
 }
 
-h1{
-  font-size:clamp(3.2rem,6.5vw,6.4rem);
-  max-width:900px;
-  margin-bottom:24px;
+.container {
+  width: min(calc(100% - 40px), var(--max));
+  margin: auto;
 }
 
-h2{
-  font-size:clamp(2.4rem,4.8vw,4.7rem);
-  max-width:900px;
-  margin-bottom:24px;
+h1,
+h2,
+h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  line-height: 1.04;
+  letter-spacing: -.035em;
+  margin-top: 0;
 }
 
-h3{
-  font-size:clamp(1.5rem,2.5vw,2.1rem);
-  margin-bottom:12px;
+h1 {
+  font-size: clamp(3.2rem, 6.5vw, 6.4rem);
+  max-width: 900px;
+  margin-bottom: 24px;
 }
 
-p{
-  margin-top:0;
+h2 {
+  font-size: clamp(2.4rem, 4.8vw, 4.7rem);
+  max-width: 900px;
+  margin-bottom: 24px;
 }
 
-.eyebrow{
-  display:inline-flex;
-  align-items:center;
-  gap:9px;
-
-  margin-bottom:18px;
-
-  font-size:.75rem;
-  font-weight:900;
-  letter-spacing:.15em;
-  text-transform:uppercase;
+h3 {
+  font-size: clamp(1.5rem, 2.5vw, 2.1rem);
+  margin-bottom: 12px;
 }
 
-.eyebrow:before{
-  content:"";
-  width:7px;
-  height:7px;
-  border-radius:50%;
-  background:currentColor;
+p {
+  margin-top: 0;
 }
 
-.lead{
-  max-width:760px;
-  font-size:clamp(1.05rem,1.8vw,1.3rem);
-  color:rgba(255,255,255,.72);
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 18px;
+  font-size: .75rem;
+  font-weight: 900;
+  letter-spacing: .15em;
+  text-transform: uppercase;
 }
 
-.btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:9px;
-
-  min-height:58px;
-  padding:16px 27px;
-
-  border-radius:999px;
-  border:1px solid transparent;
-
-  font-size:.78rem;
-  font-weight:900;
-  letter-spacing:.08em;
-  text-transform:uppercase;
-
-  transition:.2s;
+.eyebrow::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
 }
 
-.btn:hover{
-  transform:translateY(-2px);
+.lead {
+  max-width: 760px;
+  font-size: clamp(1.05rem, 1.8vw, 1.3rem);
+  color: rgba(255,255,255,.72);
 }
 
-.btn-malbec{
-  background:var(--malbec);
-  color:#fff;
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  min-height: 58px;
+  padding: 16px 27px;
+
+  border-radius: 999px;
+  border: 1px solid transparent;
+
+  font-size: .78rem;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+
+  transition: .2s;
 }
 
-.btn-malbec:hover{
-  background:var(--malbec2);
+.btn:hover {
+  transform: translateY(-2px);
 }
 
-.btn-branco{
-  background:#fff;
-  color:#111;
+.btn-malbec {
+  background: var(--malbec);
+  color: white;
 }
 
-.btn-outline{
-  border-color:rgba(255,255,255,.32);
-  color:#fff;
+.btn-malbec:hover {
+  background: var(--malbec2);
 }
 
-
-/* TOPO */
-
-.topo{
-  position:absolute;
-  z-index:50;
-  width:100%;
-  padding:24px 0;
-  color:#fff;
+.btn-branco {
+  background: white;
+  color: #111;
 }
 
-.topo-inner{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
-}
-
-.logo{
-  width:150px;
-}
-
-.status{
-  font-size:.72rem;
-  font-weight:900;
-  letter-spacing:.12em;
-  text-transform:uppercase;
+.btn-outline {
+  border-color: rgba(255,255,255,.32);
+  color: white;
 }
 
 
-/* HERO */
+/* ===================================
+   CABEÇALHO
+=================================== */
 
-.hero{
-  min-height:100vh;
+.topo {
+  position: absolute;
+  z-index: 50;
+  width: 100%;
+  padding: 24px 0;
+  color: white;
+}
 
-  display:flex;
-  align-items:center;
+.topo-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
 
-  padding:145px 0 85px;
+.logo {
+  width: 170px;
+  height: 82px;
 
-  color:#fff;
+  display: flex;
+  align-items: center;
+
+  overflow: visible;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  object-position: left center;
+
+  /*
+  Faz o preto da imagem desaparecer visualmente
+  sobre o fundo escuro da página.
+  */
+  mix-blend-mode: screen;
+
+  filter:
+    brightness(1.12)
+    contrast(1.2);
+}
+
+.status {
+  font-size: .72rem;
+  font-weight: 900;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+
+/* ===================================
+   HERO
+=================================== */
+
+.hero {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+
+  padding: 145px 0 85px;
+
+  color: white;
 
   background:
-    radial-gradient(circle at 88% 15%,rgba(103,22,47,.67),transparent 30%),
-    linear-gradient(130deg,#070707,#111 62%,#260b16);
+    radial-gradient(
+      circle at 88% 15%,
+      rgba(103,22,47,.67),
+      transparent 30%
+    ),
+    linear-gradient(
+      130deg,
+      #070707,
+      #111 62%,
+      #260b16
+    );
 
-  overflow:hidden;
+  overflow: hidden;
 }
 
-.hero-grid{
-  display:grid;
-  grid-template-columns:1.15fr .85fr;
-  gap:70px;
-  align-items:center;
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+
+  gap: 70px;
+
+  align-items: center;
 }
 
-.hero-actions{
-  display:flex;
-  flex-wrap:wrap;
-  gap:13px;
-  margin-top:34px;
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 13px;
+
+  margin-top: 34px;
 }
+
+.hero-note {
+  max-width: 600px;
 
-.hero-note{
-  max-width:600px;
-  margin-top:18px;
-  color:rgba(255,255,255,.48);
-  font-size:.84rem;
+  margin-top: 18px;
+
+  color: rgba(255,255,255,.48);
+
+  font-size: .84rem;
 }
 
-.hero-photo-wrap{
-  position:relative;
+.hero-photo-wrap {
+  position: relative;
 }
+
+.hero-photo {
+  overflow: hidden;
+
+  aspect-ratio: 4 / 5;
+
+  border-radius:
+    30px
+    30px
+    100px
+    30px;
+
+  background: #222;
 
-.hero-photo{
-  overflow:hidden;
-  aspect-ratio:4/5;
-  border-radius:30px 30px 100px 30px;
-  background:#222;
-  box-shadow:0 30px 90px rgba(0,0,0,.35);
+  box-shadow:
+    0 30px 90px
+    rgba(0,0,0,.35);
 }
 
-.hero-photo img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  /*
+  Ajustado especialmente para a foto
+  da Daniella sentada à mesa.
+  */
+  object-position: 61% 58%;
 }
 
-.hero-badge{
-  position:absolute;
-  left:-30px;
-  bottom:32px;
+.hero-badge {
+  position: absolute;
 
-  max-width:235px;
+  left: -30px;
+  bottom: 32px;
 
-  padding:18px 20px;
+  max-width: 235px;
 
-  border-radius:18px;
+  padding: 18px 20px;
 
-  background:rgba(244,239,231,.97);
-  color:#111;
+  border-radius: 18px;
 
-  box-shadow:0 18px 50px rgba(0,0,0,.25);
+  background:
+    rgba(244,239,231,.97);
+
+  color: #111;
+
+  box-shadow:
+    0 18px 50px
+    rgba(0,0,0,.25);
 }
+
+.hero-badge strong {
+  display: block;
 
-.hero-badge strong{
-  display:block;
-  font-family:Georgia,serif;
-  font-size:2rem;
-  font-weight:500;
-  line-height:1;
-  margin-bottom:6px;
+  font-family: Georgia, serif;
+
+  font-size: 2rem;
+
+  font-weight: 500;
+
+  line-height: 1;
+
+  margin-bottom: 6px;
 }
 
-.hero-badge span{
-  color:#625c57;
-  font-size:.8rem;
+.hero-badge span {
+  color: #625c57;
+  font-size: .8rem;
 }
 
 
-/* SEÇÕES */
+/* ===================================
+   SEÇÕES
+=================================== */
 
-section{
-  padding:110px 0;
+section {
+  padding: 110px 0;
 }
 
 
-/* VIDEO */
+/* ===================================
+   VÍDEO
+=================================== */
 
-.video-section{
-  background:var(--creme);
+.video-section {
+  background: var(--creme);
 }
+
+.video-intro {
+  display: grid;
+
+  grid-template-columns:
+    .9fr
+    1.1fr;
 
-.video-intro{
-  display:grid;
-  grid-template-columns:.9fr 1.1fr;
-  gap:70px;
-  align-items:end;
-  margin-bottom:40px;
+  gap: 70px;
+
+  align-items: end;
+
+  margin-bottom: 40px;
 }
 
-.video-intro p{
-  color:var(--cinza);
-  font-size:1.05rem;
+.video-intro p {
+  color: var(--cinza);
+
+  font-size: 1.05rem;
 }
+
+.video-box {
+  padding: 12px;
+
+  border-radius: 30px;
 
-.video-box{
-  padding:12px;
-  border-radius:30px;
-  background:var(--creme2);
-  border:1px solid var(--linha);
-  box-shadow:0 25px 70px rgba(0,0,0,.15);
+  background: var(--creme2);
+
+  border:
+    1px solid
+    var(--linha);
+
+  box-shadow:
+    0 25px 70px
+    rgba(0,0,0,.15);
 }
+
+.video-stage {
+  position: relative;
+
+  overflow: hidden;
+
+  aspect-ratio: 16 / 9;
+
+  border-radius: 20px;
 
-.video-stage{
-  position:relative;
-  overflow:hidden;
-  aspect-ratio:16/9;
+  background: black;
 
-  border-radius:20px;
-  background:#000;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-.video-stage img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
+.video-stage img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
 }
+
+.play {
+  position: absolute;
+
+  z-index: 4;
 
-.play{
-  position:absolute;
-  z-index:4;
+  left: 50%;
+  top: 50%;
 
-  left:50%;
-  top:50%;
+  transform:
+    translate(-50%,-50%);
 
-  transform:translate(-50%,-50%);
+  width: 90px;
+  height: 90px;
 
-  width:90px;
-  height:90px;
+  border-radius: 50%;
 
-  border-radius:50%;
+  display: grid;
+  place-items: center;
 
-  display:grid;
-  place-items:center;
+  background:
+    rgba(103,22,47,.95);
 
-  background:rgba(103,22,47,.95);
-  color:#fff;
+  color: white;
 
-  font-size:2rem;
+  font-size: 2rem;
 
-  box-shadow:0 16px 40px rgba(0,0,0,.35);
+  box-shadow:
+    0 16px 40px
+    rgba(0,0,0,.35);
 }
 
-.video-stage iframe{
-  position:absolute;
-  inset:0;
+.video-stage iframe {
+  position: absolute;
 
-  width:100%;
-  height:100%;
+  inset: 0;
 
-  border:0;
+  width: 100%;
+  height: 100%;
 
-  z-index:5;
+  border: 0;
+
+  z-index: 5;
 }
+
+.video-note {
+  max-width: 780px;
+
+  margin:
+    24px auto 0;
 
-.video-note{
-  max-width:780px;
-  margin:24px auto 0;
-  text-align:center;
-  color:var(--cinza);
-  font-size:.9rem;
+  text-align: center;
+
+  color: var(--cinza);
+
+  font-size: .9rem;
 }
 
 
-/* PROVA SOCIAL */
+/* ===================================
+   PROVA SOCIAL
+=================================== */
 
-.prova{
-  background:#fff;
+.prova {
+  background: white;
 }
+
+.prova-head {
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  gap: 70px;
+
+  align-items: end;
 
-.prova-head{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:70px;
-  align-items:end;
-  margin-bottom:42px;
+  margin-bottom: 42px;
 }
 
-.prova-head p{
-  color:var(--cinza);
+.prova-head p {
+  color: var(--cinza);
 }
 
-.quotes{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:16px;
+.quotes {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap: 16px;
 }
+
+.quote {
+  min-height: 330px;
+
+  padding: 30px;
+
+  border:
+    1px solid
+    var(--linha);
 
-.quote{
-  min-height:330px;
+  border-radius: 22px;
 
-  padding:30px;
+  background: #faf8f4;
 
-  border:1px solid var(--linha);
-  border-radius:22px;
+  display: flex;
 
-  background:#faf8f4;
+  flex-direction: column;
 
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
+  justify-content:
+    space-between;
 }
 
-.quote-mark{
-  font-family:Georgia,serif;
-  font-size:4rem;
-  color:var(--malbec);
-  line-height:.8;
+.quote-mark {
+  font-family:
+    Georgia,
+    serif;
+
+  font-size: 4rem;
+
+  color: var(--malbec);
+
+  line-height: .8;
 }
 
-.quote blockquote{
-  margin:28px 0 25px;
+.quote blockquote {
+  margin:
+    28px 0
+    25px;
 
-  font-family:Georgia,serif;
+  font-family:
+    Georgia,
+    serif;
 
-  font-size:1.4rem;
-  line-height:1.35;
+  font-size: 1.4rem;
+
+  line-height: 1.35;
 }
+
+.quote small {
+  border-top:
+    1px solid
+    var(--linha);
+
+  padding-top: 17px;
 
-.quote small{
-  border-top:1px solid var(--linha);
-  padding-top:17px;
+  color: var(--cinza);
 
-  color:var(--cinza);
+  font-size: .7rem;
 
-  font-size:.7rem;
-  font-weight:900;
-  letter-spacing:.08em;
-  text-transform:uppercase;
+  font-weight: 900;
+
+  letter-spacing: .08em;
+
+  text-transform: uppercase;
 }
 
 
-/* MANIFESTO */
+/* ===================================
+   DIFERENCIAL
+=================================== */
 
-.manifesto{
-  background:var(--preto);
-  color:#fff;
+.manifesto {
+  background: var(--preto);
+  color: white;
 }
 
-.manifesto-grid{
-  display:grid;
-  grid-template-columns:.85fr 1.15fr;
-  gap:80px;
+.manifesto-grid {
+  display: grid;
+
+  grid-template-columns:
+    .85fr
+    1.15fr;
+
+  gap: 80px;
 }
+
+.manifesto-texto p {
+  color:
+    rgba(255,255,255,.64);
 
-.manifesto-texto p{
-  color:rgba(255,255,255,.64);
-  font-size:1.05rem;
+  font-size: 1.05rem;
 }
 
-.frase-grande{
-  color:#fff !important;
+.frase-grande {
+  color: white !important;
 
-  font-family:Georgia,serif;
+  font-family:
+    Georgia,
+    serif;
 
-  font-size:clamp(2.1rem,4vw,4rem) !important;
+  font-size:
+    clamp(
+      2.1rem,
+      4vw,
+      4rem
+    ) !important;
 
-  line-height:1.1;
+  line-height: 1.1;
 }
 
-.manifesto-list{
-  margin-top:36px;
-  border-top:1px solid rgba(255,255,255,.16);
+.manifesto-list {
+  margin-top: 36px;
+
+  border-top:
+    1px solid
+    rgba(255,255,255,.16);
 }
+
+.manifesto-item {
+  display: grid;
+
+  grid-template-columns:
+    55px
+    1fr;
 
-.manifesto-item{
-  display:grid;
-  grid-template-columns:55px 1fr;
-  gap:20px;
+  gap: 20px;
 
-  padding:23px 0;
+  padding:
+    23px 0;
 
-  border-bottom:1px solid rgba(255,255,255,.13);
+  border-bottom:
+    1px solid
+    rgba(255,255,255,.13);
 }
 
-.manifesto-item b{
-  color:rgba(255,255,255,.42);
-  font-size:.72rem;
+.manifesto-item b {
+  color:
+    rgba(255,255,255,.42);
+
+  font-size: .72rem;
 }
 
-.manifesto-item span{
-  color:rgba(255,255,255,.8);
+.manifesto-item span {
+  color:
+    rgba(255,255,255,.8);
 }
 
 
-/* PILARES */
+/* ===================================
+   MÉTODO
+=================================== */
 
-.metodo{
-  background:var(--creme);
+.metodo {
+  background: var(--creme);
 }
+
+.intro {
+  max-width: 760px;
+
+  color: var(--cinza);
 
-.intro{
-  max-width:760px;
-  color:var(--cinza);
-  font-size:1.05rem;
-  margin-bottom:50px;
+  font-size: 1.05rem;
+
+  margin-bottom: 50px;
 }
+
+.pilares {
+  display: grid;
 
-.pilares{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:17px;
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap: 17px;
 }
+
+.pilar {
+  min-height: 390px;
+
+  padding: 32px;
 
-.pilar{
-  min-height:390px;
+  border:
+    1px solid
+    var(--linha);
 
-  padding:32px;
+  border-radius: 24px;
 
-  border:1px solid var(--linha);
-  border-radius:24px;
+  background: white;
 
-  background:#fff;
+  display: flex;
 
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
+  flex-direction: column;
+
+  justify-content:
+    space-between;
 }
+
+.pilar-num {
+  width: 46px;
+  height: 46px;
+
+  display: grid;
 
-.pilar-num{
-  width:46px;
-  height:46px;
+  place-items: center;
 
-  display:grid;
-  place-items:center;
+  border-radius: 50%;
 
-  border-radius:50%;
-  border:1px solid var(--linha);
+  border:
+    1px solid
+    var(--linha);
 
-  font-weight:900;
-  font-size:.74rem;
+  font-weight: 900;
 
-  color:var(--malbec);
+  font-size: .74rem;
+
+  color: var(--malbec);
 }
 
-.pilar p{
-  color:var(--cinza);
-  margin-bottom:0;
+.pilar p {
+  color: var(--cinza);
+
+  margin-bottom: 0;
 }
 
 
-/* CONTEUDO */
+/* ===================================
+   CONTEÚDO
+=================================== */
 
-.conteudo{
-  background:#fff;
+.conteudo {
+  background: white;
 }
+
+.lista {
+  margin-top: 45px;
 
-.lista{
-  margin-top:45px;
-  border-top:1px solid #111;
+  border-top:
+    1px solid #111;
 }
 
-.item{
-  display:grid;
-  grid-template-columns:78px .9fr 1.1fr;
-  gap:26px;
+.item {
+  display: grid;
 
-  padding:29px 0;
+  grid-template-columns:
+    78px
+    .9fr
+    1.1fr;
 
-  border-bottom:1px solid var(--linha);
+  gap: 26px;
+
+  padding:
+    29px 0;
+
+  border-bottom:
+    1px solid
+    var(--linha);
 }
+
+.item-num {
+  color: var(--malbec);
 
-.item-num{
-  color:var(--malbec);
-  font-weight:900;
-  font-size:.72rem;
+  font-weight: 900;
+
+  font-size: .72rem;
 }
 
-.item h3{
-  margin:0;
+.item h3 {
+  margin: 0;
 }
 
-.item p{
-  margin:0;
-  color:var(--cinza);
+.item p {
+  margin: 0;
+
+  color: var(--cinza);
 }
+
 
+/* ===================================
+   STORIES
+=================================== */
 
-/* STORIES */
+.stories {
+  background:
+    linear-gradient(
+      180deg,
+      #68152f,
+      #480b1e
+    );
 
-.stories{
-  background:linear-gradient(180deg,#68152f,#480b1e);
-  color:#fff;
+  color: white;
 }
 
-.stories-head{
-  display:grid;
-  grid-template-columns:.9fr 1.1fr;
-  gap:70px;
-  align-items:end;
-  margin-bottom:42px;
+.stories-head {
+  display: grid;
+
+  grid-template-columns:
+    .9fr
+    1.1fr;
+
+  gap: 70px;
+
+  align-items: end;
+
+  margin-bottom: 42px;
 }
 
-.stories-head p{
-  color:rgba(255,255,255,.72);
+.stories-head p {
+  color:
+    rgba(255,255,255,.72);
 }
 
-.story-grid{
-  columns:4 240px;
-  column-gap:14px;
+.story-grid {
+  columns:
+    4 240px;
+
+  column-gap: 14px;
 }
 
-.story{
-  margin:0 0 14px;
+.story {
+  margin:
+    0 0 14px;
 
-  break-inside:avoid;
+  break-inside: avoid;
 
-  overflow:hidden;
+  overflow: hidden;
 
-  border-radius:18px;
+  border-radius: 18px;
 
-  background:#fff;
+  background: white;
 
-  cursor:zoom-in;
+  cursor: zoom-in;
 
-  transition:.2s;
+  transition: .2s;
 }
 
-.story:hover{
-  transform:translateY(-3px);
+.story:hover {
+  transform:
+    translateY(-3px);
 }
 
-.story img{
-  width:100%;
+.story img {
+  width: 100%;
+  height: auto;
 }
+
+.disclaimer {
+  margin-top: 20px;
 
-.disclaimer{
-  margin-top:20px;
-  color:rgba(255,255,255,.52);
-  font-size:.78rem;
+  color:
+    rgba(255,255,255,.52);
+
+  font-size: .78rem;
 }
 
 
-/* PARA QUEM */
+/* ===================================
+   PARA QUEM
+=================================== */
 
-.para-quem{
-  background:var(--creme);
+.para-quem {
+  background: var(--creme);
 }
+
+.grid-quem {
+  display: grid;
 
-.grid-quem{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:16px;
-  margin-top:45px;
+  grid-template-columns:
+    1fr
+    1fr;
+
+  gap: 16px;
+
+  margin-top: 45px;
 }
 
-.card-quem{
-  padding:30px;
+.card-quem {
+  padding: 30px;
 
-  border-top:1px solid #111;
+  border-top:
+    1px solid #111;
 
-  background:rgba(255,255,255,.4);
+  background:
+    rgba(255,255,255,.4);
 }
+
+.card-quem span {
+  display: block;
 
-.card-quem span{
-  display:block;
+  margin-bottom: 14px;
 
-  margin-bottom:14px;
+  color: var(--malbec);
 
-  color:var(--malbec);
+  font-size: .72rem;
 
-  font-size:.72rem;
-  font-weight:900;
-  letter-spacing:.12em;
-  text-transform:uppercase;
+  font-weight: 900;
+
+  letter-spacing: .12em;
+
+  text-transform: uppercase;
 }
+
+.card-quem p {
+  margin-bottom: 0;
 
-.card-quem p{
-  margin-bottom:0;
-  color:var(--cinza);
+  color: var(--cinza);
 }
 
 
-/* DANIELLA */
+/* ===================================
+   DANIELLA
+=================================== */
 
-.daniella{
-  background:#fff;
+.daniella {
+  background: white;
 }
+
+.daniella-grid {
+  display: grid;
+
+  grid-template-columns:
+    .95fr
+    1.05fr;
+
+  gap: 70px;
 
-.daniella-grid{
-  display:grid;
-  grid-template-columns:.72fr 1.28fr;
-  gap:75px;
-  align-items:center;
+  align-items: center;
 }
 
-.daniella-foto{
-  overflow:hidden;
-  aspect-ratio:4/5;
-  border-radius:26px 26px 100px 26px;
+.daniella-foto {
+  overflow: hidden;
+
+  aspect-ratio: 16 / 10;
+
+  border-radius: 26px;
+
+  background: #1a1a1a;
+
+  box-shadow:
+    0 22px 60px
+    rgba(0,0,0,.13);
 }
+
+.daniella-foto img {
+  width: 100%;
+  height: 100%;
 
-.daniella-foto img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
+  object-fit: cover;
+
+  object-position: center;
 }
 
-.daniella-texto p{
-  color:var(--cinza);
-  font-size:1.04rem;
+.daniella-texto p {
+  color: var(--cinza);
+
+  font-size: 1.04rem;
 }
+
+.numeros {
+  display: grid;
 
-.numeros{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:13px;
-  margin-top:32px;
+  grid-template-columns:
+    repeat(2,1fr);
+
+  gap: 13px;
+
+  margin-top: 32px;
 }
+
+.numero {
+  padding: 22px;
 
-.numero{
-  padding:22px;
+  background: var(--creme);
 
-  background:var(--creme);
+  border:
+    1px solid
+    var(--linha);
 
-  border:1px solid var(--linha);
-  border-radius:18px;
+  border-radius: 18px;
 }
 
-.numero strong{
-  display:block;
-  font-family:Georgia,serif;
-  font-size:2rem;
-  font-weight:500;
+.numero strong {
+  display: block;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size: 2rem;
+
+  font-weight: 500;
 }
 
-.numero span{
-  color:var(--cinza);
-  font-size:.78rem;
+.numero span {
+  color: var(--cinza);
+
+  font-size: .78rem;
 }
 
 
-/* OFERTA */
+/* ===================================
+   OFERTA
+=================================== */
 
-.oferta{
-  background:var(--preto);
-  color:#fff;
+.oferta {
+  background: var(--preto);
+  color: white;
 }
+
+.oferta-grid {
+  display: grid;
 
-.oferta-grid{
-  display:grid;
-  grid-template-columns:1.1fr .9fr;
-  gap:70px;
+  grid-template-columns:
+    1.1fr
+    .9fr;
+
+  gap: 70px;
 }
+
+.oferta-texto p {
+  max-width: 700px;
+
+  color:
+    rgba(255,255,255,.65);
 
-.oferta-texto p{
-  max-width:700px;
-  color:rgba(255,255,255,.65);
-  font-size:1.05rem;
+  font-size: 1.05rem;
 }
 
-.oferta-card{
-  padding:34px;
+.oferta-card {
+  padding: 34px;
 
-  background:var(--malbec);
+  background:
+    var(--malbec);
 
-  border:1px solid rgba(255,255,255,.15);
-  border-radius:26px;
+  border:
+    1px solid
+    rgba(255,255,255,.15);
 
-  box-shadow:0 30px 70px rgba(0,0,0,.25);
+  border-radius: 26px;
+
+  box-shadow:
+    0 30px 70px
+    rgba(0,0,0,.25);
 }
+
+.oferta-card ul {
+  list-style: none;
+
+  padding: 0;
 
-.oferta-card ul{
-  list-style:none;
-  padding:0;
-  margin:26px 0;
+  margin:
+    26px 0;
 
-  border-top:1px solid rgba(255,255,255,.18);
+  border-top:
+    1px solid
+    rgba(255,255,255,.18);
 }
 
-.oferta-card li{
-  padding:14px 0;
-  border-bottom:1px solid rgba(255,255,255,.18);
+.oferta-card li {
+  padding:
+    14px 0;
+
+  border-bottom:
+    1px solid
+    rgba(255,255,255,.18);
 }
 
-.oferta-card .btn{
-  width:100%;
+.oferta-card .btn {
+  width: 100%;
 }
+
+.checkout-info {
+  margin:
+    13px 0 0;
+
+  text-align: center;
 
-.checkout-info{
-  margin:13px 0 0;
-  text-align:center;
-  font-size:.73rem;
-  color:rgba(255,255,255,.55);
+  font-size: .73rem;
+
+  color:
+    rgba(255,255,255,.55);
 }
 
 
-/* FAQ */
+/* ===================================
+   FAQ
+=================================== */
 
-.faq{
-  background:#fff;
+.faq {
+  background: white;
 }
+
+.faq-list {
+  max-width: 920px;
+
+  margin-top: 40px;
 
-.faq-list{
-  max-width:920px;
-  margin-top:40px;
-  border-top:1px solid #111;
+  border-top:
+    1px solid #111;
 }
 
-details{
-  border-bottom:1px solid var(--linha);
+details {
+  border-bottom:
+    1px solid
+    var(--linha);
 }
 
-summary{
-  padding:23px 0;
+summary {
+  padding:
+    23px 0;
 
-  cursor:pointer;
+  cursor: pointer;
 
-  list-style:none;
+  list-style: none;
 
-  font-weight:800;
-  font-size:1.03rem;
-}
+  font-weight: 800;
 
-summary::-webkit-details-marker{
-  display:none;
+  font-size: 1.03rem;
 }
 
-details p{
-  max-width:780px;
-  padding-bottom:24px;
-  color:var(--cinza);
+summary::-webkit-details-marker {
+  display: none;
 }
 
+details p {
+  max-width: 780px;
 
-/* FINAL */
+  padding-bottom: 24px;
 
-.final{
-  padding:105px 0 125px;
-  text-align:center;
-  background:var(--creme);
+  color: var(--cinza);
 }
+
+
+/* ===================================
+   FINAL
+=================================== */
 
-.final h2{
-  margin-left:auto;
-  margin-right:auto;
+.final {
+  padding:
+    105px 0
+    125px;
+
+  text-align: center;
+
+  background: var(--creme);
 }
 
-.final p{
-  max-width:700px;
-  margin:0 auto 30px;
-  color:var(--cinza);
+.final h2 {
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.final p {
+  max-width: 700px;
 
+  margin:
+    0 auto 30px;
 
-/* RODAPÉ */
+  color: var(--cinza);
+}
+
+footer {
+  padding:
+    25px 0
+    90px;
 
-footer{
-  padding:25px 0 90px;
+  background: var(--creme);
 
-  background:var(--creme);
+  text-align: center;
 
-  text-align:center;
-  color:var(--cinza);
+  color: var(--cinza);
 
-  font-size:.75rem;
+  font-size: .75rem;
 }
 
 
-/* BOTÃO FIXO */
+/* ===================================
+   BOTÃO FIXO
+=================================== */
 
-.float{
-  position:fixed;
-  z-index:100;
+.float {
+  position: fixed;
 
-  right:18px;
-  bottom:18px;
+  z-index: 100;
 
-  padding:8px;
+  right: 18px;
+  bottom: 18px;
 
-  border-radius:999px;
+  padding: 8px;
 
-  background:rgba(9,9,9,.94);
+  border-radius: 999px;
 
-  box-shadow:0 15px 50px rgba(0,0,0,.28);
+  background:
+    rgba(9,9,9,.94);
 
-  opacity:0;
-  pointer-events:none;
+  box-shadow:
+    0 15px 50px
+    rgba(0,0,0,.28);
 
-  transition:.2s;
+  opacity: 0;
+
+  pointer-events: none;
+
+  transition: .2s;
 }
+
+.float.show {
+  opacity: 1;
 
-.float.show{
-  opacity:1;
-  pointer-events:auto;
+  pointer-events: auto;
 }
 
 
-/* LIGHTBOX */
+/* ===================================
+   LIGHTBOX
+=================================== */
 
-.lightbox{
-  position:fixed;
-  z-index:200;
+.lightbox {
+  position: fixed;
 
-  inset:0;
+  z-index: 200;
 
-  display:none;
+  inset: 0;
 
-  align-items:center;
-  justify-content:center;
+  display: none;
 
-  padding:24px;
+  align-items: center;
 
-  background:rgba(0,0,0,.92);
+  justify-content: center;
+
+  padding: 24px;
+
+  background:
+    rgba(0,0,0,.92);
 }
 
-.lightbox.open{
-  display:flex;
+.lightbox.open {
+  display: flex;
 }
+
+.lightbox img {
+  max-height: 92vh;
 
-.lightbox img{
-  max-height:92vh;
-  max-width:min(92vw,720px);
+  max-width:
+    min(92vw,900px);
 
-  border-radius:16px;
+  border-radius: 16px;
 }
 
-.fechar{
-  position:absolute;
+.fechar {
+  position: absolute;
 
-  top:18px;
-  right:22px;
+  top: 18px;
+  right: 22px;
 
-  width:45px;
-  height:45px;
+  width: 45px;
+  height: 45px;
 
-  border-radius:50%;
+  border-radius: 50%;
 
-  border:1px solid rgba(255,255,255,.3);
+  border:
+    1px solid
+    rgba(255,255,255,.3);
 
-  background:#111;
-  color:#fff;
+  background: #111;
 
-  font-size:1.6rem;
+  color: white;
 
-  cursor:pointer;
+  font-size: 1.6rem;
+
+  cursor: pointer;
 }
 
 
-/* TABLET */
+/* ===================================
+   TABLET
+=================================== */
 
-@media(max-width:960px){
+@media(max-width:960px) {
 
-.hero-grid,
-.video-intro,
-.prova-head,
-.manifesto-grid,
-.stories-head,
-.daniella-grid,
-.oferta-grid{
-  grid-template-columns:1fr;
-}
+  .hero-grid,
+  .video-intro,
+  .prova-head,
+  .manifesto-grid,
+  .stories-head,
+  .daniella-grid,
+  .oferta-grid {
+    grid-template-columns: 1fr;
+  }
 
-.hero-photo-wrap{
-  max-width:600px;
-  margin:auto;
-}
+  .hero-photo-wrap {
+    max-width: 650px;
+    margin: auto;
+    width: 100%;
+  }
 
-.hero-photo{
-  aspect-ratio:5/4;
-  border-radius:28px;
-}
+  .hero-photo {
+    aspect-ratio: 5 / 4;
+    border-radius: 28px;
+  }
 
-.hero-badge{
-  left:18px;
-}
+  .hero-photo img {
+    object-position: 61% 58%;
+  }
 
-.quotes,
-.pilares{
-  grid-template-columns:1fr;
-}
+  .hero-badge {
+    left: 18px;
+  }
 
-.pilar,
-.quote{
-  min-height:auto;
-}
+  .quotes,
+  .pilares {
+    grid-template-columns: 1fr;
+  }
 
-.item{
-  grid-template-columns:60px 1fr;
-}
+  .pilar,
+  .quote {
+    min-height: auto;
+  }
 
-.item p{
-  grid-column:2;
-}
+  .item {
+    grid-template-columns:
+      60px
+      1fr;
+  }
 
-.grid-quem{
-  grid-template-columns:1fr;
-}
+  .item p {
+    grid-column: 2;
+  }
 
+  .grid-quem {
+    grid-template-columns: 1fr;
+  }
 }
 
 
-/* CELULAR */
+/* ===================================
+   CELULAR
+=================================== */
 
-@media(max-width:680px){
+@media(max-width:680px) {
 
-.container{
-  width:calc(100% - 28px);
-}
+  .container {
+    width:
+      calc(100% - 28px);
+  }
 
-.topo{
-  padding:18px 0;
-}
+  .topo {
+    padding: 17px 0;
+  }
 
-.logo{
-  width:115px;
-}
+  .logo {
+    width: 130px;
+    height: 64px;
+  }
 
-.hero{
-  min-height:auto;
-  padding:115px 0 65px;
-}
+  .status {
+    font-size: .62rem;
+  }
 
-h1{
-  font-size:clamp(3rem,14vw,4.2rem);
-}
+  .hero {
+    min-height: auto;
 
-h2{
-  font-size:clamp(2.25rem,10vw,3.35rem);
-}
+    padding:
+      115px 0
+      65px;
+  }
 
-section{
-  padding:78px 0;
-}
+  h1 {
+    font-size:
+      clamp(
+        3rem,
+        14vw,
+        4.2rem
+      );
+  }
 
-.hero-actions{
-  display:grid;
-}
+  h2 {
+    font-size:
+      clamp(
+        2.25rem,
+        10vw,
+        3.35rem
+      );
+  }
 
-.hero-actions .btn{
-  width:100%;
-}
+  section {
+    padding:
+      78px 0;
+  }
 
-.hero-photo{
-  aspect-ratio:4/4.7;
-}
+  .hero-actions {
+    display: grid;
+  }
 
-.hero-badge{
-  max-width:205px;
-}
+  .hero-actions .btn {
+    width: 100%;
+  }
 
-.video-intro,
-.prova-head,
-.stories-head{
-  gap:18px;
-}
+  .hero-photo {
+    aspect-ratio: 4 / 4.8;
+  }
 
-.video-box{
-  padding:7px;
-}
+  .hero-photo img {
+    object-position: 60% 58%;
+  }
 
-.play{
-  width:68px;
-  height:68px;
-  font-size:1.5rem;
-}
+  .hero-badge {
+    max-width: 205px;
+  }
 
-.story-grid{
-  columns:2 150px;
-  column-gap:9px;
-}
+  .video-intro,
+  .prova-head,
+  .stories-head {
+    gap: 18px;
+  }
 
-.story{
-  margin-bottom:9px;
-  border-radius:12px;
-}
+  .video-box {
+    padding: 7px;
+  }
 
-.item{
-  grid-template-columns:1fr;
-  gap:8px;
-}
+  .play {
+    width: 68px;
+    height: 68px;
 
-.item p{
-  grid-column:1;
-}
+    font-size: 1.5rem;
+  }
 
-.numeros{
-  grid-template-columns:1fr;
-}
+  .story-grid {
+    columns:
+      2 150px;
 
-.float{
-  left:10px;
-  right:10px;
-  bottom:10px;
-}
+    column-gap: 9px;
+  }
 
-.float .btn{
-  width:100%;
-}
+  .story {
+    margin-bottom: 9px;
+
+    border-radius: 12px;
+  }
+
+  .item {
+    grid-template-columns: 1fr;
+
+    gap: 8px;
+  }
+
+  .item p {
+    grid-column: 1;
+  }
+
+  .numeros {
+    grid-template-columns: 1fr;
+  }
+
+  .daniella-foto {
+    aspect-ratio: 16 / 11;
+  }
+
+  .float {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
 
+  .float .btn {
+    width: 100%;
+  }
 }
 
 </style>
@@ -1111,14 +1500,21 @@ section{
 <body>
 
 
+<!-- ===================================
+     CABEÇALHO
+=================================== -->
+
 <header class="topo">
 
   <div class="container topo-inner">
 
-    <a href="#inicio" class="logo">
+    <a
+      href="#inicio"
+      class="logo"
+    >
 
       <img
-        src="assets/assets/logo-dna.png"
+        src="assets/assets/logo-dna-nova.png"
         alt="DNA dos Contratos"
       >
 
@@ -1137,9 +1533,14 @@ section{
 <main>
 
 
-<!-- HERO -->
+<!-- ===================================
+     PRIMEIRA DOBRA
+=================================== -->
 
-<section class="hero" id="inicio">
+<section
+  class="hero"
+  id="inicio"
+>
 
   <div class="container hero-grid">
 
@@ -1162,23 +1563,30 @@ section{
 
       </p>
 
+
       <div class="hero-actions">
 
         <a
           href="#video"
           class="btn btn-malbec"
         >
+
           Conheça o DNA dos Contratos ↓
+
         </a>
+
 
         <a
           href="#depoimentos"
           class="btn btn-outline"
         >
+
           Ver o que os alunos dizem
+
         </a>
 
       </div>
+
 
       <p class="hero-note">
 
@@ -1190,13 +1598,14 @@ section{
     </div>
 
 
+
     <div class="hero-photo-wrap">
 
       <div class="hero-photo">
 
         <img
-          src="assets/assets/daniella.webp"
-          alt="Daniella Almada"
+          src="assets/assets/daniella-mesa.png"
+          alt="Daniella Almada sentada à mesa estudando"
         >
 
       </div>
@@ -1219,15 +1628,21 @@ section{
 
     </div>
 
+
   </div>
 
 </section>
 
 
 
-<!-- VIDEO -->
+<!-- ===================================
+     VÍDEO
+=================================== -->
 
-<section class="video-section" id="video">
+<section
+  class="video-section"
+  id="video"
+>
 
   <div class="container">
 
@@ -1250,8 +1665,8 @@ section{
       <p>
 
         Daniella apresenta a proposta da formação,
-        o raciocínio por trás do curso e o que você pode esperar
-        ao entrar para o DNA.
+        o raciocínio por trás do curso e o que você
+        pode esperar ao entrar para o DNA.
 
         Assista antes de seguir pela página.
 
@@ -1260,11 +1675,15 @@ section{
     </div>
 
 
+
     <div class="video-box">
 
       <div
         class="video-stage"
         id="videoStage"
+        role="button"
+        tabindex="0"
+        aria-label="Reproduzir vídeo Conheça o DNA dos Contratos"
       >
 
         <img
@@ -1294,9 +1713,14 @@ section{
 
 
 
-<!-- PROVA SOCIAL -->
+<!-- ===================================
+     PROVA SOCIAL EM DESTAQUE
+=================================== -->
 
-<section class="prova" id="depoimentos">
+<section
+  class="prova"
+  id="depoimentos"
+>
 
   <div class="container">
 
@@ -1360,6 +1784,7 @@ section{
       </article>
 
 
+
       <article class="quote">
 
         <div>
@@ -1383,6 +1808,7 @@ section{
         </small>
 
       </article>
+
 
 
       <article class="quote">
@@ -1418,7 +1844,9 @@ section{
 
 
 
-<!-- DIFERENCIAL -->
+<!-- ===================================
+     DIFERENCIAL
+=================================== -->
 
 <section class="manifesto">
 
@@ -1439,6 +1867,7 @@ section{
       </h2>
 
     </div>
+
 
 
     <div class="manifesto-texto">
@@ -1463,8 +1892,7 @@ section{
 
       <p>
 
-        No DNA, o aluno não aprende apenas
-        o que escrever.
+        No DNA, o aluno não aprende apenas o que escrever.
 
         Aprende a construir o raciocínio
         que sustenta o documento.
@@ -1477,10 +1905,15 @@ section{
 
         <div class="manifesto-item">
 
-          <b>01</b>
+          <b>
+            01
+          </b>
 
           <span>
-            Entender o negócio antes de abrir um modelo.
+
+            Entender o negócio antes
+            de abrir um modelo.
+
           </span>
 
         </div>
@@ -1488,10 +1921,15 @@ section{
 
         <div class="manifesto-item">
 
-          <b>02</b>
+          <b>
+            02
+          </b>
 
           <span>
-            Identificar riscos que não aparecem numa leitura superficial.
+
+            Identificar riscos que não aparecem
+            numa leitura superficial.
+
           </span>
 
         </div>
@@ -1499,11 +1937,15 @@ section{
 
         <div class="manifesto-item">
 
-          <b>03</b>
+          <b>
+            03
+          </b>
 
           <span>
+
             Escolher cláusulas pela função que exercem,
             e não pelo costume.
+
           </span>
 
         </div>
@@ -1511,7 +1953,9 @@ section{
 
         <div class="manifesto-item">
 
-          <b>04</b>
+          <b>
+            04
+          </b>
 
           <span>
 
@@ -1528,25 +1972,34 @@ section{
 
     </div>
 
+
   </div>
 
 </section>
 
 
 
-<!-- MÉTODO -->
+<!-- ===================================
+     MÉTODO
+=================================== -->
 
 <section class="metodo">
 
   <div class="container">
 
+
     <p class="eyebrow">
       O método
     </p>
 
+
     <h2>
-      Três dimensões que precisam caminhar juntas.
+
+      Três dimensões que precisam
+      caminhar juntas.
+
     </h2>
+
 
     <p class="intro">
 
@@ -1585,6 +2038,7 @@ section{
       </article>
 
 
+
       <article class="pilar">
 
         <span class="pilar-num">
@@ -1608,6 +2062,7 @@ section{
         </div>
 
       </article>
+
 
 
       <article class="pilar">
@@ -1643,15 +2098,19 @@ section{
 
 
 
-<!-- CONTEÚDO -->
+<!-- ===================================
+     CONTEÚDO DA FORMAÇÃO
+=================================== -->
 
 <section class="conteudo">
 
   <div class="container">
 
+
     <p class="eyebrow">
       Dentro da formação
     </p>
+
 
     <h2>
 
@@ -1685,6 +2144,7 @@ section{
       </div>
 
 
+
       <div class="item">
 
         <span class="item-num">
@@ -1704,6 +2164,7 @@ section{
         </p>
 
       </div>
+
 
 
       <div class="item">
@@ -1728,6 +2189,7 @@ section{
       </div>
 
 
+
       <div class="item">
 
         <span class="item-num">
@@ -1747,6 +2209,7 @@ section{
         </p>
 
       </div>
+
 
 
       <div class="item">
@@ -1770,6 +2233,7 @@ section{
       </div>
 
 
+
       <div class="item">
 
         <span class="item-num">
@@ -1782,13 +2246,13 @@ section{
 
         <p>
 
-          Escopo, proposta,
-          honorários e posicionamento
-          da atuação consultiva.
+          Escopo, proposta, honorários
+          e posicionamento da atuação consultiva.
 
         </p>
 
       </div>
+
 
 
       <div class="item">
@@ -1803,8 +2267,8 @@ section{
 
         <p>
 
-          Tempo para assistir,
-          revisar e retornar ao conteúdo
+          Tempo para assistir, revisar
+          e retornar ao conteúdo
           conforme surgirem novos casos.
 
         </p>
@@ -1820,7 +2284,9 @@ section{
 
 
 
-<!-- STORIES -->
+<!-- ===================================
+     STORIES DOS ALUNOS
+=================================== -->
 
 <section class="stories">
 
@@ -1828,6 +2294,7 @@ section{
 
 
     <div class="stories-head">
+
 
       <div>
 
@@ -1837,8 +2304,8 @@ section{
 
         <h2>
 
-          Os stories que acabaram virando
-          parte desta página.
+          Os stories que acabaram
+          virando parte desta página.
 
         </h2>
 
@@ -1854,62 +2321,180 @@ section{
 
       </p>
 
+
     </div>
+
 
 
     <div class="story-grid">
 
 
-      <figure class="story">
-        <img src="assets/assets/depoimento-01.webp" alt="Depoimento">
-      </figure>
+      <!-- NOVA FOTO DA PERGUNTA -->
 
       <figure class="story">
-        <img src="assets/assets/depoimento-02.webp" alt="Depoimento">
+
+        <img
+          src="assets/assets/depoimento-01-novo.png"
+          alt="Mensagem de aluna sobre as aulas do DNA dos Contratos"
+        >
+
       </figure>
 
-      <figure class="story">
-        <img src="assets/assets/depoimento-03.webp" alt="Depoimento">
-      </figure>
+
+
+      <!-- NOVO DEPOIMENTO SOBRE A VIRADA NA CARREIRA -->
 
       <figure class="story">
-        <img src="assets/assets/depoimento-04.webp" alt="Depoimento">
+
+        <img
+          src="assets/assets/depoimento-virada.jpg"
+          alt="Depoimento de aluna sobre a mudança para a área consultiva"
+        >
+
       </figure>
 
-      <figure class="story">
-        <img src="assets/assets/depoimento-05.webp" alt="Depoimento">
-      </figure>
+
 
       <figure class="story">
-        <img src="assets/assets/depoimento-06.webp" alt="Depoimento">
+
+        <img
+          loading="lazy"
+          src="assets/assets/depoimento-02.webp"
+          alt="Depoimento de aluno do DNA dos Contratos"
+        >
+
       </figure>
 
-      <figure class="story">
-        <img src="assets/assets/depoimento-07.webp" alt="Depoimento">
-      </figure>
+
 
       <figure class="story">
-        <img src="assets/assets/depoimento-08.webp" alt="Depoimento">
+
+        <img
+          loading="lazy"
+          src="assets/assets/depoimento-03.webp"
+          alt="Depoimento de aluno do DNA dos Contratos"
+        >
+
       </figure>
 
-      <figure class="story">
-        <img src="assets/assets/depoimento-09.webp" alt="Depoimento">
-      </figure>
+
 
       <figure class="story">
-        <img src="assets/assets/depoimento-10.webp" alt="Depoimento">
+
+        <img
+          loading="lazy"
+          src="assets/assets/depoimento-04.webp"
+          alt="Depoimento de aluno do DNA dos Contratos"
+        >
+
       </figure>
 
-      <figure class="story">
-        <img src="assets/assets/depoimento-11.webp" alt="Depoimento">
-      </figure>
+
 
       <figure class="story">
-        <img src="assets/assets/depoimento-12.webp" alt="Depoimento">
+
+        <img
+          loading="lazy"
+          src="assets/assets/depoimento-05.webp"
+          alt="Depoimento de aluno do DNA dos Contratos"
+        >
+
       </figure>
 
+
+
       <figure class="story">
-        <img src="assets/assets/depoimento-13.webp" alt="Depoimento">
+
+        <img
+          loading="lazy"
+          src="assets/assets/depoimento-06.webp"
+          alt="Depoimento de aluno do DNA dos Contratos"
+        >
+
+      </figure>
+
+
+
+      <figure class="story">
+
+        <img
+          loading="lazy"
+          src="assets/assets/depoimento-07.webp"
+          alt="Depoimento de aluno do DNA dos Contratos"
+        >
+
+      </figure>
+
+
+
+      <figure class="story">
+
+        <img
+          loading="lazy"
+          src="assets/assets/depoimento-08.webp"
+          alt="Depoimento de aluno do DNA dos Contratos"
+        >
+
+      </figure>
+
+
+
+      <figure class="story">
+
+        <img
+          loading="lazy"
+          src="assets/assets/depoimento-09.webp"
+          alt="Depoimento de aluno do DNA dos Contratos"
+        >
+
+      </figure>
+
+
+
+      <figure class="story">
+
+        <img
+          loading="lazy"
+          src="assets/assets/depoimento-10.webp"
+          alt="Depoimento de aluno do DNA dos Contratos"
+        >
+
+      </figure>
+
+
+
+      <figure class="story">
+
+        <img
+          loading="lazy"
+          src="assets/assets/depoimento-11.webp"
+          alt="Depoimento de aluno do DNA dos Contratos"
+        >
+
+      </figure>
+
+
+
+      <figure class="story">
+
+        <img
+          loading="lazy"
+          src="assets/assets/depoimento-12.webp"
+          alt="Depoimento de aluno do DNA dos Contratos"
+        >
+
+      </figure>
+
+
+
+      <figure class="story">
+
+        <img
+          loading="lazy"
+          src="assets/assets/depoimento-13.webp"
+          alt="Depoimento de aluno do DNA dos Contratos"
+        >
+
       </figure>
 
 
@@ -1930,15 +2515,19 @@ section{
 
 
 
-<!-- PARA QUEM -->
+<!-- ===================================
+     PARA QUEM É
+=================================== -->
 
 <section class="para-quem">
 
   <div class="container">
 
+
     <p class="eyebrow">
       Para quem é
     </p>
+
 
     <h2>
 
@@ -1975,6 +2564,7 @@ section{
       </article>
 
 
+
       <article class="card-quem">
 
         <span>
@@ -1982,7 +2572,9 @@ section{
         </span>
 
         <h3>
+
           “Eu dependo demais de modelos.”
+
         </h3>
 
         <p>
@@ -1994,6 +2586,7 @@ section{
         </p>
 
       </article>
+
 
 
       <article class="card-quem">
@@ -2018,6 +2611,7 @@ section{
         </p>
 
       </article>
+
 
 
       <article class="card-quem">
@@ -2052,28 +2646,35 @@ section{
 
 
 
-<!-- DANIELLA -->
+<!-- ===================================
+     DANIELLA
+=================================== -->
 
 <section class="daniella">
 
   <div class="container daniella-grid">
 
 
+    <!-- NOVA FOTO COM MICROFONE AZUL -->
+
     <div class="daniella-foto">
 
       <img
-        src="assets/assets/daniella.webp"
-        alt="Daniella Almada"
+        src="assets/assets/daniella-microfone.png"
+        alt="Daniella Almada durante aula do DNA dos Contratos"
       >
 
     </div>
 
 
+
     <div class="daniella-texto">
+
 
       <p class="eyebrow">
         Daniella Almada
       </p>
+
 
       <h2>
 
@@ -2082,6 +2683,7 @@ section{
 
       </h2>
 
+
       <p>
 
         O DNA nasceu da prática de quem trabalha
@@ -2089,6 +2691,7 @@ section{
         não está em encontrar uma cláusula na internet.
 
       </p>
+
 
       <p>
 
@@ -2110,10 +2713,14 @@ section{
           </strong>
 
           <span>
-            alunos já passaram pelo DNA dos Contratos
+
+            alunos já passaram
+            pelo DNA dos Contratos
+
           </span>
 
         </div>
+
 
 
         <div class="numero">
@@ -2123,7 +2730,10 @@ section{
           </strong>
 
           <span>
-            técnica, negocial e comercial
+
+            técnica, negocial
+            e comercial
+
           </span>
 
         </div>
@@ -2131,7 +2741,9 @@ section{
 
       </div>
 
+
     </div>
+
 
   </div>
 
@@ -2139,9 +2751,14 @@ section{
 
 
 
-<!-- OFERTA -->
+<!-- ===================================
+     OFERTA
+=================================== -->
 
-<section class="oferta" id="oferta">
+<section
+  class="oferta"
+  id="oferta"
+>
 
   <div class="container oferta-grid">
 
@@ -2178,6 +2795,7 @@ section{
       </p>
 
     </div>
+
 
 
     <aside class="oferta-card">
@@ -2220,19 +2838,22 @@ section{
         data-checkout
         href="#oferta"
       >
+
         Quero entrar para a 3ª turma →
+
       </a>
 
 
       <p class="checkout-info">
 
-        Quando tivermos o link da Hotmart,
-        basta inseri-lo no campo indicado
-        no final deste código.
+        O valor e as condições serão exibidos
+        no checkout da Hotmart.
 
       </p>
 
+
     </aside>
+
 
   </div>
 
@@ -2240,11 +2861,14 @@ section{
 
 
 
-<!-- FAQ -->
+<!-- ===================================
+     FAQ
+=================================== -->
 
 <section class="faq">
 
   <div class="container">
+
 
     <p class="eyebrow">
       Dúvidas frequentes
@@ -2276,6 +2900,7 @@ section{
       </details>
 
 
+
       <details>
 
         <summary>
@@ -2284,13 +2909,18 @@ section{
 
         <p>
 
-          Sim. Mas os modelos são ferramentas
-          de trabalho e não substitutos
-          da análise jurídica.
+          Sim. Mas os modelos são ferramentas de trabalho
+          e não substitutos da análise jurídica.
+
+          O objetivo é que você saiba entender
+          por que determinada cláusula existe,
+          quando deve ser usada
+          e quando precisa ser modificada.
 
         </p>
 
       </details>
+
 
 
       <details>
@@ -2301,14 +2931,17 @@ section{
 
         <p>
 
-          Não. O DNA foi estruturado
-          em técnica contratual,
+          Não.
+
+          O DNA foi estruturado em três dimensões:
+          técnica contratual,
           visão negocial
           e construção comercial.
 
         </p>
 
       </details>
+
 
 
       <details>
@@ -2319,12 +2952,13 @@ section{
 
         <p>
 
-          O acesso previsto para esta turma
-          é de 24 meses.
+          O acesso previsto
+          para esta turma é de 24 meses.
 
         </p>
 
       </details>
+
 
 
       <details>
@@ -2335,11 +2969,13 @@ section{
 
         <p>
 
-          Não. Os depoimentos mostram
+          Não.
+
+          Os depoimentos apresentados mostram
           experiências individuais de alunos.
 
-          Os resultados variam conforme
-          experiência, mercado,
+          Os resultados variam de acordo
+          com experiência, mercado,
           aplicação do conteúdo
           e outros fatores.
 
@@ -2356,15 +2992,19 @@ section{
 
 
 
-<!-- FINAL -->
+<!-- ===================================
+     CTA FINAL
+=================================== -->
 
 <section class="final">
 
   <div class="container">
 
+
     <p class="eyebrow">
       3ª turma
     </p>
+
 
     <h2>
 
@@ -2376,12 +3016,14 @@ section{
 
     </h2>
 
+
     <p>
 
       Se você quer construir o segundo caminho,
       o DNA dos Contratos foi criado para isso.
 
     </p>
+
 
     <a
       class="btn btn-malbec"
@@ -2393,6 +3035,7 @@ section{
 
     </a>
 
+
   </div>
 
 </section>
@@ -2402,12 +3045,19 @@ section{
 
 
 
+<!-- ===================================
+     RODAPÉ
+=================================== -->
+
 <footer>
 
   <div class="container">
 
-    © <span id="ano"></span>
+    ©
+    <span id="ano"></span>
+
     DNA dos Contratos.
+
     Todos os direitos reservados.
 
   </div>
@@ -2416,27 +3066,44 @@ section{
 
 
 
-<!-- BOTÃO FIXO -->
+<!-- ===================================
+     BOTÃO FLUTUANTE
+=================================== -->
 
-<div class="float" id="float">
+<div
+  class="float"
+  id="float"
+>
 
   <a
     class="btn btn-malbec"
     data-checkout
     href="#oferta"
   >
+
     Quero entrar
+
   </a>
 
 </div>
 
 
 
-<!-- LIGHTBOX -->
+<!-- ===================================
+     AMPLIAÇÃO DOS DEPOIMENTOS
+=================================== -->
 
-<div class="lightbox" id="lightbox">
+<div
+  class="lightbox"
+  id="lightbox"
+  aria-hidden="true"
+>
 
-  <button class="fechar" id="fechar">
+  <button
+    class="fechar"
+    id="fechar"
+    aria-label="Fechar"
+  >
     ×
   </button>
 
@@ -2453,46 +3120,60 @@ section{
 <script>
 
 
-/* LINK HOTMART
+/* ===================================
+   CHECKOUT DA HOTMART
 
-Quando tiver o link,
-cole ENTRE AS ASPAS abaixo.
-
-Exemplo:
-
-const CHECKOUT_URL = "https://pay.hotmart.com/SEULINK";
-
-*/
-
+   Quando tivermos o link,
+   vamos colocar aqui.
+=================================== */
 
 const CHECKOUT_URL = "";
 
 
 
-/* VIDEO JÁ CONFIGURADO */
+/* ===================================
+   VÍDEO DO YOUTUBE
+=================================== */
 
-const VIDEO_ID = "7bw6hv2zOcI";
-
-
-
-/* ANO */
-
-document.getElementById("ano").textContent =
-new Date().getFullYear();
+const VIDEO_ID =
+"7bw6hv2zOcI";
 
 
 
-/* CHECKOUT */
+/* ===================================
+   ANO DO RODAPÉ
+=================================== */
 
 document
-.querySelectorAll("[data-checkout]")
+  .getElementById("ano")
+  .textContent =
+  new Date().getFullYear();
+
+
+
+/* ===================================
+   BOTÕES DE CHECKOUT
+=================================== */
+
+document
+.querySelectorAll(
+  "[data-checkout]"
+)
 .forEach(link => {
 
-  if(CHECKOUT_URL.startsWith("http")){
+  if(
+    CHECKOUT_URL
+    .startsWith("http")
+  ) {
 
-    link.href = CHECKOUT_URL;
-    link.target = "_blank";
-    link.rel = "noopener noreferrer";
+    link.href =
+      CHECKOUT_URL;
+
+    link.target =
+      "_blank";
+
+    link.rel =
+      "noopener noreferrer";
 
   }
 
@@ -2500,110 +3181,233 @@ document
 
 
 
-/* VIDEO */
+/* ===================================
+   VÍDEO
+=================================== */
 
 const videoStage =
-document.getElementById("videoStage");
+document.getElementById(
+  "videoStage"
+);
 
 
-videoStage.addEventListener("click",function(){
+function playVideo() {
 
-  this.innerHTML = `
+  if(
+    videoStage
+    .querySelector("iframe")
+  ) {
 
-  <iframe
+    return;
 
-    src="https://www.youtube-nocookie.com/embed/${VIDEO_ID}?autoplay=1&rel=0&playsinline=1"
+  }
 
-    title="Conheça o DNA dos Contratos"
 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  videoStage.innerHTML = `
 
-    allowfullscreen>
+    <iframe
 
-  </iframe>
+      src="https://www.youtube-nocookie.com/embed/${VIDEO_ID}?autoplay=1&rel=0&playsinline=1"
+
+      title="Conheça o DNA dos Contratos"
+
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+
+      referrerpolicy="strict-origin-when-cross-origin"
+
+      allowfullscreen>
+
+    </iframe>
 
   `;
 
-});
+}
 
 
+videoStage
+.addEventListener(
+  "click",
+  playVideo
+);
 
-/* BOTÃO FIXO */
 
-const float =
-document.getElementById("float");
+videoStage
+.addEventListener(
+  "keydown",
+  e => {
 
+    if(
+      e.key === "Enter"
+      ||
+      e.key === " "
+    ) {
 
-window.addEventListener("scroll",function(){
+      e.preventDefault();
 
-  if(window.scrollY > 850){
+      playVideo();
 
-    float.classList.add("show");
-
-  }else{
-
-    float.classList.remove("show");
+    }
 
   }
-
-});
-
+);
 
 
-/* LIGHTBOX STORIES */
+
+/* ===================================
+   BOTÃO FIXO
+=================================== */
+
+const float =
+document.getElementById(
+  "float"
+);
+
+
+window
+.addEventListener(
+  "scroll",
+  () => {
+
+    if(
+      window.scrollY > 850
+    ) {
+
+      float
+      .classList
+      .add("show");
+
+    }
+
+    else {
+
+      float
+      .classList
+      .remove("show");
+
+    }
+
+  }
+);
+
+
+
+/* ===================================
+   LIGHTBOX DOS STORIES
+=================================== */
 
 const lightbox =
-document.getElementById("lightbox");
+document.getElementById(
+  "lightbox"
+);
 
 const lightboxImg =
-document.getElementById("lightboxImg");
+document.getElementById(
+  "lightboxImg"
+);
 
 const fechar =
-document.getElementById("fechar");
+document.getElementById(
+  "fechar"
+);
 
 
 document
-.querySelectorAll(".story img")
+.querySelectorAll(
+  ".story img"
+)
 .forEach(img => {
 
-  img.addEventListener("click",function(){
+  img
+  .addEventListener(
+    "click",
+    () => {
 
-    lightboxImg.src = this.src;
+      lightboxImg.src =
+        img.src;
 
-    lightbox.classList.add("open");
+      lightbox
+      .classList
+      .add("open");
 
-  });
+      lightbox
+      .setAttribute(
+        "aria-hidden",
+        "false"
+      );
+
+      document
+      .body
+      .classList
+      .add("no-scroll");
+
+    }
+
+  );
 
 });
 
 
-fechar.addEventListener("click",function(){
+function fecharLightbox() {
 
-  lightbox.classList.remove("open");
+  lightbox
+  .classList
+  .remove("open");
 
-});
+  lightbox
+  .setAttribute(
+    "aria-hidden",
+    "true"
+  );
+
+  document
+  .body
+  .classList
+  .remove("no-scroll");
+
+  lightboxImg.src = "";
+
+}
 
 
-lightbox.addEventListener("click",function(e){
+fechar
+.addEventListener(
+  "click",
+  fecharLightbox
+);
 
-  if(e.target === lightbox){
 
-    lightbox.classList.remove("open");
+lightbox
+.addEventListener(
+  "click",
+  e => {
+
+    if(
+      e.target === lightbox
+    ) {
+
+      fecharLightbox();
+
+    }
 
   }
+);
 
-});
 
+document
+.addEventListener(
+  "keydown",
+  e => {
 
-document.addEventListener("keydown",function(e){
+    if(
+      e.key === "Escape"
+    ) {
 
-  if(e.key === "Escape"){
+      fecharLightbox();
 
-    lightbox.classList.remove("open");
+    }
 
   }
-
-});
+);
 
 
 </script>
