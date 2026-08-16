@@ -11,232 +11,236 @@
 
 <meta
   name="description"
-  content="Conheça o DNA dos Contratos, formação criada por Daniella Almada para desenvolver técnica contratual, visão negocial e uma atuação comercial mais estruturada."
+  content="DNA dos Contratos. Formação completa para desenvolver técnica contratual, visão negocial, estruturação de contratos, precificação e atuação consultiva."
 >
 
 <style>
 
-:root {
-  --preto: #090909;
-  --preto2: #151515;
-  --branco: #ffffff;
-  --creme: #f4efe7;
-  --creme2: #eae1d5;
-  --malbec: #67162f;
-  --malbec2: #470d20;
-  --cinza: #6d6863;
-  --linha: rgba(9,9,9,.12);
-  --max: 1180px;
+:root{
+  --preto:#090909;
+  --preto2:#151515;
+  --branco:#ffffff;
+  --creme:#f4efe7;
+  --creme2:#eae1d5;
+  --malbec:#67162f;
+  --malbec2:#470d20;
+  --cinza:#6d6863;
+  --linha:rgba(9,9,9,.12);
+  --max:1180px;
 }
 
-* {
-  box-sizing: border-box;
+*{
+  box-sizing:border-box;
 }
 
-html {
-  scroll-behavior: smooth;
+html{
+  scroll-behavior:smooth;
 }
 
-body {
-  margin: 0;
-  background: var(--creme);
-  color: var(--preto);
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.65;
-  -webkit-font-smoothing: antialiased;
+body{
+  margin:0;
+  background:var(--creme);
+  color:var(--preto);
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
 }
 
-body.no-scroll {
-  overflow: hidden;
+body.no-scroll{
+  overflow:hidden;
 }
 
-img {
-  display: block;
-  max-width: 100%;
+img{
+  display:block;
+  max-width:100%;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+a{
+  color:inherit;
+  text-decoration:none;
 }
 
-button {
-  font: inherit;
+button{
+  font:inherit;
 }
 
-.container {
-  width: min(calc(100% - 40px), var(--max));
-  margin: auto;
+.container{
+  width:min(calc(100% - 40px),var(--max));
+  margin:auto;
 }
 
 h1,
 h2,
-h3 {
-  font-family: Georgia, "Times New Roman", serif;
-  font-weight: 500;
-  line-height: 1.04;
-  letter-spacing: -.035em;
-  margin-top: 0;
+h3{
+  font-family:Georgia,"Times New Roman",serif;
+  font-weight:500;
+  line-height:1.04;
+  letter-spacing:-.035em;
+  margin-top:0;
 }
 
-h1 {
-  font-size: clamp(3.2rem, 6.5vw, 6.4rem);
-  max-width: 900px;
-  margin-bottom: 24px;
+h1{
+  font-size:clamp(3.2rem,6.5vw,6.4rem);
+  max-width:900px;
+  margin-bottom:24px;
 }
 
-h2 {
-  font-size: clamp(2.4rem, 4.8vw, 4.7rem);
-  max-width: 900px;
-  margin-bottom: 24px;
+h2{
+  font-size:clamp(2.4rem,4.8vw,4.7rem);
+  max-width:900px;
+  margin-bottom:24px;
 }
 
-h3 {
-  font-size: clamp(1.5rem, 2.5vw, 2.1rem);
-  margin-bottom: 12px;
+h3{
+  font-size:clamp(1.45rem,2.3vw,2rem);
+  margin-bottom:12px;
 }
 
-p {
-  margin-top: 0;
+p{
+  margin-top:0;
 }
 
-.eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  margin-bottom: 18px;
-  font-size: .75rem;
-  font-weight: 900;
-  letter-spacing: .15em;
-  text-transform: uppercase;
+.eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+
+  margin-bottom:18px;
+
+  font-size:.75rem;
+  font-weight:900;
+  letter-spacing:.15em;
+  text-transform:uppercase;
 }
 
-.eyebrow::before {
-  content: "";
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: currentColor;
+.eyebrow::before{
+  content:"";
+
+  width:7px;
+  height:7px;
+
+  border-radius:50%;
+
+  background:currentColor;
 }
 
-.lead {
-  max-width: 760px;
-  font-size: clamp(1.05rem, 1.8vw, 1.3rem);
-  color: rgba(255,255,255,.72);
+.lead{
+  max-width:760px;
+
+  font-size:clamp(1.05rem,1.8vw,1.3rem);
+
+  color:rgba(255,255,255,.72);
 }
 
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 9px;
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
 
-  min-height: 58px;
-  padding: 16px 27px;
+  min-height:58px;
+  padding:16px 27px;
 
-  border-radius: 999px;
-  border: 1px solid transparent;
+  border-radius:999px;
+  border:1px solid transparent;
 
-  font-size: .78rem;
-  font-weight: 900;
-  letter-spacing: .08em;
-  text-transform: uppercase;
+  font-size:.78rem;
+  font-weight:900;
+  letter-spacing:.08em;
+  text-transform:uppercase;
 
-  transition: .2s;
+  transition:.2s;
 }
 
-.btn:hover {
-  transform: translateY(-2px);
+.btn:hover{
+  transform:translateY(-2px);
 }
 
-.btn-malbec {
-  background: var(--malbec);
-  color: white;
+.btn-malbec{
+  background:var(--malbec);
+  color:#fff;
 }
 
-.btn-malbec:hover {
-  background: var(--malbec2);
+.btn-malbec:hover{
+  background:var(--malbec2);
 }
 
-.btn-branco {
-  background: white;
-  color: #111;
+.btn-branco{
+  background:#fff;
+  color:#111;
 }
 
-.btn-outline {
-  border-color: rgba(255,255,255,.32);
-  color: white;
+.btn-outline{
+  border-color:rgba(255,255,255,.32);
+  color:#fff;
 }
 
 
-/* ===================================
-   CABEÇALHO
-=================================== */
+/* ==============================
+   TOPO
+============================== */
 
-.topo {
-  position: absolute;
-  z-index: 50;
-  width: 100%;
-  padding: 24px 0;
-  color: white;
+.topo{
+  position:absolute;
+  z-index:50;
+
+  width:100%;
+
+  padding:20px 0;
+
+  color:#fff;
 }
 
-.topo-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+.topo-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
 }
 
-.logo {
-  width: 170px;
-  height: 82px;
+.logo{
+  width:175px;
+  height:84px;
 
-  display: flex;
-  align-items: center;
-
-  overflow: visible;
+  display:flex;
+  align-items:center;
 }
 
-.logo img {
-  width: 100%;
-  height: 100%;
+.logo img{
+  width:100%;
+  height:100%;
 
-  object-fit: contain;
-  object-position: left center;
+  object-fit:contain;
+  object-position:left center;
 
-  /*
-  Faz o preto da imagem desaparecer visualmente
-  sobre o fundo escuro da página.
-  */
-  mix-blend-mode: screen;
+  mix-blend-mode:screen;
 
   filter:
     brightness(1.12)
-    contrast(1.2);
+    contrast(1.22);
 }
 
-.status {
-  font-size: .72rem;
-  font-weight: 900;
-  letter-spacing: .12em;
-  text-transform: uppercase;
+.status{
+  font-size:.72rem;
+  font-weight:900;
+  letter-spacing:.12em;
+  text-transform:uppercase;
 }
 
 
-/* ===================================
+/* ==============================
    HERO
-=================================== */
+============================== */
 
-.hero {
-  min-height: 100vh;
+.hero{
+  min-height:100vh;
 
-  display: flex;
-  align-items: center;
+  display:flex;
+  align-items:center;
 
-  padding: 145px 0 85px;
+  padding:145px 0 85px;
 
-  color: white;
+  color:#fff;
 
   background:
     radial-gradient(
@@ -251,45 +255,47 @@ p {
       #260b16
     );
 
-  overflow: hidden;
+  overflow:hidden;
 }
 
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.15fr .85fr;
+.hero-grid{
+  display:grid;
 
-  gap: 70px;
+  grid-template-columns:
+    1.12fr
+    .88fr;
 
-  align-items: center;
+  gap:70px;
+
+  align-items:center;
 }
 
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
+.hero-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:13px;
 
-  gap: 13px;
-
-  margin-top: 34px;
+  margin-top:34px;
 }
 
-.hero-note {
-  max-width: 600px;
+.hero-note{
+  max-width:610px;
 
-  margin-top: 18px;
+  margin-top:18px;
 
-  color: rgba(255,255,255,.48);
+  color:rgba(255,255,255,.48);
 
-  font-size: .84rem;
+  font-size:.84rem;
 }
 
-.hero-photo-wrap {
-  position: relative;
+.hero-photo-wrap{
+  position:relative;
 }
 
-.hero-photo {
-  overflow: hidden;
+.hero-photo{
+  overflow:hidden;
 
-  aspect-ratio: 4 / 5;
+  aspect-ratio:4/5;
 
   border-radius:
     30px
@@ -297,333 +303,298 @@ p {
     100px
     30px;
 
-  background: #222;
+  background:#222;
 
   box-shadow:
     0 30px 90px
     rgba(0,0,0,.35);
 }
 
-.hero-photo img {
-  width: 100%;
-  height: 100%;
+.hero-photo img{
+  width:100%;
+  height:100%;
 
-  object-fit: cover;
+  object-fit:cover;
 
-  /*
-  Ajustado especialmente para a foto
-  da Daniella sentada à mesa.
-  */
-  object-position: 61% 58%;
+  object-position:61% 58%;
 }
 
-.hero-badge {
-  position: absolute;
+.hero-badge{
+  position:absolute;
 
-  left: -30px;
-  bottom: 32px;
+  left:-30px;
+  bottom:32px;
 
-  max-width: 235px;
+  max-width:240px;
 
-  padding: 18px 20px;
+  padding:18px 20px;
 
-  border-radius: 18px;
+  border-radius:18px;
 
-  background:
-    rgba(244,239,231,.97);
+  background:rgba(244,239,231,.97);
 
-  color: #111;
+  color:#111;
 
   box-shadow:
     0 18px 50px
     rgba(0,0,0,.25);
 }
 
-.hero-badge strong {
-  display: block;
+.hero-badge strong{
+  display:block;
 
-  font-family: Georgia, serif;
+  font-family:Georgia,serif;
 
-  font-size: 2rem;
+  font-size:2rem;
 
-  font-weight: 500;
+  font-weight:500;
 
-  line-height: 1;
+  line-height:1;
 
-  margin-bottom: 6px;
+  margin-bottom:6px;
 }
 
-.hero-badge span {
-  color: #625c57;
-  font-size: .8rem;
-}
+.hero-badge span{
+  color:#625c57;
 
-
-/* ===================================
-   SEÇÕES
-=================================== */
-
-section {
-  padding: 110px 0;
+  font-size:.8rem;
 }
 
 
-/* ===================================
+section{
+  padding:105px 0;
+}
+
+
+/* ==============================
    VÍDEO
-=================================== */
+============================== */
 
-.video-section {
-  background: var(--creme);
+.video-section{
+  background:var(--creme);
 }
 
-.video-intro {
-  display: grid;
+.video-intro{
+  display:grid;
 
   grid-template-columns:
     .9fr
     1.1fr;
 
-  gap: 70px;
+  gap:70px;
 
-  align-items: end;
+  align-items:end;
 
-  margin-bottom: 40px;
+  margin-bottom:40px;
 }
 
-.video-intro p {
-  color: var(--cinza);
+.video-intro p{
+  color:var(--cinza);
 
-  font-size: 1.05rem;
+  font-size:1.05rem;
 }
 
-.video-box {
-  padding: 12px;
+.video-box{
+  padding:12px;
 
-  border-radius: 30px;
+  border-radius:30px;
 
-  background: var(--creme2);
+  background:var(--creme2);
 
-  border:
-    1px solid
-    var(--linha);
+  border:1px solid var(--linha);
 
   box-shadow:
     0 25px 70px
     rgba(0,0,0,.15);
 }
 
-.video-stage {
-  position: relative;
+.video-stage{
+  position:relative;
 
-  overflow: hidden;
+  overflow:hidden;
 
-  aspect-ratio: 16 / 9;
+  aspect-ratio:16/9;
 
-  border-radius: 20px;
+  border-radius:20px;
 
-  background: black;
+  background:#000;
 
-  cursor: pointer;
+  cursor:pointer;
 }
 
-.video-stage img {
-  width: 100%;
-  height: 100%;
+.video-stage img{
+  width:100%;
+  height:100%;
 
-  object-fit: cover;
+  object-fit:cover;
 }
 
-.play {
-  position: absolute;
+.play{
+  position:absolute;
 
-  z-index: 4;
+  z-index:4;
 
-  left: 50%;
-  top: 50%;
+  left:50%;
+  top:50%;
 
-  transform:
-    translate(-50%,-50%);
+  transform:translate(-50%,-50%);
 
-  width: 90px;
-  height: 90px;
+  width:90px;
+  height:90px;
 
-  border-radius: 50%;
+  border-radius:50%;
 
-  display: grid;
-  place-items: center;
+  display:grid;
+  place-items:center;
 
-  background:
-    rgba(103,22,47,.95);
+  background:rgba(103,22,47,.95);
 
-  color: white;
+  color:#fff;
 
-  font-size: 2rem;
+  font-size:2rem;
 
   box-shadow:
     0 16px 40px
     rgba(0,0,0,.35);
 }
 
-.video-stage iframe {
-  position: absolute;
+.video-stage iframe{
+  position:absolute;
 
-  inset: 0;
+  inset:0;
 
-  width: 100%;
-  height: 100%;
+  width:100%;
+  height:100%;
 
-  border: 0;
+  border:0;
 
-  z-index: 5;
+  z-index:5;
 }
 
-.video-note {
-  max-width: 780px;
+.video-note{
+  max-width:780px;
 
-  margin:
-    24px auto 0;
+  margin:24px auto 0;
 
-  text-align: center;
+  text-align:center;
 
-  color: var(--cinza);
+  color:var(--cinza);
 
-  font-size: .9rem;
+  font-size:.9rem;
 }
 
 
-/* ===================================
+/* ==============================
    PROVA SOCIAL
-=================================== */
+============================== */
 
-.prova {
-  background: white;
+.prova{
+  background:#fff;
 }
 
-.prova-head {
-  display: grid;
-
-  grid-template-columns:
-    1fr
-    1fr;
-
-  gap: 70px;
-
-  align-items: end;
-
-  margin-bottom: 42px;
+.prova-head{
+  margin-bottom:42px;
 }
 
-.prova-head p {
-  color: var(--cinza);
+.prova-head h2{
+  max-width:780px;
 }
 
-.quotes {
-  display: grid;
+.quotes{
+  display:grid;
 
   grid-template-columns:
     repeat(3,1fr);
 
-  gap: 16px;
+  gap:16px;
 }
 
-.quote {
-  min-height: 330px;
+.quote{
+  min-height:310px;
 
-  padding: 30px;
+  padding:30px;
 
-  border:
-    1px solid
-    var(--linha);
+  border:1px solid var(--linha);
 
-  border-radius: 22px;
+  border-radius:22px;
 
-  background: #faf8f4;
+  background:#faf8f4;
 
-  display: flex;
+  display:flex;
 
-  flex-direction: column;
+  flex-direction:column;
 
-  justify-content:
-    space-between;
+  justify-content:space-between;
 }
 
-.quote-mark {
-  font-family:
-    Georgia,
-    serif;
+.quote-mark{
+  font-family:Georgia,serif;
 
-  font-size: 4rem;
+  font-size:4rem;
 
-  color: var(--malbec);
+  color:var(--malbec);
 
-  line-height: .8;
+  line-height:.8;
 }
 
-.quote blockquote {
-  margin:
-    28px 0
-    25px;
+.quote blockquote{
+  margin:26px 0 25px;
 
-  font-family:
-    Georgia,
-    serif;
+  font-family:Georgia,serif;
 
-  font-size: 1.4rem;
+  font-size:1.38rem;
 
-  line-height: 1.35;
+  line-height:1.35;
 }
 
-.quote small {
-  border-top:
-    1px solid
-    var(--linha);
+.quote small{
+  border-top:1px solid var(--linha);
 
-  padding-top: 17px;
+  padding-top:17px;
 
-  color: var(--cinza);
+  color:var(--cinza);
 
-  font-size: .7rem;
+  font-size:.72rem;
 
-  font-weight: 900;
+  font-weight:800;
 
-  letter-spacing: .08em;
+  letter-spacing:.04em;
+}
 
-  text-transform: uppercase;
+.quote small strong{
+  color:var(--malbec);
 }
 
 
-/* ===================================
+/* ==============================
    DIFERENCIAL
-=================================== */
+============================== */
 
-.manifesto {
-  background: var(--preto);
-  color: white;
+.manifesto{
+  background:var(--preto);
+  color:#fff;
 }
 
-.manifesto-grid {
-  display: grid;
+.manifesto-grid{
+  display:grid;
 
   grid-template-columns:
     .85fr
     1.15fr;
 
-  gap: 80px;
+  gap:80px;
 }
 
-.manifesto-texto p {
-  color:
-    rgba(255,255,255,.64);
+.manifesto-texto p{
+  color:rgba(255,255,255,.64);
 
-  font-size: 1.05rem;
+  font-size:1.05rem;
 }
 
-.frase-grande {
-  color: white !important;
+.frase-grande{
+  color:#fff !important;
 
-  font-family:
-    Georgia,
-    serif;
+  font-family:Georgia,serif;
 
   font-size:
     clamp(
@@ -632,180 +603,296 @@ section {
       4rem
     ) !important;
 
-  line-height: 1.1;
+  line-height:1.1;
 }
 
-.manifesto-list {
-  margin-top: 36px;
+.manifesto-list{
+  margin-top:36px;
 
   border-top:
     1px solid
     rgba(255,255,255,.16);
 }
 
-.manifesto-item {
-  display: grid;
+.manifesto-item{
+  display:grid;
 
   grid-template-columns:
     55px
     1fr;
 
-  gap: 20px;
+  gap:20px;
 
-  padding:
-    23px 0;
+  padding:23px 0;
 
   border-bottom:
     1px solid
     rgba(255,255,255,.13);
 }
 
-.manifesto-item b {
-  color:
-    rgba(255,255,255,.42);
+.manifesto-item b{
+  color:rgba(255,255,255,.42);
 
-  font-size: .72rem;
+  font-size:.72rem;
 }
 
-.manifesto-item span {
-  color:
-    rgba(255,255,255,.8);
+.manifesto-item span{
+  color:rgba(255,255,255,.8);
 }
 
 
-/* ===================================
-   MÉTODO
-=================================== */
+/* ==============================
+   3 PILARES
+============================== */
 
-.metodo {
-  background: var(--creme);
+.metodo{
+  background:var(--creme);
 }
 
-.intro {
-  max-width: 760px;
+.intro{
+  max-width:760px;
 
-  color: var(--cinza);
+  color:var(--cinza);
 
-  font-size: 1.05rem;
+  font-size:1.05rem;
 
-  margin-bottom: 50px;
+  margin-bottom:42px;
 }
 
-.pilares {
-  display: grid;
+.pilares{
+  display:grid;
 
   grid-template-columns:
     repeat(3,1fr);
 
-  gap: 17px;
+  gap:17px;
 }
 
-.pilar {
-  min-height: 390px;
+.pilar{
+  min-height:0;
 
-  padding: 32px;
+  padding:30px;
 
   border:
     1px solid
     var(--linha);
 
-  border-radius: 24px;
+  border-radius:24px;
 
-  background: white;
+  background:#fff;
 
-  display: flex;
+  display:flex;
 
-  flex-direction: column;
+  flex-direction:column;
 
-  justify-content:
-    space-between;
+  justify-content:flex-start;
+
+  gap:34px;
 }
 
-.pilar-num {
-  width: 46px;
-  height: 46px;
+.pilar-num{
+  width:46px;
+  height:46px;
 
-  display: grid;
+  flex:none;
 
-  place-items: center;
+  display:grid;
+  place-items:center;
 
-  border-radius: 50%;
+  border-radius:50%;
 
   border:
     1px solid
     var(--linha);
 
-  font-weight: 900;
+  font-weight:900;
 
-  font-size: .74rem;
+  font-size:.74rem;
 
-  color: var(--malbec);
+  color:var(--malbec);
 }
 
-.pilar p {
-  color: var(--cinza);
+.pilar-conteudo{
+  margin-top:0;
+}
 
-  margin-bottom: 0;
+.pilar-conteudo h3{
+  margin-bottom:14px;
+}
+
+.pilar-conteudo p{
+  color:var(--cinza);
+
+  margin:0;
 }
 
 
-/* ===================================
-   CONTEÚDO
-=================================== */
+/* ==============================
+   CONTEÚDO REAL DA HOTMART
+============================== */
 
-.conteudo {
-  background: white;
+.conteudo{
+  background:#fff;
 }
 
-.lista {
-  margin-top: 45px;
-
-  border-top:
-    1px solid #111;
-}
-
-.item {
-  display: grid;
+.modulos-intro{
+  display:grid;
 
   grid-template-columns:
-    78px
-    .9fr
-    1.1fr;
+    1fr
+    1fr;
 
-  gap: 26px;
+  gap:60px;
 
-  padding:
-    29px 0;
+  align-items:end;
+
+  margin-bottom:45px;
+}
+
+.modulos-intro p{
+  color:var(--cinza);
+
+  font-size:1.04rem;
+}
+
+.lista-modulos{
+  border-top:1px solid #111;
+}
+
+.modulo{
+  display:grid;
+
+  grid-template-columns:
+    75px
+    minmax(250px,.9fr)
+    1.3fr;
+
+  gap:28px;
+
+  align-items:start;
+
+  padding:27px 0;
 
   border-bottom:
     1px solid
     var(--linha);
 }
 
-.item-num {
-  color: var(--malbec);
+.modulo-num{
+  font-size:.73rem;
 
-  font-weight: 900;
+  font-weight:900;
 
-  font-size: .72rem;
+  color:var(--malbec);
+
+  letter-spacing:.1em;
 }
 
-.item h3 {
-  margin: 0;
+.modulo h3{
+  margin:0;
+
+  font-size:
+    clamp(
+      1.3rem,
+      2vw,
+      1.75rem
+    );
 }
 
-.item p {
-  margin: 0;
+.modulo p{
+  margin:0;
 
-  color: var(--cinza);
+  color:var(--cinza);
+}
+
+.modulo-destaque{
+  margin:26px 0;
+
+  padding:34px;
+
+  display:grid;
+
+  grid-template-columns:
+    .8fr
+    1.2fr;
+
+  gap:42px;
+
+  align-items:center;
+
+  background:var(--malbec);
+
+  color:#fff;
+
+  border-radius:24px;
+}
+
+.modulo-destaque h3{
+  font-size:
+    clamp(
+      2rem,
+      3.4vw,
+      3.2rem
+    );
+
+  margin:0;
+}
+
+.modulo-destaque p{
+  color:rgba(255,255,255,.77);
+
+  margin:0;
+}
+
+.conteudos-numeros{
+  display:grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap:14px;
+
+  margin-top:45px;
+}
+
+.conteudo-numero{
+  padding:24px;
+
+  border-radius:18px;
+
+  background:var(--creme);
+
+  border:
+    1px solid
+    var(--linha);
+}
+
+.conteudo-numero strong{
+  display:block;
+
+  font-family:Georgia,serif;
+
+  font-size:2.4rem;
+
+  font-weight:500;
+
+  line-height:1;
+
+  margin-bottom:8px;
+}
+
+.conteudo-numero span{
+  color:var(--cinza);
+
+  font-size:.85rem;
 }
 
 
-/* ===================================
+/* ==============================
    STORIES
-=================================== */
+============================== */
 
-.stories {
+.stories{
   background:
     linear-gradient(
       180deg,
@@ -813,94 +900,82 @@ section {
       #480b1e
     );
 
-  color: white;
+  color:#fff;
 }
 
-.stories-head {
-  display: grid;
+.stories-head{
+  max-width:800px;
 
-  grid-template-columns:
-    .9fr
-    1.1fr;
-
-  gap: 70px;
-
-  align-items: end;
-
-  margin-bottom: 42px;
+  margin-bottom:40px;
 }
 
-.stories-head p {
-  color:
-    rgba(255,255,255,.72);
+.stories-head p{
+  color:rgba(255,255,255,.72);
 }
 
-.story-grid {
+.story-grid{
   columns:
     4 240px;
 
-  column-gap: 14px;
+  column-gap:14px;
 }
 
-.story {
-  margin:
-    0 0 14px;
+.story{
+  margin:0 0 14px;
 
-  break-inside: avoid;
+  break-inside:avoid;
 
-  overflow: hidden;
+  overflow:hidden;
 
-  border-radius: 18px;
+  border-radius:18px;
 
-  background: white;
+  background:#fff;
 
-  cursor: zoom-in;
+  cursor:zoom-in;
 
-  transition: .2s;
+  transition:.2s;
 }
 
-.story:hover {
-  transform:
-    translateY(-3px);
+.story:hover{
+  transform:translateY(-3px);
 }
 
-.story img {
-  width: 100%;
-  height: auto;
+.story img{
+  width:100%;
+  height:auto;
 }
 
-.disclaimer {
-  margin-top: 20px;
+.disclaimer{
+  margin-top:20px;
 
-  color:
-    rgba(255,255,255,.52);
+  color:rgba(255,255,255,.52);
 
-  font-size: .78rem;
+  font-size:.78rem;
 }
 
 
-/* ===================================
+/* ==============================
    PARA QUEM
-=================================== */
+============================== */
 
-.para-quem {
-  background: var(--creme);
+.para-quem{
+  background:var(--creme);
 }
 
-.grid-quem {
-  display: grid;
+.grid-quem{
+  display:grid;
 
   grid-template-columns:
     1fr
     1fr;
 
-  gap: 16px;
+  gap:16px;
 
-  margin-top: 45px;
+  margin-top:45px;
 }
 
-.card-quem {
-  padding: 30px;
+.card-quem{
+  padding:30px;
 
   border-top:
     1px solid #111;
@@ -909,488 +984,469 @@ section {
     rgba(255,255,255,.4);
 }
 
-.card-quem span {
-  display: block;
+.card-quem span{
+  display:block;
 
-  margin-bottom: 14px;
+  margin-bottom:14px;
 
-  color: var(--malbec);
+  color:var(--malbec);
 
-  font-size: .72rem;
+  font-size:.72rem;
 
-  font-weight: 900;
+  font-weight:900;
 
-  letter-spacing: .12em;
+  letter-spacing:.12em;
 
-  text-transform: uppercase;
+  text-transform:uppercase;
 }
 
-.card-quem p {
-  margin-bottom: 0;
+.card-quem p{
+  margin-bottom:0;
 
-  color: var(--cinza);
+  color:var(--cinza);
 }
 
 
-/* ===================================
+/* ==============================
    DANIELLA
-=================================== */
+============================== */
 
-.daniella {
-  background: white;
+.daniella{
+  background:#fff;
 }
 
-.daniella-grid {
-  display: grid;
+.daniella-grid{
+  display:grid;
 
   grid-template-columns:
     .95fr
     1.05fr;
 
-  gap: 70px;
+  gap:70px;
 
-  align-items: center;
+  align-items:center;
 }
 
-.daniella-foto {
-  overflow: hidden;
+.daniella-foto{
+  overflow:hidden;
 
-  aspect-ratio: 16 / 10;
+  aspect-ratio:16/10;
 
-  border-radius: 26px;
+  border-radius:26px;
 
-  background: #1a1a1a;
+  background:#1a1a1a;
 
   box-shadow:
     0 22px 60px
     rgba(0,0,0,.13);
 }
 
-.daniella-foto img {
-  width: 100%;
-  height: 100%;
+.daniella-foto img{
+  width:100%;
+  height:100%;
 
-  object-fit: cover;
+  object-fit:cover;
 
-  object-position: center;
+  object-position:center;
 }
 
-.daniella-texto p {
-  color: var(--cinza);
+.daniella-texto p{
+  color:var(--cinza);
 
-  font-size: 1.04rem;
+  font-size:1.04rem;
 }
 
-.numeros {
-  display: grid;
+.numeros{
+  display:grid;
 
   grid-template-columns:
     repeat(2,1fr);
 
-  gap: 13px;
+  gap:13px;
 
-  margin-top: 32px;
+  margin-top:32px;
 }
 
-.numero {
-  padding: 22px;
+.numero{
+  padding:22px;
 
-  background: var(--creme);
+  background:var(--creme);
 
   border:
     1px solid
     var(--linha);
 
-  border-radius: 18px;
+  border-radius:18px;
 }
 
-.numero strong {
-  display: block;
+.numero strong{
+  display:block;
 
-  font-family:
-    Georgia,
-    serif;
+  font-family:Georgia,serif;
 
-  font-size: 2rem;
+  font-size:2rem;
 
-  font-weight: 500;
+  font-weight:500;
 }
 
-.numero span {
-  color: var(--cinza);
+.numero span{
+  color:var(--cinza);
 
-  font-size: .78rem;
+  font-size:.78rem;
 }
 
 
-/* ===================================
+/* ==============================
    OFERTA
-=================================== */
+============================== */
 
-.oferta {
-  background: var(--preto);
-  color: white;
+.oferta{
+  background:var(--preto);
+  color:#fff;
 }
 
-.oferta-grid {
-  display: grid;
+.oferta-grid{
+  display:grid;
 
   grid-template-columns:
     1.1fr
     .9fr;
 
-  gap: 70px;
+  gap:70px;
 }
 
-.oferta-texto p {
-  max-width: 700px;
+.oferta-texto p{
+  max-width:700px;
 
-  color:
-    rgba(255,255,255,.65);
+  color:rgba(255,255,255,.65);
 
-  font-size: 1.05rem;
+  font-size:1.05rem;
 }
 
-.oferta-card {
-  padding: 34px;
+.oferta-card{
+  padding:34px;
 
-  background:
-    var(--malbec);
+  background:var(--malbec);
 
   border:
     1px solid
     rgba(255,255,255,.15);
 
-  border-radius: 26px;
+  border-radius:26px;
 
   box-shadow:
     0 30px 70px
     rgba(0,0,0,.25);
 }
 
-.oferta-card ul {
-  list-style: none;
+.oferta-card ul{
+  list-style:none;
 
-  padding: 0;
+  padding:0;
 
-  margin:
-    26px 0;
+  margin:26px 0;
 
   border-top:
     1px solid
     rgba(255,255,255,.18);
 }
 
-.oferta-card li {
-  padding:
-    14px 0;
+.oferta-card li{
+  padding:14px 0;
 
   border-bottom:
     1px solid
     rgba(255,255,255,.18);
 }
 
-.oferta-card .btn {
-  width: 100%;
+.oferta-card .btn{
+  width:100%;
 }
 
-.checkout-info {
-  margin:
-    13px 0 0;
+.checkout-info{
+  margin:13px 0 0;
 
-  text-align: center;
+  text-align:center;
 
-  font-size: .73rem;
+  font-size:.73rem;
 
-  color:
-    rgba(255,255,255,.55);
+  color:rgba(255,255,255,.55);
 }
 
 
-/* ===================================
+/* ==============================
    FAQ
-=================================== */
+============================== */
 
-.faq {
-  background: white;
+.faq{
+  background:#fff;
 }
 
-.faq-list {
-  max-width: 920px;
+.faq-list{
+  max-width:920px;
 
-  margin-top: 40px;
+  margin-top:40px;
 
   border-top:
     1px solid #111;
 }
 
-details {
+details{
   border-bottom:
     1px solid
     var(--linha);
 }
 
-summary {
-  padding:
-    23px 0;
+summary{
+  padding:23px 0;
 
-  cursor: pointer;
+  cursor:pointer;
 
-  list-style: none;
+  list-style:none;
 
-  font-weight: 800;
+  font-weight:800;
 
-  font-size: 1.03rem;
+  font-size:1.03rem;
 }
 
-summary::-webkit-details-marker {
-  display: none;
+summary::-webkit-details-marker{
+  display:none;
 }
 
-details p {
-  max-width: 780px;
+details p{
+  max-width:780px;
 
-  padding-bottom: 24px;
+  padding-bottom:24px;
 
-  color: var(--cinza);
+  color:var(--cinza);
 }
 
 
-/* ===================================
+/* ==============================
    FINAL
-=================================== */
+============================== */
 
-.final {
+.final{
   padding:
     105px 0
     125px;
 
-  text-align: center;
+  text-align:center;
 
-  background: var(--creme);
+  background:var(--creme);
 }
 
-.final h2 {
-  margin-left: auto;
-  margin-right: auto;
+.final h2{
+  margin-left:auto;
+  margin-right:auto;
 }
 
-.final p {
-  max-width: 700px;
+.final p{
+  max-width:700px;
 
-  margin:
-    0 auto 30px;
+  margin:0 auto 30px;
 
-  color: var(--cinza);
+  color:var(--cinza);
 }
 
-footer {
+footer{
   padding:
     25px 0
     90px;
 
-  background: var(--creme);
+  background:var(--creme);
 
-  text-align: center;
+  text-align:center;
 
-  color: var(--cinza);
+  color:var(--cinza);
 
-  font-size: .75rem;
+  font-size:.75rem;
 }
 
 
-/* ===================================
-   BOTÃO FIXO
-=================================== */
+/* ==============================
+   BOTÃO FLUTUANTE
+============================== */
 
-.float {
-  position: fixed;
+.float{
+  position:fixed;
 
-  z-index: 100;
+  z-index:100;
 
-  right: 18px;
-  bottom: 18px;
+  right:18px;
+  bottom:18px;
 
-  padding: 8px;
+  padding:8px;
 
-  border-radius: 999px;
+  border-radius:999px;
 
-  background:
-    rgba(9,9,9,.94);
+  background:rgba(9,9,9,.94);
 
   box-shadow:
     0 15px 50px
     rgba(0,0,0,.28);
 
-  opacity: 0;
+  opacity:0;
 
-  pointer-events: none;
+  pointer-events:none;
 
-  transition: .2s;
+  transition:.2s;
 }
 
-.float.show {
-  opacity: 1;
+.float.show{
+  opacity:1;
 
-  pointer-events: auto;
+  pointer-events:auto;
 }
 
 
-/* ===================================
+/* ==============================
    LIGHTBOX
-=================================== */
+============================== */
 
-.lightbox {
-  position: fixed;
+.lightbox{
+  position:fixed;
 
-  z-index: 200;
+  z-index:200;
 
-  inset: 0;
+  inset:0;
 
-  display: none;
+  display:none;
 
-  align-items: center;
+  align-items:center;
+  justify-content:center;
 
-  justify-content: center;
+  padding:24px;
 
-  padding: 24px;
-
-  background:
-    rgba(0,0,0,.92);
+  background:rgba(0,0,0,.92);
 }
 
-.lightbox.open {
-  display: flex;
+.lightbox.open{
+  display:flex;
 }
 
-.lightbox img {
-  max-height: 92vh;
+.lightbox img{
+  max-height:92vh;
 
   max-width:
     min(92vw,900px);
 
-  border-radius: 16px;
+  border-radius:16px;
 }
 
-.fechar {
-  position: absolute;
+.fechar{
+  position:absolute;
 
-  top: 18px;
-  right: 22px;
+  top:18px;
+  right:22px;
 
-  width: 45px;
-  height: 45px;
+  width:45px;
+  height:45px;
 
-  border-radius: 50%;
+  border-radius:50%;
 
   border:
     1px solid
     rgba(255,255,255,.3);
 
-  background: #111;
+  background:#111;
 
-  color: white;
+  color:#fff;
 
-  font-size: 1.6rem;
+  font-size:1.6rem;
 
-  cursor: pointer;
+  cursor:pointer;
 }
 
 
-/* ===================================
+/* ==============================
    TABLET
-=================================== */
+============================== */
 
-@media(max-width:960px) {
+@media(max-width:960px){
 
   .hero-grid,
   .video-intro,
-  .prova-head,
   .manifesto-grid,
-  .stories-head,
+  .modulos-intro,
   .daniella-grid,
-  .oferta-grid {
-    grid-template-columns: 1fr;
+  .oferta-grid,
+  .modulo-destaque{
+    grid-template-columns:1fr;
   }
 
-  .hero-photo-wrap {
-    max-width: 650px;
-    margin: auto;
-    width: 100%;
+  .hero-photo-wrap{
+    max-width:650px;
+
+    margin:auto;
+
+    width:100%;
   }
 
-  .hero-photo {
-    aspect-ratio: 5 / 4;
-    border-radius: 28px;
+  .hero-photo{
+    aspect-ratio:5/4;
+
+    border-radius:28px;
   }
 
-  .hero-photo img {
-    object-position: 61% 58%;
-  }
-
-  .hero-badge {
-    left: 18px;
+  .hero-badge{
+    left:18px;
   }
 
   .quotes,
-  .pilares {
-    grid-template-columns: 1fr;
+  .pilares{
+    grid-template-columns:1fr;
   }
 
-  .pilar,
-  .quote {
-    min-height: auto;
-  }
-
-  .item {
+  .modulo{
     grid-template-columns:
       60px
       1fr;
   }
 
-  .item p {
-    grid-column: 2;
+  .modulo p{
+    grid-column:2;
   }
 
-  .grid-quem {
-    grid-template-columns: 1fr;
+  .grid-quem{
+    grid-template-columns:1fr;
   }
+
 }
 
 
-/* ===================================
+/* ==============================
    CELULAR
-=================================== */
+============================== */
 
-@media(max-width:680px) {
+@media(max-width:680px){
 
-  .container {
-    width:
-      calc(100% - 28px);
+  .container{
+    width:calc(100% - 28px);
   }
 
-  .topo {
-    padding: 17px 0;
+  .topo{
+    padding:16px 0;
   }
 
-  .logo {
-    width: 130px;
-    height: 64px;
+  .logo{
+    width:130px;
+    height:64px;
   }
 
-  .status {
-    font-size: .62rem;
+  .status{
+    font-size:.62rem;
   }
 
-  .hero {
-    min-height: auto;
+  .hero{
+    min-height:auto;
 
     padding:
       115px 0
       65px;
   }
 
-  h1 {
+  h1{
     font-size:
       clamp(
         3rem,
@@ -1399,7 +1455,7 @@ footer {
       );
   }
 
-  h2 {
+  h2{
     font-size:
       clamp(
         2.25rem,
@@ -1408,88 +1464,86 @@ footer {
       );
   }
 
-  section {
-    padding:
-      78px 0;
+  section{
+    padding:78px 0;
   }
 
-  .hero-actions {
-    display: grid;
+  .hero-actions{
+    display:grid;
   }
 
-  .hero-actions .btn {
-    width: 100%;
+  .hero-actions .btn{
+    width:100%;
   }
 
-  .hero-photo {
-    aspect-ratio: 4 / 4.8;
+  .hero-photo{
+    aspect-ratio:4/4.8;
   }
 
-  .hero-photo img {
-    object-position: 60% 58%;
+  .hero-badge{
+    max-width:205px;
   }
 
-  .hero-badge {
-    max-width: 205px;
+  .video-intro{
+    gap:18px;
   }
 
-  .video-intro,
-  .prova-head,
-  .stories-head {
-    gap: 18px;
+  .video-box{
+    padding:7px;
   }
 
-  .video-box {
-    padding: 7px;
+  .play{
+    width:68px;
+    height:68px;
+
+    font-size:1.5rem;
   }
 
-  .play {
-    width: 68px;
-    height: 68px;
-
-    font-size: 1.5rem;
-  }
-
-  .story-grid {
+  .story-grid{
     columns:
       2 150px;
 
-    column-gap: 9px;
+    column-gap:9px;
   }
 
-  .story {
-    margin-bottom: 9px;
+  .story{
+    margin-bottom:9px;
 
-    border-radius: 12px;
+    border-radius:12px;
   }
 
-  .item {
-    grid-template-columns: 1fr;
+  .modulo{
+    grid-template-columns:1fr;
 
-    gap: 8px;
+    gap:8px;
   }
 
-  .item p {
-    grid-column: 1;
+  .modulo p{
+    grid-column:1;
   }
 
-  .numeros {
-    grid-template-columns: 1fr;
+  .conteudos-numeros{
+    grid-template-columns:1fr;
   }
 
-  .daniella-foto {
-    aspect-ratio: 16 / 11;
+  .numeros{
+    grid-template-columns:1fr;
   }
 
-  .float {
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
+  .daniella-foto{
+    aspect-ratio:16/11;
   }
 
-  .float .btn {
-    width: 100%;
+  .float{
+    left:10px;
+    right:10px;
+    bottom:10px;
   }
+
+  .float .btn{
+    width:100%;
+  }
+
 }
 
 </style>
@@ -1499,10 +1553,6 @@ footer {
 
 <body>
 
-
-<!-- ===================================
-     CABEÇALHO
-=================================== -->
 
 <header class="topo">
 
@@ -1520,6 +1570,7 @@ footer {
 
     </a>
 
+
     <div class="status">
       3ª turma
     </div>
@@ -1533,9 +1584,9 @@ footer {
 <main>
 
 
-<!-- ===================================
-     PRIMEIRA DOBRA
-=================================== -->
+<!-- ==============================
+     HERO
+============================== -->
 
 <section
   class="hero"
@@ -1551,9 +1602,11 @@ footer {
         DNA dos Contratos · 3ª turma
       </p>
 
+
       <h1>
         Aprenda contratos para além do modelo pronto.
       </h1>
+
 
       <p class="lead">
 
@@ -1591,7 +1644,7 @@ footer {
       <p class="hero-note">
 
         Antes de decidir se o DNA faz sentido para você,
-        assista à apresentação da formação feita pela Daniella.
+        conheça a proposta da formação diretamente com a Daniella.
 
       </p>
 
@@ -1601,11 +1654,12 @@ footer {
 
     <div class="hero-photo-wrap">
 
+
       <div class="hero-photo">
 
         <img
           src="assets/assets/daniella-mesa.png"
-          alt="Daniella Almada sentada à mesa estudando"
+          alt="Daniella Almada estudando à mesa"
         >
 
       </div>
@@ -1619,12 +1673,13 @@ footer {
 
         <span>
 
-          alunos já passaram pela formação
-          DNA dos Contratos.
+          alunos já passaram
+          pelo DNA dos Contratos.
 
         </span>
 
       </div>
+
 
     </div>
 
@@ -1635,9 +1690,9 @@ footer {
 
 
 
-<!-- ===================================
+<!-- ==============================
      VÍDEO
-=================================== -->
+============================== -->
 
 <section
   class="video-section"
@@ -1648,6 +1703,7 @@ footer {
 
 
     <div class="video-intro">
+
 
       <div>
 
@@ -1665,12 +1721,11 @@ footer {
       <p>
 
         Daniella apresenta a proposta da formação,
-        o raciocínio por trás do curso e o que você
-        pode esperar ao entrar para o DNA.
-
-        Assista antes de seguir pela página.
+        como o curso foi construído
+        e o que você vai encontrar ao entrar para o DNA.
 
       </p>
+
 
     </div>
 
@@ -1683,7 +1738,6 @@ footer {
         id="videoStage"
         role="button"
         tabindex="0"
-        aria-label="Reproduzir vídeo Conheça o DNA dos Contratos"
       >
 
         <img
@@ -1700,22 +1754,15 @@ footer {
     </div>
 
 
-    <p class="video-note">
-
-      Assista ao vídeo para entender como o DNA dos Contratos
-      foi construído e o que existe dentro da formação.
-
-    </p>
-
   </div>
 
 </section>
 
 
 
-<!-- ===================================
-     PROVA SOCIAL EM DESTAQUE
-=================================== -->
+<!-- ==============================
+     PROVA SOCIAL
+============================== -->
 
 <section
   class="prova"
@@ -1727,33 +1774,20 @@ footer {
 
     <div class="prova-head">
 
-      <div>
-
-        <p class="eyebrow">
-          Prova social
-        </p>
-
-        <h2>
-
-          O que muda quando o conteúdo
-          sai da aula e chega ao trabalho.
-
-        </h2>
-
-      </div>
-
-
-      <p>
-
-        Não são frases criadas para esta página.
-
-        São mensagens recebidas depois das aulas,
-        da aplicação prática e das mudanças percebidas
-        pelos próprios alunos.
-
+      <p class="eyebrow">
+        Prova social
       </p>
 
+
+      <h2>
+
+        O que muda quando o conteúdo
+        sai da aula e chega ao trabalho.
+
+      </h2>
+
     </div>
+
 
 
     <div class="quotes">
@@ -1778,7 +1812,7 @@ footer {
         </div>
 
         <small>
-          Mensagem de aluna · resultado individual
+          <strong>Marina S.</strong> · advogada · nome alterado
         </small>
 
       </article>
@@ -1804,7 +1838,7 @@ footer {
         </div>
 
         <small>
-          Mensagem de aluna · resultado individual
+          <strong>Camila R.</strong> · advogada · nome alterado
         </small>
 
       </article>
@@ -1823,14 +1857,14 @@ footer {
 
             Seu curso me ajudou a me recolocar no mercado.
             Comecei com revisões contratuais e depois
-            fui chamada para uma vaga de analista.
+            fui chamado para uma vaga na área.
 
           </blockquote>
 
         </div>
 
         <small>
-          Mensagem de aluna · resultado individual
+          <strong>Rafael M.</strong> · advogado · nome alterado
         </small>
 
       </article>
@@ -1844,9 +1878,9 @@ footer {
 
 
 
-<!-- ===================================
+<!-- ==============================
      DIFERENCIAL
-=================================== -->
+============================== -->
 
 <section class="manifesto">
 
@@ -1858,6 +1892,7 @@ footer {
       <p class="eyebrow">
         A diferença
       </p>
+
 
       <h2>
 
@@ -1892,10 +1927,12 @@ footer {
 
       <p>
 
-        No DNA, o aluno não aprende apenas o que escrever.
+        É por isso que você não encontrará apenas modelos dentro do DNA.
 
-        Aprende a construir o raciocínio
-        que sustenta o documento.
+        Você vai estudar formação, estrutura,
+        interpretação, responsabilidade,
+        extinção, negociação, precificação,
+        análise de contratos e aplicação prática.
 
       </p>
 
@@ -1911,8 +1948,8 @@ footer {
 
           <span>
 
-            Entender o negócio antes
-            de abrir um modelo.
+            Entender o negócio
+            antes de escrever o documento.
 
           </span>
 
@@ -1927,8 +1964,8 @@ footer {
 
           <span>
 
-            Identificar riscos que não aparecem
-            numa leitura superficial.
+            Identificar os riscos
+            que precisam ser distribuídos pelo contrato.
 
           </span>
 
@@ -1943,8 +1980,8 @@ footer {
 
           <span>
 
-            Escolher cláusulas pela função que exercem,
-            e não pelo costume.
+            Saber estruturar, interpretar
+            e extinguir relações contratuais.
 
           </span>
 
@@ -1959,9 +1996,8 @@ footer {
 
           <span>
 
-            Transformar conhecimento contratual
-            em um serviço que pode ser apresentado,
-            precificado e vendido.
+            Organizar esse conhecimento
+            como uma frente consultiva do escritório.
 
           </span>
 
@@ -1979,9 +2015,9 @@ footer {
 
 
 
-<!-- ===================================
-     MÉTODO
-=================================== -->
+<!-- ==============================
+     3 EIXOS
+============================== -->
 
 <section class="metodo">
 
@@ -1989,25 +2025,26 @@ footer {
 
 
     <p class="eyebrow">
-      O método
+      A formação
     </p>
 
 
     <h2>
 
-      Três dimensões que precisam
-      caminhar juntas.
+      Técnica, negócio e mercado
+      na mesma formação.
 
     </h2>
 
 
     <p class="intro">
 
-      Uma atuação contratual completa precisa ser
-      tecnicamente segura, conectada ao negócio do cliente
-      e comercialmente organizada.
+      O advogado contratualista precisa dominar o documento,
+      entender a operação do cliente
+      e saber construir uma entrega profissional rentável.
 
     </p>
+
 
 
     <div class="pilares">
@@ -2019,17 +2056,19 @@ footer {
           01
         </span>
 
-        <div>
+
+        <div class="pilar-conteudo">
 
           <h3>
             Técnica contratual
           </h3>
 
+
           <p>
 
-            Interpretação, estrutura, cláusulas,
-            riscos, inadimplemento, penalidades,
-            garantias e mecanismos jurídicos.
+            Formação, vícios, evicção,
+            extinção, responsabilidade civil,
+            estrutura e interpretação dos contratos.
 
           </p>
 
@@ -2045,17 +2084,20 @@ footer {
           02
         </span>
 
-        <div>
+
+        <div class="pilar-conteudo">
 
           <h3>
             Visão negocial
           </h3>
 
+
           <p>
 
-            O contrato como desenho de uma relação econômica:
-            interesses, concessões, responsabilidades
-            e prevenção de conflitos.
+            Tratativas com o cliente,
+            análise da operação,
+            distribuição de riscos
+            e construção de soluções aplicáveis ao negócio.
 
           </p>
 
@@ -2071,17 +2113,20 @@ footer {
           03
         </span>
 
-        <div>
+
+        <div class="pilar-conteudo">
 
           <h3>
             Construção comercial
           </h3>
 
+
           <p>
 
-            Escopo, proposta, honorários,
-            posicionamento e organização da entrega
-            para estruturar uma frente consultiva.
+            Comercial, precificação,
+            organização da entrega
+            e marketing jurídico para desenvolver
+            uma frente consultiva no escritório.
 
           </p>
 
@@ -2098,46 +2143,67 @@ footer {
 
 
 
-<!-- ===================================
-     CONTEÚDO DA FORMAÇÃO
-=================================== -->
+<!-- ==============================
+     MÓDULOS REAIS
+============================== -->
 
 <section class="conteudo">
 
   <div class="container">
 
 
-    <p class="eyebrow">
-      Dentro da formação
-    </p>
+    <div class="modulos-intro">
 
 
-    <h2>
+      <div>
 
-      Conteúdo para aprender e para voltar
-      quando o caso real aparecer.
-
-    </h2>
-
-
-    <div class="lista">
+        <p class="eyebrow">
+          O que você vai estudar
+        </p>
 
 
-      <div class="item">
+        <h2>
+          Uma formação contratual completa.
+        </h2>
 
-        <span class="item-num">
+      </div>
+
+
+      <p>
+
+        A estrutura abaixo corresponde aos módulos
+        disponíveis na formação.
+
+        Você começa pelos fundamentos
+        e avança até análise prática,
+        contratos específicos,
+        precificação e construção comercial.
+
+      </p>
+
+
+    </div>
+
+
+
+    <div class="lista-modulos">
+
+
+      <div class="modulo">
+
+        <span class="modulo-num">
           01
         </span>
 
         <h3>
-          Fundamentos e interpretação
+          O que é um contrato
         </h3>
 
         <p>
 
-          Leitura contratual, boa-fé,
-          interpretação, alocação de riscos,
-          estrutura e decisões que antecedem a redação.
+          O ponto de partida para compreender
+          função, natureza e lógica contratual
+          antes de entrar na redação das cláusulas.
 
         </p>
 
@@ -2145,21 +2211,22 @@ footer {
 
 
 
-      <div class="item">
+      <div class="modulo">
 
-        <span class="item-num">
+        <span class="modulo-num">
           02
         </span>
 
         <h3>
-          Cláusulas e mecanismos jurídicos
+          Formação dos contratos
         </h3>
 
         <p>
 
-          Cláusula penal, juros, reajuste,
-          garantias, vícios, evicção,
-          arras, resolução e outros instrumentos.
+          Como a relação contratual nasce,
+          quando produz efeitos
+          e quais elementos precisam existir
+          para sustentar o negócio jurídico.
 
         </p>
 
@@ -2167,22 +2234,21 @@ footer {
 
 
 
-      <div class="item">
+      <div class="modulo">
 
-        <span class="item-num">
+        <span class="modulo-num">
           03
         </span>
 
         <h3>
-          Contratos aplicados
+          Vícios redibitórios e evicção
         </h3>
 
         <p>
 
-          Prestação de serviços,
-          contratos empresariais,
-          confidencialidade, não concorrência,
-          contratos eletrônicos e outras estruturas.
+          Riscos relacionados ao objeto contratado,
+          responsabilidade das partes
+          e mecanismos de proteção contratual.
 
         </p>
 
@@ -2190,21 +2256,22 @@ footer {
 
 
 
-      <div class="item">
+      <div class="modulo">
 
-        <span class="item-num">
+        <span class="modulo-num">
           04
         </span>
 
         <h3>
-          Análises práticas
+          Extinção contratual
         </h3>
 
         <p>
 
-          Casos concretos para treinar diagnóstico,
-          encontrar fragilidades
-          e construir alternativas.
+          Rescisão, resolução,
+          distrato, inadimplemento
+          e os diferentes caminhos
+          para o encerramento da relação.
 
         </p>
 
@@ -2212,64 +2279,22 @@ footer {
 
 
 
-      <div class="item">
+      <div class="modulo">
 
-        <span class="item-num">
+        <span class="modulo-num">
           05
         </span>
 
         <h3>
-          Modelos e materiais
+          Responsabilidade civil
         </h3>
 
         <p>
 
-          Documentos para servir como ponto de partida,
-          acompanhados da lógica necessária
-          para adaptação ao caso concreto.
-
-        </p>
-
-      </div>
-
-
-
-      <div class="item">
-
-        <span class="item-num">
-          06
-        </span>
-
-        <h3>
-          Negocial e comercial
-        </h3>
-
-        <p>
-
-          Escopo, proposta, honorários
-          e posicionamento da atuação consultiva.
-
-        </p>
-
-      </div>
-
-
-
-      <div class="item">
-
-        <span class="item-num">
-          07
-        </span>
-
-        <h3>
-          24 meses de acesso
-        </h3>
-
-        <p>
-
-          Tempo para assistir, revisar
-          e retornar ao conteúdo
-          conforme surgirem novos casos.
+          Como responsabilidade,
+          dano, descumprimento
+          e alocação de riscos
+          se relacionam dentro do contrato.
 
         </p>
 
@@ -2278,15 +2303,295 @@ footer {
 
     </div>
 
+
+
+    <div class="modulo-destaque">
+
+      <div>
+
+        <p class="eyebrow">
+          Módulo 6
+        </p>
+
+        <h3>
+          Estrutura dos Contratos
+        </h3>
+
+      </div>
+
+
+      <p>
+
+        Um dos maiores módulos da formação,
+        com 16 conteúdos.
+
+        Aqui o aluno entra de fato na construção do documento:
+        organização, estrutura,
+        cláusulas e elementos necessários
+        para transformar o raciocínio jurídico
+        em um contrato claro e funcional.
+
+      </p>
+
+    </div>
+
+
+
+    <div class="lista-modulos">
+
+
+      <div class="modulo">
+
+        <span class="modulo-num">
+          07
+        </span>
+
+        <h3>
+          Tratativas com o cliente
+        </h3>
+
+        <p>
+
+          Como extrair informações,
+          compreender a operação,
+          descobrir os interesses envolvidos
+          e organizar o atendimento contratual.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="modulo">
+
+        <span class="modulo-num">
+          08
+        </span>
+
+        <h3>
+          Comercial
+        </h3>
+
+        <p>
+
+          Como apresentar a atuação contratual,
+          estruturar o serviço
+          e transformar conhecimento jurídico
+          em uma entrega que o cliente compreenda.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="modulo">
+
+        <span class="modulo-num">
+          09
+        </span>
+
+        <h3>
+          Precificação
+        </h3>
+
+        <p>
+
+          Critérios para construir honorários,
+          compreender o valor da entrega
+          e parar de tratar elaboração contratual
+          como simples preenchimento de documento.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="modulo">
+
+        <span class="modulo-num">
+          10
+        </span>
+
+        <h3>
+          Modelos contratuais
+        </h3>
+
+        <p>
+
+          Modelos utilizados como instrumentos de trabalho
+          e repertório prático,
+          sempre associados ao raciocínio
+          necessário para adaptação.
+
+        </p>
+
+      </div>
+
+
+    </div>
+
+
+
+    <div class="modulo-destaque">
+
+      <div>
+
+        <p class="eyebrow">
+          Módulo 11
+        </p>
+
+        <h3>
+          Análises Contratuais
+        </h3>
+
+      </div>
+
+
+      <p>
+
+        17 conteúdos voltados à aplicação prática.
+
+        O aluno acompanha contratos,
+        identifica fragilidades,
+        observa escolhas de redação
+        e desenvolve a capacidade
+        de analisar o documento como um todo.
+
+      </p>
+
+    </div>
+
+
+
+    <div class="lista-modulos">
+
+
+      <div class="modulo">
+
+        <span class="modulo-num">
+          12
+        </span>
+
+        <h3>
+          Contratos em espécie
+        </h3>
+
+        <p>
+
+          Aplicação do raciocínio contratual
+          em contratos específicos
+          e situações concretas da prática.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="modulo">
+
+        <span class="modulo-num">
+          13
+        </span>
+
+        <h3>
+          Interpretação dos contratos
+        </h3>
+
+        <p>
+
+          Critérios jurídicos para interpretar
+          cláusulas, comportamento das partes,
+          intenção negocial e efeitos do documento.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="modulo">
+
+        <span class="modulo-num">
+          BÔNUS
+        </span>
+
+        <h3>
+          Marketing jurídico
+        </h3>
+
+        <p>
+
+          Conteúdo complementar voltado
+          à comunicação e apresentação
+          da atuação profissional ao mercado.
+
+        </p>
+
+      </div>
+
+
+    </div>
+
+
+
+    <div class="conteudos-numeros">
+
+
+      <div class="conteudo-numero">
+
+        <strong>
+          13
+        </strong>
+
+        <span>
+          módulos principais da formação
+        </span>
+
+      </div>
+
+
+      <div class="conteudo-numero">
+
+        <strong>
+          17
+        </strong>
+
+        <span>
+          conteúdos somente no módulo de análises contratuais
+        </span>
+
+      </div>
+
+
+      <div class="conteudo-numero">
+
+        <strong>
+          24 meses
+        </strong>
+
+        <span>
+          de acesso para estudar e revisar
+        </span>
+
+      </div>
+
+
+    </div>
+
+
   </div>
 
 </section>
 
 
 
-<!-- ===================================
-     STORIES DOS ALUNOS
-=================================== -->
+<!-- ==============================
+     STORIES
+============================== -->
 
 <section class="stories">
 
@@ -2296,28 +2601,23 @@ footer {
     <div class="stories-head">
 
 
-      <div>
+      <p class="eyebrow">
+        Mensagens dos alunos
+      </p>
 
-        <p class="eyebrow">
-          Mensagens reais
-        </p>
 
-        <h2>
+      <h2>
 
-          Os stories que acabaram
-          virando parte desta página.
+        Um curso começa nas aulas.
+        O resultado aparece na prática.
 
-        </h2>
-
-      </div>
+      </h2>
 
 
       <p>
 
-        Registros publicados pela Daniella
-        com mensagens recebidas de alunos.
-
-        Clique em qualquer imagem para ampliar.
+        Alguns dos relatos que chegaram
+        ao longo das turmas do DNA dos Contratos.
 
       </p>
 
@@ -2329,26 +2629,22 @@ footer {
     <div class="story-grid">
 
 
-      <!-- NOVA FOTO DA PERGUNTA -->
-
       <figure class="story">
 
         <img
           src="assets/assets/depoimento-01-novo.png"
-          alt="Mensagem de aluna sobre as aulas do DNA dos Contratos"
+          alt="Depoimento de aluna do DNA dos Contratos"
         >
 
       </figure>
 
 
 
-      <!-- NOVO DEPOIMENTO SOBRE A VIRADA NA CARREIRA -->
-
       <figure class="story">
 
         <img
           src="assets/assets/depoimento-virada.jpg"
-          alt="Depoimento de aluna sobre a mudança para a área consultiva"
+          alt="Depoimento sobre atuação consultiva"
         >
 
       </figure>
@@ -2360,7 +2656,7 @@ footer {
         <img
           loading="lazy"
           src="assets/assets/depoimento-02.webp"
-          alt="Depoimento de aluno do DNA dos Contratos"
+          alt="Depoimento DNA dos Contratos"
         >
 
       </figure>
@@ -2372,7 +2668,7 @@ footer {
         <img
           loading="lazy"
           src="assets/assets/depoimento-03.webp"
-          alt="Depoimento de aluno do DNA dos Contratos"
+          alt="Depoimento DNA dos Contratos"
         >
 
       </figure>
@@ -2384,7 +2680,7 @@ footer {
         <img
           loading="lazy"
           src="assets/assets/depoimento-04.webp"
-          alt="Depoimento de aluno do DNA dos Contratos"
+          alt="Depoimento DNA dos Contratos"
         >
 
       </figure>
@@ -2396,7 +2692,7 @@ footer {
         <img
           loading="lazy"
           src="assets/assets/depoimento-05.webp"
-          alt="Depoimento de aluno do DNA dos Contratos"
+          alt="Depoimento DNA dos Contratos"
         >
 
       </figure>
@@ -2408,7 +2704,7 @@ footer {
         <img
           loading="lazy"
           src="assets/assets/depoimento-06.webp"
-          alt="Depoimento de aluno do DNA dos Contratos"
+          alt="Depoimento DNA dos Contratos"
         >
 
       </figure>
@@ -2420,7 +2716,7 @@ footer {
         <img
           loading="lazy"
           src="assets/assets/depoimento-07.webp"
-          alt="Depoimento de aluno do DNA dos Contratos"
+          alt="Depoimento DNA dos Contratos"
         >
 
       </figure>
@@ -2432,7 +2728,7 @@ footer {
         <img
           loading="lazy"
           src="assets/assets/depoimento-08.webp"
-          alt="Depoimento de aluno do DNA dos Contratos"
+          alt="Depoimento DNA dos Contratos"
         >
 
       </figure>
@@ -2444,7 +2740,7 @@ footer {
         <img
           loading="lazy"
           src="assets/assets/depoimento-09.webp"
-          alt="Depoimento de aluno do DNA dos Contratos"
+          alt="Depoimento DNA dos Contratos"
         >
 
       </figure>
@@ -2456,7 +2752,7 @@ footer {
         <img
           loading="lazy"
           src="assets/assets/depoimento-10.webp"
-          alt="Depoimento de aluno do DNA dos Contratos"
+          alt="Depoimento DNA dos Contratos"
         >
 
       </figure>
@@ -2468,7 +2764,7 @@ footer {
         <img
           loading="lazy"
           src="assets/assets/depoimento-11.webp"
-          alt="Depoimento de aluno do DNA dos Contratos"
+          alt="Depoimento DNA dos Contratos"
         >
 
       </figure>
@@ -2480,7 +2776,7 @@ footer {
         <img
           loading="lazy"
           src="assets/assets/depoimento-12.webp"
-          alt="Depoimento de aluno do DNA dos Contratos"
+          alt="Depoimento DNA dos Contratos"
         >
 
       </figure>
@@ -2492,7 +2788,7 @@ footer {
         <img
           loading="lazy"
           src="assets/assets/depoimento-13.webp"
-          alt="Depoimento de aluno do DNA dos Contratos"
+          alt="Depoimento DNA dos Contratos"
         >
 
       </figure>
@@ -2503,11 +2799,11 @@ footer {
 
     <p class="disclaimer">
 
-      Depoimentos representam experiências individuais
-      e não constituem promessa ou garantia
-      de resultado profissional ou financeiro.
+      Os relatos representam experiências individuais
+      dos alunos.
 
     </p>
+
 
   </div>
 
@@ -2515,9 +2811,9 @@ footer {
 
 
 
-<!-- ===================================
-     PARA QUEM É
-=================================== -->
+<!-- ==============================
+     PARA QUEM
+============================== -->
 
 <section class="para-quem">
 
@@ -2531,10 +2827,11 @@ footer {
 
     <h2>
 
-      O DNA faz sentido para quem reconhece
-      pelo menos uma dessas situações.
+      Para quem quer fazer dos contratos
+      uma atuação profissional de verdade.
 
     </h2>
+
 
 
     <div class="grid-quem">
@@ -2555,9 +2852,9 @@ footer {
 
         <p>
 
-          Você quer desenvolver um processo de análise
-          e deixar de depender apenas da sensação
-          de que alguma coisa parece errada.
+          Você quer desenvolver método de análise
+          e aprender a decidir o que precisa
+          entrar ou sair de um contrato.
 
         </p>
 
@@ -2568,20 +2865,20 @@ footer {
       <article class="card-quem">
 
         <span>
-          Autonomia
+          Estrutura
         </span>
 
         <h3>
 
-          “Eu dependo demais de modelos.”
+          “Eu ainda dependo demais de modelos.”
 
         </h3>
 
         <p>
 
-          Você quer entender a função das cláusulas
-          para adaptar, retirar, acrescentar
-          e justificar suas escolhas.
+          Você quer compreender a função das cláusulas
+          e construir documentos adequados
+          à operação concreta do cliente.
 
         </p>
 
@@ -2592,21 +2889,21 @@ footer {
       <article class="card-quem">
 
         <span>
-          Posicionamento
+          Honorários
         </span>
 
         <h3>
 
-          “Eu sei fazer,
-          mas não sei vender esse serviço.”
+          “Eu não sei quanto cobrar
+          por um trabalho contratual.”
 
         </h3>
 
         <p>
 
-          Você quer organizar proposta,
-          escopo, honorários
-          e a apresentação do serviço ao cliente.
+          Você quer aprender a estruturar
+          e precificar a entrega
+          sem reduzir o serviço ao número de páginas.
 
         </p>
 
@@ -2622,16 +2919,16 @@ footer {
 
         <h3>
 
-          “Quero uma fonte de receita
-          menos dependente do contencioso.”
+          “Quero construir receita
+          fora do contencioso.”
 
         </h3>
 
         <p>
 
           Você quer desenvolver elaboração,
-          revisão e acompanhamento contratual
-          como uma frente profissional do escritório.
+          revisão, análise e acompanhamento
+          de contratos como uma área do escritório.
 
         </p>
 
@@ -2640,28 +2937,27 @@ footer {
 
     </div>
 
+
   </div>
 
 </section>
 
 
 
-<!-- ===================================
+<!-- ==============================
      DANIELLA
-=================================== -->
+============================== -->
 
 <section class="daniella">
 
   <div class="container daniella-grid">
 
 
-    <!-- NOVA FOTO COM MICROFONE AZUL -->
-
     <div class="daniella-foto">
 
       <img
         src="assets/assets/daniella-microfone.png"
-        alt="Daniella Almada durante aula do DNA dos Contratos"
+        alt="Daniella Almada em aula"
       >
 
     </div>
@@ -2686,8 +2982,8 @@ footer {
 
       <p>
 
-        O DNA nasceu da prática de quem trabalha
-        com contratos e percebeu que a maior dificuldade
+        O DNA nasceu da prática de quem percebeu
+        que a maior dificuldade do advogado
         não está em encontrar uma cláusula na internet.
 
       </p>
@@ -2695,10 +2991,10 @@ footer {
 
       <p>
 
-        Está em saber quando ela faz sentido,
-        qual risco tenta resolver
-        e o que muda quando é inserida,
-        retirada ou negociada.
+        Está em saber quando aquela cláusula faz sentido,
+        qual risco ela tenta resolver,
+        como ela conversa com o restante do documento
+        e como tudo isso deve ser explicado ao cliente.
 
       </p>
 
@@ -2713,14 +3009,10 @@ footer {
           </strong>
 
           <span>
-
-            alunos já passaram
-            pelo DNA dos Contratos
-
+            alunos no DNA dos Contratos
           </span>
 
         </div>
-
 
 
         <div class="numero">
@@ -2730,10 +3022,7 @@ footer {
           </strong>
 
           <span>
-
-            técnica, negocial
-            e comercial
-
+            técnica, negocial e comercial
           </span>
 
         </div>
@@ -2751,9 +3040,9 @@ footer {
 
 
 
-<!-- ===================================
+<!-- ==============================
      OFERTA
-=================================== -->
+============================== -->
 
 <section
   class="oferta"
@@ -2765,9 +3054,11 @@ footer {
 
     <div class="oferta-texto">
 
+
       <p class="eyebrow">
         3ª turma
       </p>
+
 
       <h2>
 
@@ -2776,23 +3067,27 @@ footer {
 
       </h2>
 
-      <p>
-
-        Se você quer transformar contratos
-        em uma atuação mais técnica,
-        estratégica e comercialmente organizada,
-        a próxima etapa é entrar para a formação.
-
-      </p>
 
       <p>
 
-        Você terá tempo para estudar,
-        revisar e retornar ao material
-        conforme os casos surgirem
-        na sua prática.
+        Uma formação que começa
+        nos fundamentos dos contratos
+        e chega à estrutura,
+        interpretação, análise prática,
+        relacionamento com o cliente,
+        comercial e precificação.
 
       </p>
+
+
+      <p>
+
+        O objetivo é que você tenha repertório
+        para trabalhar com contratos
+        como uma área real da sua atuação profissional.
+
+      </p>
+
 
     </div>
 
@@ -2800,22 +3095,37 @@ footer {
 
     <aside class="oferta-card">
 
+
       <p>
         SUA INSCRIÇÃO INCLUI
       </p>
+
 
       <h3>
         DNA dos Contratos
       </h3>
 
+
       <ul>
 
         <li>
-          Formação completa
+          13 módulos principais
         </li>
 
         <li>
-          Aulas e análises contratuais
+          Formação técnica contratual
+        </li>
+
+        <li>
+          Módulo completo de estrutura dos contratos
+        </li>
+
+        <li>
+          Análises contratuais práticas
+        </li>
+
+        <li>
+          Comercial e precificação
         </li>
 
         <li>
@@ -2823,7 +3133,7 @@ footer {
         </li>
 
         <li>
-          Técnica + Negocial + Comercial
+          Bônus de Marketing Jurídico
         </li>
 
         <li>
@@ -2846,8 +3156,8 @@ footer {
 
       <p class="checkout-info">
 
-        O valor e as condições serão exibidos
-        no checkout da Hotmart.
+        O valor e as condições de pagamento
+        serão exibidos no checkout.
 
       </p>
 
@@ -2861,9 +3171,9 @@ footer {
 
 
 
-<!-- ===================================
+<!-- ==============================
      FAQ
-=================================== -->
+============================== -->
 
 <section class="faq">
 
@@ -2874,9 +3184,11 @@ footer {
       Dúvidas frequentes
     </p>
 
+
     <h2>
       Antes de entrar.
     </h2>
+
 
 
     <div class="faq-list">
@@ -2890,10 +3202,11 @@ footer {
 
         <p>
 
-          Não. A formação atende quem está começando
-          e também quem já elabora ou revisa contratos,
-          mas quer aprofundar a análise
-          e organizar melhor o próprio método.
+          Não.
+
+          A formação atende tanto quem está iniciando
+          quanto quem já elabora ou revisa contratos
+          e quer ampliar o repertório e a segurança na prática.
 
         </p>
 
@@ -2909,13 +3222,14 @@ footer {
 
         <p>
 
-          Sim. Mas os modelos são ferramentas de trabalho
-          e não substitutos da análise jurídica.
+          Sim.
 
-          O objetivo é que você saiba entender
-          por que determinada cláusula existe,
-          quando deve ser usada
-          e quando precisa ser modificada.
+          Existe um módulo próprio de modelos contratuais
+          e materiais de apoio.
+
+          Mas a proposta do DNA é que você saiba
+          compreender e adaptar o documento,
+          e não apenas preencher campos.
 
         </p>
 
@@ -2926,17 +3240,35 @@ footer {
       <details>
 
         <summary>
-          O curso é só sobre técnica jurídica?
+          Existe conteúdo de precificação?
         </summary>
 
         <p>
 
-          Não.
+          Sim.
 
-          O DNA foi estruturado em três dimensões:
-          técnica contratual,
-          visão negocial
-          e construção comercial.
+          O DNA possui um módulo específico de precificação,
+          além de conteúdo comercial e tratativas com o cliente.
+
+        </p>
+
+      </details>
+
+
+
+      <details>
+
+        <summary>
+          Há análises práticas de contratos?
+        </summary>
+
+        <p>
+
+          Sim.
+
+          O módulo de Análises Contratuais possui
+          17 conteúdos destinados à aplicação prática
+          do raciocínio desenvolvido ao longo da formação.
 
         </p>
 
@@ -2952,32 +3284,7 @@ footer {
 
         <p>
 
-          O acesso previsto
-          para esta turma é de 24 meses.
-
-        </p>
-
-      </details>
-
-
-
-      <details>
-
-        <summary>
-          O curso promete retorno financeiro?
-        </summary>
-
-        <p>
-
-          Não.
-
-          Os depoimentos apresentados mostram
-          experiências individuais de alunos.
-
-          Os resultados variam de acordo
-          com experiência, mercado,
-          aplicação do conteúdo
-          e outros fatores.
+          O acesso desta oferta é de 24 meses.
 
         </p>
 
@@ -2986,15 +3293,16 @@ footer {
 
     </div>
 
+
   </div>
 
 </section>
 
 
 
-<!-- ===================================
-     CTA FINAL
-=================================== -->
+<!-- ==============================
+     FINAL
+============================== -->
 
 <section class="final">
 
@@ -3045,10 +3353,6 @@ footer {
 
 
 
-<!-- ===================================
-     RODAPÉ
-=================================== -->
-
 <footer>
 
   <div class="container">
@@ -3065,10 +3369,6 @@ footer {
 </footer>
 
 
-
-<!-- ===================================
-     BOTÃO FLUTUANTE
-=================================== -->
 
 <div
   class="float"
@@ -3089,14 +3389,9 @@ footer {
 
 
 
-<!-- ===================================
-     AMPLIAÇÃO DOS DEPOIMENTOS
-=================================== -->
-
 <div
   class="lightbox"
   id="lightbox"
-  aria-hidden="true"
 >
 
   <button
@@ -3120,40 +3415,33 @@ footer {
 <script>
 
 
-/* ===================================
-   CHECKOUT DA HOTMART
-
-   Quando tivermos o link,
-   vamos colocar aqui.
-=================================== */
+/* ==============================
+   CHECKOUT
+============================== */
 
 const CHECKOUT_URL = "";
 
 
 
-/* ===================================
-   VÍDEO DO YOUTUBE
-=================================== */
+/* ==============================
+   VÍDEO
+============================== */
 
 const VIDEO_ID =
 "7bw6hv2zOcI";
 
 
 
-/* ===================================
-   ANO DO RODAPÉ
-=================================== */
+/* ANO */
 
 document
-  .getElementById("ano")
-  .textContent =
-  new Date().getFullYear();
+.getElementById("ano")
+.textContent =
+new Date().getFullYear();
 
 
 
-/* ===================================
-   BOTÕES DE CHECKOUT
-=================================== */
+/* CHECKOUT */
 
 document
 .querySelectorAll(
@@ -3164,7 +3452,7 @@ document
   if(
     CHECKOUT_URL
     .startsWith("http")
-  ) {
+  ){
 
     link.href =
       CHECKOUT_URL;
@@ -3181,9 +3469,7 @@ document
 
 
 
-/* ===================================
-   VÍDEO
-=================================== */
+/* VÍDEO */
 
 const videoStage =
 document.getElementById(
@@ -3191,12 +3477,12 @@ document.getElementById(
 );
 
 
-function playVideo() {
+function playVideo(){
 
   if(
     videoStage
     .querySelector("iframe")
-  ) {
+  ){
 
     return;
 
@@ -3240,7 +3526,7 @@ videoStage
       e.key === "Enter"
       ||
       e.key === " "
-    ) {
+    ){
 
       e.preventDefault();
 
@@ -3253,9 +3539,7 @@ videoStage
 
 
 
-/* ===================================
-   BOTÃO FIXO
-=================================== */
+/* BOTÃO FLUTUANTE */
 
 const float =
 document.getElementById(
@@ -3270,7 +3554,7 @@ window
 
     if(
       window.scrollY > 850
-    ) {
+    ){
 
       float
       .classList
@@ -3278,7 +3562,7 @@ window
 
     }
 
-    else {
+    else{
 
       float
       .classList
@@ -3291,9 +3575,7 @@ window
 
 
 
-/* ===================================
-   LIGHTBOX DOS STORIES
-=================================== */
+/* LIGHTBOX */
 
 const lightbox =
 document.getElementById(
@@ -3329,12 +3611,6 @@ document
       .classList
       .add("open");
 
-      lightbox
-      .setAttribute(
-        "aria-hidden",
-        "false"
-      );
-
       document
       .body
       .classList
@@ -3347,17 +3623,11 @@ document
 });
 
 
-function fecharLightbox() {
+function fecharLightbox(){
 
   lightbox
   .classList
   .remove("open");
-
-  lightbox
-  .setAttribute(
-    "aria-hidden",
-    "true"
-  );
 
   document
   .body
@@ -3383,7 +3653,7 @@ lightbox
 
     if(
       e.target === lightbox
-    ) {
+    ){
 
       fecharLightbox();
 
@@ -3400,7 +3670,7 @@ document
 
     if(
       e.key === "Escape"
-    ) {
+    ){
 
       fecharLightbox();
 
