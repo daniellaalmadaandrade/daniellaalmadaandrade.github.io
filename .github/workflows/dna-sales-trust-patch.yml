@@ -1,0 +1,326 @@
+name: DNA sales trust patch
+
+on:
+  push:
+    paths:
+      - '.github/workflows/dna-sales-trust-patch.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Patch DNA sales page
+        shell: bash
+        run: |
+          python3 <<'PY'
+          from pathlib import Path
+
+          path = Path('dna-dos-contratos.html')
+          html = path.read_text(encoding='utf-8')
+
+          css = r'''
+
+/* ==================================================
+   PAGAMENTO, GARANTIA E SEGURANÇA
+================================================== */
+
+.checkout-seguranca{
+  margin-top:30px;
+  padding:24px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:22px;
+  background:rgba(255,255,255,.045);
+}
+
+.checkout-seguranca.claro{
+  border-color:var(--linha);
+  background:#fff;
+  color:var(--preto);
+}
+
+.checkout-seguranca-titulo{
+  margin:0 0 17px;
+  font-size:.72rem;
+  font-weight:900;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.68);
+}
+
+.checkout-seguranca.claro .checkout-seguranca-titulo{
+  color:var(--malbec);
+}
+
+.checkout-seguranca-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+}
+
+.checkout-beneficio{
+  min-height:145px;
+  padding:18px;
+  border:1px solid rgba(255,255,255,.11);
+  border-radius:16px;
+  background:rgba(255,255,255,.045);
+}
+
+.checkout-seguranca.claro .checkout-beneficio{
+  border-color:var(--linha);
+  background:var(--creme);
+}
+
+.checkout-beneficio-icone{
+  display:block;
+  margin-bottom:9px;
+  font-size:1.25rem;
+}
+
+.checkout-beneficio strong{
+  display:block;
+  margin-bottom:7px;
+  font-size:.9rem;
+}
+
+.checkout-beneficio p{
+  margin:0;
+  color:rgba(255,255,255,.62);
+  font-size:.76rem;
+  line-height:1.45;
+}
+
+.checkout-seguranca.claro .checkout-beneficio p{
+  color:var(--cinza);
+}
+
+.bandeiras{
+  display:flex;
+  flex-wrap:wrap;
+  gap:5px;
+  margin-top:10px;
+}
+
+.bandeiras span{
+  display:inline-flex;
+  align-items:center;
+  min-height:25px;
+  padding:4px 8px;
+  border:1px solid rgba(255,255,255,.15);
+  border-radius:7px;
+  font-size:.58rem;
+  font-weight:900;
+  letter-spacing:.035em;
+}
+
+.checkout-seguranca.claro .bandeiras span{
+  border-color:var(--linha);
+  background:#fff;
+}
+
+.hotmart-seguro{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:7px;
+  margin:16px 0 0;
+  color:rgba(255,255,255,.43);
+  font-size:.66rem;
+  text-align:center;
+}
+
+.checkout-seguranca.claro .hotmart-seguro{
+  color:var(--cinza);
+}
+
+.depoimento-extra{
+  margin-top:15px;
+  padding:30px;
+  border:1px solid var(--linha);
+  border-radius:21px;
+  background:#faf8f4;
+}
+
+.depoimento-extra .quote-mark{
+  margin-bottom:16px;
+}
+
+.depoimento-extra blockquote{
+  max-width:920px;
+  margin:0 0 22px;
+  font-family:Georgia,serif;
+  font-size:1.45rem;
+  line-height:1.4;
+}
+
+.depoimento-extra small{
+  display:block;
+  padding-top:15px;
+  border-top:1px solid var(--linha);
+  color:var(--malbec);
+  font-size:.75rem;
+  font-weight:800;
+}
+
+@media(max-width:680px){
+  .checkout-seguranca{
+    margin-top:22px;
+    padding:16px;
+    border-radius:17px;
+  }
+
+  .checkout-seguranca-grid{
+    grid-template-columns:1fr;
+    gap:8px;
+  }
+
+  .checkout-beneficio{
+    min-height:0;
+    padding:15px;
+    border-radius:13px;
+  }
+
+  .checkout-beneficio p{
+    text-align:left !important;
+  }
+
+  .bandeiras{
+    gap:4px;
+  }
+
+  .bandeiras span{
+    font-size:.54rem;
+    padding:4px 7px;
+  }
+
+  .depoimento-extra{
+    margin-top:9px;
+    padding:21px;
+    border-radius:17px;
+  }
+
+  .depoimento-extra blockquote{
+    font-size:1.12rem;
+    line-height:1.42;
+    text-align:left !important;
+  }
+}
+'''
+
+          if 'PAGAMENTO, GARANTIA E SEGURANÇA' not in html:
+              html = html.replace('</style>', css + '\n</style>', 1)
+
+          trust_dark = r'''
+
+    <div class="checkout-seguranca">
+      <p class="checkout-seguranca-titulo">Pagamento seguro e flexível</p>
+
+      <div class="checkout-seguranca-grid">
+        <div class="checkout-beneficio">
+          <span class="checkout-beneficio-icone">💳</span>
+          <strong>Cartão em até 12x</strong>
+          <p>Escolha o parcelamento disponível no checkout.</p>
+          <div class="bandeiras">
+            <span>VISA</span><span>MASTERCARD</span><span>ELO</span><span>AMEX</span><span>HIPERCARD</span>
+          </div>
+        </div>
+
+        <div class="checkout-beneficio">
+          <span class="checkout-beneficio-icone">◆</span>
+          <strong>Pix e outras formas</strong>
+          <p>Pix, boleto, Apple Pay, NuPay, PayPal, dois cartões e outras opções exibidas pela Hotmart.</p>
+        </div>
+
+        <div class="checkout-beneficio">
+          <span class="checkout-beneficio-icone">✓</span>
+          <strong>7 dias de garantia</strong>
+          <p>Entre, conheça a formação e assista às primeiras aulas com tranquilidade. Dentro de 7 dias, você pode solicitar o reembolso pela Hotmart.</p>
+        </div>
+      </div>
+
+      <p class="hotmart-seguro">🔒 Pagamento processado com segurança pela Hotmart.</p>
+    </div>
+'''
+
+          if 'Pagamento seguro e flexível' not in html:
+              start = html.find('<section class="condicao">')
+              if start == -1:
+                  raise SystemExit('Seção condicao não encontrada')
+              end = html.find('</section>', start)
+              if end == -1:
+                  raise SystemExit('Fim da seção condicao não encontrado')
+              html = html[:end] + trust_dark + '\n' + html[end:]
+
+          trust_offer = r'''
+
+      <div class="checkout-seguranca">
+        <p class="checkout-seguranca-titulo">Compra protegida</p>
+
+        <div class="checkout-seguranca-grid">
+          <div class="checkout-beneficio">
+            <span class="checkout-beneficio-icone">💳</span>
+            <strong>Cartões aceitos</strong>
+            <p>Parcelamento disponível no checkout.</p>
+            <div class="bandeiras">
+              <span>VISA</span><span>MASTERCARD</span><span>ELO</span><span>AMEX</span><span>HIPERCARD</span>
+            </div>
+          </div>
+
+          <div class="checkout-beneficio">
+            <span class="checkout-beneficio-icone">◆</span>
+            <strong>Pix e outras opções</strong>
+            <p>Escolha a forma de pagamento que fizer mais sentido para você diretamente na Hotmart.</p>
+          </div>
+
+          <div class="checkout-beneficio">
+            <span class="checkout-beneficio-icone">✓</span>
+            <strong>Garantia de 7 dias</strong>
+            <p>Você tem 7 dias para conhecer o DNA dos Contratos e, se decidir não permanecer, solicitar o reembolso.</p>
+          </div>
+        </div>
+      </div>
+'''
+
+          if 'Compra protegida' not in html:
+              marker = '<p class="checkout-info">'
+              pos = html.find(marker)
+              if pos != -1:
+                  close = html.find('</p>', pos)
+                  html = html[:close+4] + trust_offer + html[close+4:]
+
+          extra = r'''
+
+    <article class="depoimento-extra">
+      <div class="quote-mark">“</div>
+      <blockquote>
+        Dani, acabei de assistir o módulo comercial. Quantos insights, quanta experiência compartilhada. Só esse módulo já pagaria o curso inteiro. Já comprei vários cursos e nenhum foi tão claro como o seu. Grata!!!
+      </blockquote>
+      <small>Mensagem recebida de aluna do DNA dos Contratos</small>
+    </article>
+'''
+
+          if 'Só esse módulo já pagaria o curso inteiro' not in html:
+              marker = '<!-- MAIS TRÊS DEPOIMENTOS REAIS EM IMAGEM -->'
+              idx = html.find(marker)
+              if idx == -1:
+                  marker = '<!-- ==================================================\n     CTA APÓS PROVAS'
+                  idx = html.find(marker)
+              if idx == -1:
+                  raise SystemExit('Ponto de inserção do depoimento não encontrado')
+              html = html[:idx] + extra + '\n\n' + html[idx:]
+
+          path.write_text(html, encoding='utf-8')
+          PY
+
+      - name: Commit changes
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dna-dos-contratos.html
+          git diff --cached --quiet || git commit -m "Add payment methods, 7-day guarantee and testimonial"
+          git push
