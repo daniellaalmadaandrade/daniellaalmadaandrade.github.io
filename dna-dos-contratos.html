@@ -4,944 +4,2196 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#090909">
 
-<title>DNA dos Contratos | 3ª Turma</title>
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+>
+
+<meta
+  name="theme-color"
+  content="#090909"
+>
+
+<title>
+DNA dos Contratos | 3ª Turma
+</title>
 
 <meta
   name="description"
-  content="DNA dos Contratos. Formação em contratos para advogados que querem desenvolver técnica contratual, visão negocial, precificação e atuação consultiva."
+  content="DNA dos Contratos. Formação para advogados que querem desenvolver técnica contratual, atuação consultiva, precificação e visão de negócio."
 >
+
 
 <style>
 
 :root{
+
   --preto:#090909;
   --preto2:#151515;
+
   --branco:#ffffff;
+
   --creme:#f4efe7;
   --creme2:#eae1d5;
-  --malbec:#67162f;
-  --malbec2:#470d20;
-  --cinza:#6d6863;
+
+  --malbec:#721632;
+  --malbec2:#4d0d21;
+
+  --cinza:#716b66;
+
   --linha:rgba(9,9,9,.12);
+
   --max:1180px;
+
 }
+
 
 *{
   box-sizing:border-box;
 }
 
+
 html{
   scroll-behavior:smooth;
 }
 
+
 body{
+
   margin:0;
+
   background:var(--creme);
+
   color:var(--preto);
-  font-family:Arial,Helvetica,sans-serif;
-  line-height:1.65;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  line-height:1.6;
+
   -webkit-font-smoothing:antialiased;
+
 }
+
 
 body.no-scroll{
   overflow:hidden;
 }
 
+
 img{
+
   display:block;
+
   max-width:100%;
+
 }
 
+
 a{
+
   color:inherit;
+
   text-decoration:none;
+
 }
+
 
 button{
   font:inherit;
 }
 
+
 .container{
-  width:min(calc(100% - 40px),var(--max));
+
+  width:min(
+    calc(100% - 40px),
+    var(--max)
+  );
+
   margin:auto;
+
 }
+
 
 h1,
 h2,
 h3{
-  font-family:Georgia,"Times New Roman",serif;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
   font-weight:500;
-  line-height:1.04;
+
   letter-spacing:-.035em;
+
   margin-top:0;
+
 }
+
 
 h1{
-  font-size:clamp(3.2rem,6.5vw,6.4rem);
-  max-width:900px;
-  margin-bottom:24px;
+
+  font-size:
+    clamp(
+      3.3rem,
+      6.4vw,
+      6.2rem
+    );
+
+  line-height:.98;
+
+  margin-bottom:25px;
+
 }
+
 
 h2{
-  font-size:clamp(2.4rem,4.8vw,4.7rem);
-  max-width:900px;
+
+  font-size:
+    clamp(
+      2.4rem,
+      4.7vw,
+      4.6rem
+    );
+
+  line-height:1.02;
+
   margin-bottom:24px;
+
 }
 
+
 h3{
-  font-size:clamp(1.45rem,2.3vw,2rem);
-  margin-bottom:12px;
+
+  font-size:
+    clamp(
+      1.45rem,
+      2.4vw,
+      2.1rem
+    );
+
+  line-height:1.08;
+
 }
+
 
 p{
   margin-top:0;
 }
 
-.eyebrow{
-  display:inline-flex;
-  align-items:center;
-  gap:9px;
-  margin-bottom:18px;
-  font-size:.75rem;
-  font-weight:900;
-  letter-spacing:.15em;
-  text-transform:uppercase;
-}
-
-.eyebrow::before{
-  content:"";
-  width:7px;
-  height:7px;
-  border-radius:50%;
-  background:currentColor;
-}
-
-.lead{
-  max-width:760px;
-  font-size:clamp(1.05rem,1.8vw,1.3rem);
-  color:rgba(255,255,255,.74);
-}
-
-.btn{
-  display:inline-flex !important;
-  align-items:center !important;
-  justify-content:center !important;
-  gap:9px !important;
-
-  min-height:58px !important;
-  padding:16px 27px !important;
-
-  border-radius:999px !important;
-  border:1px solid transparent !important;
-
-  font-family:Arial,Helvetica,sans-serif !important;
-  font-size:.78rem !important;
-  font-weight:900 !important;
-  letter-spacing:.08em !important;
-  text-transform:uppercase !important;
-  text-align:center !important;
-  text-decoration:none !important;
-
-  cursor:pointer !important;
-
-  transition:.2s !important;
-}
-
-.btn:hover{
-  transform:translateY(-2px);
-}
-
-.btn-malbec{
-  background:#67162f !important;
-  color:#ffffff !important;
-  -webkit-text-fill-color:#ffffff !important;
-}
-
-.btn-branco{
-  background:#ffffff !important;
-  color:#090909 !important;
-  -webkit-text-fill-color:#090909 !important;
-}
-
-
-/* CABEÇALHO */
-
-.topo{
-  position:absolute;
-  z-index:50;
-  width:100%;
-  padding:18px 0;
-  color:#fff;
-}
-
-.topo-inner{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
-}
-
-.logo{
-  width:230px;
-  height:110px;
-  display:flex;
-  align-items:center;
-  flex:none;
-}
-
-.logo img{
-  width:100%;
-  height:100%;
-  object-fit:contain;
-  object-position:left center;
-  mix-blend-mode:screen;
-  filter:brightness(1.12) contrast(1.22);
-}
-
-.status{
-  font-size:.7rem;
-  font-weight:900;
-  letter-spacing:.12em;
-  text-transform:uppercase;
-  color:rgba(255,255,255,.78);
-}
-
-
-/* HERO */
-
-.hero{
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  padding:155px 0 85px;
-  color:#fff;
-
-  background:
-    radial-gradient(
-      circle at 88% 15%,
-      rgba(103,22,47,.68),
-      transparent 30%
-    ),
-    linear-gradient(
-      130deg,
-      #070707,
-      #111 62%,
-      #260b16
-    );
-
-  overflow:hidden;
-}
-
-.hero-grid{
-  display:grid;
-  grid-template-columns:1.12fr .88fr;
-  gap:70px;
-  align-items:center;
-}
-
-.hero-actions{
-  display:flex;
-  flex-wrap:wrap;
-  gap:13px;
-  margin-top:34px;
-}
-
-.hero-note{
-  max-width:610px;
-  margin-top:18px;
-  color:rgba(255,255,255,.5);
-  font-size:.84rem;
-}
-
-.hero-photo-wrap{
-  position:relative;
-}
-
-.hero-photo{
-  overflow:hidden;
-  aspect-ratio:4/5;
-  border-radius:30px 30px 100px 30px;
-  background:#222;
-  box-shadow:0 30px 90px rgba(0,0,0,.35);
-}
-
-.hero-photo img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  object-position:61% 58%;
-}
-
-.hero-badge{
-  position:absolute;
-  left:-30px;
-  bottom:32px;
-
-  max-width:240px;
-
-  padding:18px 20px;
-
-  border-radius:18px;
-
-  background:rgba(244,239,231,.97);
-
-  color:#111;
-
-  box-shadow:0 18px 50px rgba(0,0,0,.25);
-}
-
-.hero-badge strong{
-  display:block;
-  font-family:Georgia,serif;
-  font-size:2rem;
-  font-weight:500;
-  line-height:1;
-  margin-bottom:6px;
-}
-
-.hero-badge span{
-  color:#625c57;
-  font-size:.8rem;
-}
 
 section{
   padding:105px 0;
 }
 
 
-/* VÍDEO */
+/* ==============================
+   UTILITÁRIOS
+============================== */
+
+
+.eyebrow{
+
+  display:inline-flex;
+
+  align-items:center;
+
+  gap:9px;
+
+  margin-bottom:18px;
+
+  font-size:.73rem;
+
+  font-weight:900;
+
+  letter-spacing:.15em;
+
+  text-transform:uppercase;
+
+}
+
+
+.eyebrow::before{
+
+  content:"";
+
+  width:7px;
+
+  height:7px;
+
+  border-radius:50%;
+
+  background:currentColor;
+
+}
+
+
+.btn{
+
+  display:inline-flex !important;
+
+  align-items:center !important;
+
+  justify-content:center !important;
+
+  min-height:58px !important;
+
+  padding:16px 27px !important;
+
+  border-radius:999px !important;
+
+  border:1px solid transparent !important;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif !important;
+
+  font-size:.77rem !important;
+
+  font-weight:900 !important;
+
+  letter-spacing:.07em !important;
+
+  text-transform:uppercase !important;
+
+  text-align:center !important;
+
+  cursor:pointer !important;
+
+  transition:.2s !important;
+
+}
+
+
+.btn:hover{
+  transform:translateY(-2px);
+}
+
+
+.btn-malbec{
+
+  background:var(--malbec) !important;
+
+  color:#fff !important;
+
+  -webkit-text-fill-color:#fff !important;
+
+}
+
+
+.btn-malbec:hover{
+  background:var(--malbec2) !important;
+}
+
+
+.btn-branco{
+
+  background:#fff !important;
+
+  color:#090909 !important;
+
+  -webkit-text-fill-color:#090909 !important;
+
+}
+
+
+.btn-outline{
+
+  background:transparent !important;
+
+  color:#fff !important;
+
+  border-color:
+    rgba(
+      255,
+      255,
+      255,
+      .3
+    ) !important;
+
+}
+
+
+
+/* ==============================
+   HEADER
+============================== */
+
+
+.topo{
+
+  position:absolute;
+
+  z-index:30;
+
+  top:0;
+
+  left:0;
+
+  width:100%;
+
+  padding:15px 0;
+
+  color:#fff;
+
+}
+
+
+.topo-inner{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:
+    space-between;
+
+  gap:20px;
+
+}
+
+
+.logo{
+
+  width:235px;
+
+  height:110px;
+
+  display:flex;
+
+  align-items:center;
+
+}
+
+
+.logo img{
+
+  width:100%;
+
+  height:100%;
+
+  object-fit:contain;
+
+  object-position:
+    left center;
+
+  mix-blend-mode:screen;
+
+  filter:
+    brightness(1.12)
+    contrast(1.22);
+
+}
+
+
+.top-status{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:8px;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      .77
+    );
+
+  font-size:.66rem;
+
+  font-weight:900;
+
+  letter-spacing:.12em;
+
+  text-transform:uppercase;
+
+}
+
+
+.top-status::before{
+
+  content:"";
+
+  width:7px;
+
+  height:7px;
+
+  border-radius:50%;
+
+  background:#fff;
+
+}
+
+
+
+/* ==============================
+   HERO NOVO
+============================== */
+
+
+.hero{
+
+  min-height:100vh;
+
+  padding:
+    150px
+    0
+    85px;
+
+  display:flex;
+
+  align-items:center;
+
+  color:#fff;
+
+  background:
+
+    radial-gradient(
+      circle at 86% 18%,
+      rgba(114,22,50,.68),
+      transparent 32%
+    ),
+
+    radial-gradient(
+      circle at 30% 100%,
+      rgba(74,10,30,.36),
+      transparent 37%
+    ),
+
+    linear-gradient(
+      135deg,
+      #060606,
+      #0c0c0c 56%,
+      #280913
+    );
+
+  overflow:hidden;
+
+}
+
+
+.hero-grid{
+
+  display:grid;
+
+  grid-template-columns:
+    1.12fr
+    .88fr;
+
+  gap:65px;
+
+  align-items:center;
+
+}
+
+
+.hero h1{
+
+  max-width:760px;
+
+}
+
+
+.hero .eyebrow{
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      .84
+    );
+
+}
+
+
+.hero-lead{
+
+  max-width:700px;
+
+  margin-bottom:0;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      .78
+    );
+
+  font-size:
+    clamp(
+      1.05rem,
+      1.8vw,
+      1.28rem
+    );
+
+}
+
+
+.hero-lead strong{
+  color:#fff;
+}
+
+
+.hero-actions{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:12px;
+
+  margin-top:30px;
+
+}
+
+
+.hero-mini{
+
+  max-width:610px;
+
+  margin-top:17px;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      .48
+    );
+
+  font-size:.82rem;
+
+}
+
+
+.hero-side{
+
+  position:relative;
+
+}
+
+
+.hero-photo{
+
+  position:relative;
+
+  overflow:hidden;
+
+  aspect-ratio:4/5;
+
+  border-radius:
+    28px
+    28px
+    82px
+    28px;
+
+  background:#111;
+
+  box-shadow:
+    0
+    35px
+    90px
+    rgba(0,0,0,.36);
+
+}
+
+
+.hero-photo img{
+
+  width:100%;
+
+  height:100%;
+
+  object-fit:cover;
+
+  object-position:
+    62%
+    56%;
+
+}
+
+
+.hero-photo::after{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+
+    linear-gradient(
+      to top,
+      rgba(0,0,0,.31),
+      transparent 38%
+    );
+
+}
+
+
+.hero-badge{
+
+  position:absolute;
+
+  z-index:4;
+
+  left:-25px;
+
+  bottom:26px;
+
+  max-width:235px;
+
+  padding:
+    18px
+    21px;
+
+  border-radius:18px;
+
+  background:
+    rgba(
+      244,
+      239,
+      231,
+      .97
+    );
+
+  color:#111;
+
+  box-shadow:
+    0
+    18px
+    50px
+    rgba(0,0,0,.26);
+
+}
+
+
+.hero-badge strong{
+
+  display:block;
+
+  margin-bottom:5px;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size:2rem;
+
+  font-weight:500;
+
+  line-height:1;
+
+}
+
+
+.hero-badge span{
+
+  font-size:.78rem;
+
+  color:#655e58;
+
+}
+
+
+
+/* ==============================
+   PREÇO IMEDIATO
+============================== */
+
+
+.preco-hero{
+
+  background:#111;
+
+  color:#fff;
+
+  padding:42px 0;
+
+  border-top:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      .07
+    );
+
+}
+
+
+.preco-hero-grid{
+
+  display:grid;
+
+  grid-template-columns:
+    .8fr
+    1.2fr;
+
+  gap:50px;
+
+  align-items:center;
+
+}
+
+
+.preco-copy small{
+
+  display:block;
+
+  margin-bottom:8px;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      .5
+    );
+
+  font-size:.7rem;
+
+  font-weight:900;
+
+  letter-spacing:.12em;
+
+  text-transform:uppercase;
+
+}
+
+
+.preco-antigo{
+
+  margin:0 0 4px;
+
+  color:#dc514e;
+
+  font-size:
+    clamp(
+      1.15rem,
+      2vw,
+      1.45rem
+    );
+
+  font-weight:800;
+
+  text-decoration:
+    line-through;
+
+}
+
+
+.preco-parcelado{
+
+  margin:0;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size:
+    clamp(
+      2.8rem,
+      5vw,
+      4.8rem
+    );
+
+  line-height:1;
+
+  color:#fff;
+
+}
+
+
+.preco-parcelado strong{
+
+  color:#fff;
+
+}
+
+
+.preco-copy .mensalidade{
+
+  margin:
+    14px
+    0
+    0;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      .7
+    );
+
+  font-size:.93rem;
+
+}
+
+
+.preco-copy .mensalidade strong{
+  color:#fff;
+}
+
+
+.preco-cta{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:flex-end;
+
+}
+
+
+.preco-cta .btn{
+
+  min-width:340px;
+
+}
+
+
+.obs-preco{
+
+  margin:
+    12px
+    0
+    0;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      .38
+    );
+
+  font-size:.67rem;
+
+}
+
+
+
+/* ==============================
+   DOR
+============================== */
+
+
+.dor{
+
+  background:#fff;
+
+}
+
+
+.dor-grid{
+
+  display:grid;
+
+  grid-template-columns:
+    .8fr
+    1.2fr;
+
+  gap:80px;
+
+  align-items:start;
+
+}
+
+
+.dor h2{
+
+  position:sticky;
+
+  top:35px;
+
+}
+
+
+.dor-texto{
+
+  max-width:660px;
+
+}
+
+
+.dor-destaque{
+
+  margin-bottom:30px;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size:
+    clamp(
+      2rem,
+      3.7vw,
+      3.65rem
+    );
+
+  line-height:1.1;
+
+}
+
+
+.dor-texto > p:not(.dor-destaque){
+
+  color:var(--cinza);
+
+  font-size:1.05rem;
+
+}
+
+
+.dor-lista{
+
+  margin-top:36px;
+
+  border-top:
+    1px solid
+    var(--linha);
+
+}
+
+
+.dor-item{
+
+  display:grid;
+
+  grid-template-columns:
+    42px
+    1fr;
+
+  gap:18px;
+
+  padding:
+    22px
+    0;
+
+  border-bottom:
+    1px solid
+    var(--linha);
+
+}
+
+
+.dor-item b{
+
+  color:var(--malbec);
+
+  font-size:.72rem;
+
+}
+
+
+.dor-item span{
+  color:#45413d;
+}
+
+
+
+/* ==============================
+   SOLUÇÃO
+============================== */
+
+
+.solucao{
+
+  background:var(--creme);
+
+}
+
+
+.solucao-grid{
+
+  display:grid;
+
+  grid-template-columns:
+    .9fr
+    1.1fr;
+
+  gap:80px;
+
+}
+
+
+.solucao-grande{
+
+  margin-bottom:30px;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size:
+    clamp(
+      2.1rem,
+      4vw,
+      3.8rem
+    );
+
+  line-height:1.08;
+
+}
+
+
+.solucao-texto > p:not(.solucao-grande){
+
+  color:var(--cinza);
+
+  font-size:1.04rem;
+
+}
+
+
+.solucao-lista{
+
+  margin-top:35px;
+
+  border-top:
+    1px solid
+    var(--linha);
+
+}
+
+
+.solucao-item{
+
+  display:grid;
+
+  grid-template-columns:
+    45px
+    1fr;
+
+  gap:16px;
+
+  padding:
+    21px
+    0;
+
+  border-bottom:
+    1px solid
+    var(--linha);
+
+}
+
+
+.solucao-item b{
+
+  color:var(--malbec);
+
+  font-size:.72rem;
+
+}
+
+
+
+/* ==============================
+   VÍDEO
+============================== */
+
 
 .video-section{
-  background:var(--creme);
+
+  background:var(--preto);
+
+  color:#fff;
+
 }
 
-.video-intro{
-  max-width:760px;
-  margin-bottom:40px;
+
+.video-header{
+
+  display:grid;
+
+  grid-template-columns:
+    1fr
+    .8fr;
+
+  gap:60px;
+
+  align-items:end;
+
+  margin-bottom:38px;
+
 }
 
-.video-intro h2{
-  margin-bottom:0;
+
+.video-header p{
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      .64
+    );
+
 }
+
 
 .video-box{
-  padding:12px;
-  border-radius:30px;
-  background:var(--creme2);
-  border:1px solid var(--linha);
-  box-shadow:0 25px 70px rgba(0,0,0,.15);
+
+  padding:11px;
+
+  border-radius:28px;
+
+  background:#211d1e;
+
+  border:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      .1
+    );
+
+  box-shadow:
+    0
+    30px
+    75px
+    rgba(0,0,0,.32);
+
 }
+
 
 .video-stage{
+
   position:relative;
+
   overflow:hidden;
+
   aspect-ratio:16/9;
-  border-radius:20px;
+
+  border-radius:18px;
+
   background:#000;
+
   cursor:pointer;
+
 }
+
 
 .video-stage img{
+
   width:100%;
+
   height:100%;
+
   object-fit:cover;
+
 }
 
-.play{
-  position:absolute;
-  z-index:4;
-  left:50%;
-  top:50%;
-  transform:translate(-50%,-50%);
 
-  width:90px;
-  height:90px;
+.play{
+
+  position:absolute;
+
+  z-index:4;
+
+  left:50%;
+
+  top:50%;
+
+  transform:
+    translate(
+      -50%,
+      -50%
+    );
+
+  width:88px;
+
+  height:88px;
 
   border-radius:50%;
 
   display:grid;
+
   place-items:center;
 
-  background:rgba(103,22,47,.96);
+  background:
+    rgba(
+      114,
+      22,
+      50,
+      .96
+    );
 
   color:#fff;
+
   font-size:2rem;
 
-  box-shadow:0 16px 40px rgba(0,0,0,.35);
+  box-shadow:
+    0
+    15px
+    45px
+    rgba(0,0,0,.4);
+
 }
+
 
 .video-stage iframe{
+
   position:absolute;
+
   inset:0;
+
   width:100%;
+
   height:100%;
+
   border:0;
+
   z-index:5;
+
 }
 
 
-/* RELATOS */
+
+/* ==============================
+   RELATOS
+============================== */
+
 
 .relatos{
   background:#fff;
 }
 
-.relatos-head{
-  margin-bottom:42px;
-}
-
-.relatos-head h2{
-  max-width:800px;
-}
 
 .quotes{
+
   display:grid;
-  grid-template-columns:repeat(3,1fr);
+
+  grid-template-columns:
+    repeat(
+      3,
+      1fr
+    );
+
   gap:16px;
+
+  margin-top:40px;
+
 }
+
 
 .quote{
+
   min-height:310px;
+
   padding:30px;
-  border:1px solid var(--linha);
-  border-radius:22px;
+
   background:#faf8f4;
 
+  border:
+    1px solid
+    var(--linha);
+
+  border-radius:22px;
+
   display:flex;
+
   flex-direction:column;
-  justify-content:space-between;
+
+  justify-content:
+    space-between;
+
 }
+
 
 .quote-mark{
-  font-family:Georgia,serif;
-  font-size:4rem;
+
   color:var(--malbec);
-  line-height:.8;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size:4rem;
+
+  line-height:.7;
+
 }
+
 
 .quote blockquote{
-  margin:26px 0 25px;
 
-  font-family:Georgia,serif;
-  font-size:1.38rem;
-  line-height:1.35;
+  margin:
+    25px
+    0;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size:1.34rem;
+
+  line-height:1.36;
+
 }
+
 
 .quote small{
-  border-top:1px solid var(--linha);
-  padding-top:17px;
+
+  border-top:
+    1px solid
+    var(--linha);
+
+  padding-top:15px;
+
   color:var(--cinza);
-  font-size:.78rem;
+
   font-weight:800;
+
+  font-size:.77rem;
+
 }
 
-.quote small strong{
+
+.quote strong{
   color:var(--malbec);
 }
 
 
-/* CONTENCIOSO */
 
-.realidade{
-  background:var(--preto);
-  color:#fff;
-}
+/* ==============================
+   PILARES
+============================== */
 
-.realidade-grid{
-  display:grid;
-  grid-template-columns:.9fr 1.1fr;
-  gap:80px;
-  align-items:start;
-}
-
-.realidade h2{
-  max-width:690px;
-}
-
-.realidade-texto{
-  max-width:650px;
-}
-
-.realidade-texto > p{
-  color:rgba(255,255,255,.68);
-  font-size:1.08rem;
-}
-
-.realidade-frase{
-  font-family:Georgia,"Times New Roman",serif;
-  font-size:clamp(2rem,3.7vw,3.65rem) !important;
-  line-height:1.1 !important;
-  color:#fff !important;
-  margin-bottom:30px;
-}
-
-.realidade-lista{
-  margin-top:38px;
-  border-top:1px solid rgba(255,255,255,.15);
-}
-
-.realidade-item{
-  display:grid;
-  grid-template-columns:45px 1fr;
-  gap:18px;
-
-  padding:22px 0;
-
-  border-bottom:1px solid rgba(255,255,255,.13);
-}
-
-.realidade-item b{
-  color:rgba(255,255,255,.4);
-  font-size:.72rem;
-}
-
-.realidade-item span{
-  color:rgba(255,255,255,.78);
-}
-
-
-/* CONSULTIVO */
-
-.consultivo{
-  background:var(--creme);
-}
-
-.consultivo-grid{
-  display:grid;
-  grid-template-columns:.85fr 1.15fr;
-  gap:80px;
-}
-
-.consultivo-texto p{
-  color:var(--cinza);
-  font-size:1.05rem;
-}
-
-.frase-grande{
-  color:var(--preto) !important;
-  font-family:Georgia,serif;
-  font-size:clamp(2.1rem,4vw,4rem) !important;
-  line-height:1.1;
-}
-
-.consultivo-list{
-  margin-top:36px;
-  border-top:1px solid var(--linha);
-}
-
-.consultivo-item{
-  display:grid;
-  grid-template-columns:55px 1fr;
-  gap:20px;
-
-  padding:23px 0;
-
-  border-bottom:1px solid var(--linha);
-}
-
-.consultivo-item b{
-  color:var(--malbec);
-  font-size:.72rem;
-}
-
-.consultivo-item span{
-  color:var(--cinza);
-}
-
-
-/* PILARES */
 
 .metodo{
-  background:#fff;
+
+  background:var(--creme);
+
 }
 
-.intro{
-  max-width:760px;
+
+.metodo-intro{
+
+  max-width:780px;
+
+  margin-bottom:40px;
+
   color:var(--cinza);
-  font-size:1.05rem;
-  margin-bottom:42px;
+
 }
+
 
 .pilares{
+
   display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:17px;
+
+  grid-template-columns:
+    repeat(
+      3,
+      1fr
+    );
+
+  gap:16px;
+
 }
+
 
 .pilar{
-  padding:30px;
 
-  border:1px solid var(--linha);
-  border-radius:24px;
+  padding:29px;
 
-  background:#faf8f4;
+  background:#fff;
 
-  display:flex;
-  flex-direction:column;
-  gap:28px;
+  border:
+    1px solid
+    var(--linha);
+
+  border-radius:23px;
+
 }
 
-.pilar-num{
-  width:46px;
-  height:46px;
 
-  flex:none;
+.pilar-num{
+
+  width:44px;
+
+  height:44px;
 
   display:grid;
+
   place-items:center;
+
+  margin-bottom:27px;
+
+  border:
+    1px solid
+    var(--linha);
 
   border-radius:50%;
 
-  border:1px solid var(--linha);
+  color:var(--malbec);
 
   font-weight:900;
-  font-size:.74rem;
-  color:var(--malbec);
+
+  font-size:.72rem;
+
 }
 
-.pilar-conteudo h3{
-  margin-bottom:14px;
-}
 
-.pilar-conteudo p{
+.pilar p{
+
+  margin-bottom:0;
+
   color:var(--cinza);
-  margin:0;
+
 }
 
 
-/* MÓDULOS */
+
+/* ==============================
+   MÓDULOS
+============================== */
+
 
 .conteudo{
-  background:var(--creme);
+  background:#fff;
 }
 
-.modulos-intro{
+
+.modulos-head{
+
   display:grid;
-  grid-template-columns:1fr 1fr;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
   gap:60px;
+
   align-items:end;
-  margin-bottom:45px;
+
+  margin-bottom:40px;
+
 }
 
-.modulos-intro p{
+
+.modulos-head p{
+
   color:var(--cinza);
-  font-size:1.04rem;
+
 }
+
 
 .lista-modulos{
-  border-top:1px solid #111;
+
+  border-top:
+    1px solid
+    #111;
+
 }
+
 
 .modulo{
+
   display:grid;
-  grid-template-columns:75px minmax(250px,.9fr) 1.3fr;
-  gap:28px;
-  align-items:start;
 
-  padding:27px 0;
+  grid-template-columns:
+    70px
+    .9fr
+    1.2fr;
 
-  border-bottom:1px solid var(--linha);
+  gap:25px;
+
+  padding:
+    25px
+    0;
+
+  border-bottom:
+    1px solid
+    var(--linha);
+
 }
+
 
 .modulo-num{
-  font-size:.73rem;
-  font-weight:900;
+
   color:var(--malbec);
-  letter-spacing:.1em;
+
+  font-size:.72rem;
+
+  font-weight:900;
+
+  letter-spacing:.08em;
+
 }
+
 
 .modulo h3{
+
   margin:0;
-  font-size:clamp(1.3rem,2vw,1.75rem);
+
+  font-size:
+    clamp(
+      1.3rem,
+      2vw,
+      1.72rem
+    );
+
 }
+
 
 .modulo p{
+
   margin:0;
+
   color:var(--cinza);
+
 }
+
 
 .modulo-destaque{
-  margin:26px 0;
-  padding:34px;
 
   display:grid;
-  grid-template-columns:.8fr 1.2fr;
-  gap:42px;
+
+  grid-template-columns:
+    .8fr
+    1.2fr;
+
+  gap:40px;
+
   align-items:center;
 
+  margin:
+    24px
+    0;
+
+  padding:33px;
+
+  border-radius:23px;
+
   background:var(--malbec);
+
   color:#fff;
 
-  border-radius:24px;
 }
 
-.modulo-destaque h3{
-  font-size:clamp(2rem,3.4vw,3.2rem);
-  margin:0;
-}
 
 .modulo-destaque p{
-  color:rgba(255,255,255,.8);
+
   margin:0;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      .77
+    );
+
 }
 
 
-/* MENSAGENS */
+
+/* ==============================
+   MENSAGENS
+============================== */
+
 
 .mensagens{
-  background:linear-gradient(180deg,#68152f,#480b1e);
+
+  background:
+    linear-gradient(
+      180deg,
+      #721632,
+      #470b20
+    );
+
   color:#fff;
+
 }
+
 
 .mensagens-head{
+
   max-width:800px;
+
   margin-bottom:40px;
+
 }
+
 
 .mensagens-head p{
-  color:rgba(255,255,255,.72);
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      .7
+    );
+
 }
+
 
 .story-grid{
-  columns:4 240px;
+
+  columns:
+    4
+    240px;
+
   column-gap:14px;
+
 }
 
+
 .story{
-  margin:0 0 14px;
+
+  margin:
+    0
+    0
+    14px;
 
   break-inside:avoid;
 
   overflow:hidden;
 
-  border-radius:18px;
+  border-radius:16px;
 
   background:#fff;
 
   cursor:zoom-in;
 
-  transition:.2s;
 }
 
-.story:hover{
-  transform:translateY(-3px);
-}
 
 .story img{
+
   width:100%;
+
   height:auto;
+
 }
 
 
-/* IDENTIFICAÇÃO */
+
+/* ==============================
+   PARA QUEM
+============================== */
+
 
 .para-quem{
+
   background:var(--creme);
+
 }
+
 
 .para-quem-intro{
-  max-width:930px;
-  margin-bottom:44px;
+
+  max-width:920px;
+
+  margin-bottom:40px;
+
 }
 
-.para-quem-intro h2{
-  max-width:930px;
-}
 
 .para-quem-intro p{
   color:var(--cinza);
-  font-size:1.08rem;
-  max-width:700px;
 }
+
 
 .grid-quem{
+
   display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:16px;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  gap:15px;
+
 }
+
 
 .card-quem{
-  padding:30px;
 
-  border:1px solid var(--linha);
-  border-radius:20px;
+  padding:29px;
 
   background:#fff;
+
+  border:
+    1px solid
+    var(--linha);
+
+  border-radius:20px;
+
 }
 
+
 .card-quem span{
+
   display:block;
-  margin-bottom:14px;
+
+  margin-bottom:13px;
 
   color:var(--malbec);
 
-  font-size:.72rem;
+  font-size:.7rem;
+
   font-weight:900;
+
   letter-spacing:.1em;
+
   text-transform:uppercase;
+
 }
 
-.card-quem h3{
-  margin-bottom:14px;
-}
 
 .card-quem p{
+
   margin-bottom:0;
+
   color:var(--cinza);
+
 }
 
 
-/* DANIELLA */
+
+/* ==============================
+   DANIELLA
+============================== */
+
 
 .apresentacao{
   background:#fff;
 }
 
+
 .apresentacao-grid{
+
   display:grid;
-  grid-template-columns:.95fr 1.05fr;
+
+  grid-template-columns:
+    .95fr
+    1.05fr;
+
   gap:70px;
+
   align-items:center;
+
 }
 
+
 .apresentacao-foto{
+
   overflow:hidden;
 
   aspect-ratio:16/10;
 
-  border-radius:26px;
+  border-radius:25px;
 
-  background:#1a1a1a;
+  box-shadow:
+    0
+    24px
+    65px
+    rgba(0,0,0,.13);
 
-  box-shadow:0 22px 60px rgba(0,0,0,.13);
 }
 
+
 .apresentacao-foto img{
+
   width:100%;
+
   height:100%;
 
   object-fit:cover;
-  object-position:center;
+
 }
+
 
 .apresentacao-texto p{
+
   color:var(--cinza);
-  font-size:1.04rem;
+
 }
+
 
 .numeros{
+
   display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:13px;
-  margin-top:32px;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  gap:12px;
+
+  margin-top:28px;
+
 }
 
+
 .numero{
-  padding:22px;
+
+  padding:21px;
 
   background:var(--creme);
 
-  border:1px solid var(--linha);
-  border-radius:18px;
+  border:
+    1px solid
+    var(--linha);
+
+  border-radius:17px;
+
 }
+
 
 .numero strong{
+
   display:block;
 
-  font-family:Georgia,serif;
+  font-family:
+    Georgia,
+    serif;
 
-  font-size:2rem;
+  font-size:1.9rem;
+
   font-weight:500;
+
 }
+
 
 .numero span{
+
   color:var(--cinza);
-  font-size:.78rem;
+
+  font-size:.77rem;
+
 }
 
 
-/* OFERTA */
+
+/* ==============================
+   OFERTA FINAL
+============================== */
+
 
 .oferta{
+
   background:var(--preto);
+
   color:#fff;
+
 }
+
 
 .oferta-grid{
+
   display:grid;
-  grid-template-columns:1.1fr .9fr;
-  gap:70px;
+
+  grid-template-columns:
+    1fr
+    .9fr;
+
+  gap:65px;
+
+  align-items:center;
+
 }
 
-.oferta-texto p{
-  max-width:700px;
-  color:rgba(255,255,255,.68);
-  font-size:1.05rem;
+
+.oferta-texto > p{
+
+  max-width:640px;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      .69
+    );
+
 }
+
 
 .oferta-card{
+
   padding:34px;
 
   background:var(--malbec);
 
-  border:1px solid rgba(255,255,255,.15);
   border-radius:26px;
 
-  box-shadow:0 30px 70px rgba(0,0,0,.25);
+  border:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      .15
+    );
+
+  box-shadow:
+    0
+    30px
+    80px
+    rgba(0,0,0,.25);
+
 }
 
+
 .oferta-card ul{
+
   list-style:none;
 
   padding:0;
 
-  margin:26px 0;
+  margin:
+    22px
+    0;
 
-  border-top:1px solid rgba(255,255,255,.18);
+  border-top:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      .18
+    );
+
 }
+
 
 .oferta-card li{
-  padding:14px 0;
 
-  border-bottom:1px solid rgba(255,255,255,.18);
+  padding:
+    13px
+    0;
+
+  border-bottom:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      .18
+    );
+
 }
+
+
+.preco-card{
+
+  margin:
+    26px
+    0;
+
+  padding:
+    22px
+    0;
+
+  border-top:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      .18
+    );
+
+  border-bottom:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      .18
+    );
+
+}
+
+
+.preco-card-antigo{
+
+  margin-bottom:5px;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      .55
+    );
+
+  text-decoration:
+    line-through;
+
+}
+
+
+.preco-card-atual{
+
+  margin:0;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size:
+    clamp(
+      2.6rem,
+      4vw,
+      4rem
+    );
+
+  line-height:1;
+
+}
+
+
+.preco-card-texto{
+
+  margin:
+    12px
+    0
+    0;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      .7
+    );
+
+  font-size:.82rem;
+
+}
+
 
 .oferta-card .btn{
+
   width:100% !important;
+
 }
 
+
 .checkout-info{
-  margin:13px 0 0;
+
+  margin:
+    12px
+    0
+    0;
 
   text-align:center;
 
-  font-size:.73rem;
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      .52
+    );
 
-  color:rgba(255,255,255,.55);
+  font-size:.68rem;
+
 }
 
 
-/* FAQ */
+
+/* ==============================
+   URGÊNCIA
+============================== */
+
+
+.urgencia{
+
+  background:var(--creme);
+
+  text-align:center;
+
+}
+
+
+.urgencia h2{
+
+  max-width:850px;
+
+  margin:
+    0
+    auto
+    25px;
+
+}
+
+
+.urgencia > .container > p{
+
+  max-width:690px;
+
+  margin:
+    0
+    auto
+    28px;
+
+  color:var(--cinza);
+
+}
+
+
+
+/* ==============================
+   FAQ
+============================== */
+
 
 .faq{
   background:#fff;
 }
 
+
 .faq-list{
-  max-width:920px;
-  margin-top:40px;
-  border-top:1px solid #111;
+
+  max-width:900px;
+
+  margin-top:35px;
+
+  border-top:
+    1px solid
+    #111;
+
 }
+
 
 details{
-  border-bottom:1px solid var(--linha);
+
+  border-bottom:
+    1px solid
+    var(--linha);
+
 }
 
+
 summary{
-  padding:23px 0;
+
+  padding:
+    22px
+    0;
 
   cursor:pointer;
 
@@ -949,83 +2201,103 @@ summary{
 
   font-weight:800;
 
-  font-size:1.03rem;
 }
+
 
 summary::-webkit-details-marker{
   display:none;
 }
 
+
 details p{
-  max-width:780px;
-  padding-bottom:24px;
-  color:var(--cinza);
-}
 
+  max-width:760px;
 
-/* FINAL */
-
-.final{
-  padding:105px 0 125px;
-
-  text-align:center;
-
-  background:var(--creme);
-}
-
-.final h2{
-  margin-left:auto;
-  margin-right:auto;
-}
-
-.final p{
-  max-width:700px;
-
-  margin:0 auto 30px;
+  padding-bottom:22px;
 
   color:var(--cinza);
+
 }
+
+
+
+/* ==============================
+   RODAPÉ
+============================== */
+
 
 footer{
-  padding:25px 0 90px;
 
-  background:var(--creme);
+  padding:
+    28px
+    0
+    95px;
+
+  background:#fff;
 
   text-align:center;
 
   color:var(--cinza);
 
-  font-size:.75rem;
+  font-size:.72rem;
+
 }
 
 
-/* CTA FIXO */
+
+/* ==============================
+   CTA FIXO
+============================== */
+
 
 .float{
+
   position:fixed;
 
   z-index:1000;
 
-  right:18px;
-  bottom:18px;
+  right:17px;
 
-  padding:8px;
+  bottom:17px;
+
+  padding:7px;
 
   border-radius:999px;
 
-  background:rgba(9,9,9,.95);
+  background:
+    rgba(
+      9,
+      9,
+      9,
+      .96
+    );
 
-  box-shadow:0 15px 50px rgba(0,0,0,.3);
+  box-shadow:
+    0
+    12px
+    45px
+    rgba(0,0,0,.34);
 
-  opacity:1;
-  pointer-events:auto;
 }
 
 
-/* LIGHTBOX */
+.float .btn{
+
+  min-height:52px !important;
+
+}
+
+
+
+/* ==============================
+   LIGHTBOX
+============================== */
+
 
 .lightbox{
+
   position:fixed;
+
   z-index:2000;
 
   inset:0;
@@ -1033,364 +2305,701 @@ footer{
   display:none;
 
   align-items:center;
+
   justify-content:center;
 
-  padding:24px;
+  padding:22px;
 
-  background:rgba(0,0,0,.92);
+  background:
+    rgba(
+      0,
+      0,
+      0,
+      .92
+    );
+
 }
+
 
 .lightbox.open{
   display:flex;
 }
 
+
 .lightbox img{
+
   max-height:92vh;
-  max-width:min(92vw,900px);
-  border-radius:16px;
+
+  max-width:
+    min(
+      92vw,
+      900px
+    );
+
+  border-radius:15px;
+
 }
 
+
 .fechar{
+
   position:absolute;
 
   top:18px;
-  right:22px;
 
-  width:45px;
-  height:45px;
+  right:20px;
+
+  width:44px;
+
+  height:44px;
 
   border-radius:50%;
 
-  border:1px solid rgba(255,255,255,.3);
+  border:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      .3
+    );
 
   background:#111;
 
   color:#fff;
 
-  font-size:1.6rem;
+  font-size:1.5rem;
 
-  cursor:pointer;
 }
 
 
-/* PROTEÇÃO CONTRA O CSS DA HOTMART */
 
-a.hotmart__button-checkout.btn-branco,
-a.hotmart-fb.btn-branco,
-a.btn-branco.hotmart-fb.hotmart__button-checkout{
-  background:#ffffff !important;
+/* ==============================
+   PROTEÇÃO HOTMART
+============================== */
+
+
+a.hotmart__button-checkout,
+a.hotmart-fb{
+
+  text-shadow:none !important;
+
+  opacity:1 !important;
+
+}
+
+
+a.hotmart__button-checkout.btn-branco{
+
+  background:#fff !important;
+
   color:#090909 !important;
-  -webkit-text-fill-color:#090909 !important;
-  text-shadow:none !important;
-  opacity:1 !important;
-}
 
-a.hotmart__button-checkout.btn-malbec,
-a.hotmart-fb.btn-malbec,
-a.btn-malbec.hotmart-fb.hotmart__button-checkout{
-  background:#67162f !important;
-  color:#ffffff !important;
-  -webkit-text-fill-color:#ffffff !important;
-  text-shadow:none !important;
-  opacity:1 !important;
+  -webkit-text-fill-color:
+    #090909 !important;
+
 }
 
 
-/* TABLET */
+a.hotmart__button-checkout.btn-malbec{
+
+  background:
+    var(--malbec) !important;
+
+  color:#fff !important;
+
+  -webkit-text-fill-color:
+    #fff !important;
+
+}
+
+
+
+/* ==============================
+   TABLET
+============================== */
+
 
 @media(max-width:960px){
 
+
   .hero-grid,
-  .realidade-grid,
-  .consultivo-grid,
-  .modulos-intro,
+
+  .preco-hero-grid,
+
+  .dor-grid,
+
+  .solucao-grid,
+
+  .video-header,
+
+  .modulos-head,
+
   .apresentacao-grid,
+
   .oferta-grid,
+
   .modulo-destaque{
+
     grid-template-columns:1fr;
+
   }
 
-  .hero-photo-wrap{
-    max-width:650px;
-    margin:auto;
-    width:100%;
-  }
 
   .hero-photo{
+
     aspect-ratio:5/4;
-    border-radius:28px;
+
+    border-radius:25px;
+
   }
+
+
+  .hero-side{
+
+    max-width:650px;
+
+    width:100%;
+
+    margin:auto;
+
+  }
+
 
   .hero-badge{
-    left:18px;
+
+    left:14px;
+
   }
+
+
+  .preco-cta{
+
+    justify-content:flex-start;
+
+  }
+
+
+  .dor h2{
+
+    position:static;
+
+  }
+
 
   .quotes,
+
   .pilares{
+
     grid-template-columns:1fr;
+
   }
+
 
   .modulo{
-    grid-template-columns:60px 1fr;
+
+    grid-template-columns:
+      60px
+      1fr;
+
   }
+
 
   .modulo p{
+
     grid-column:2;
+
   }
 
+
   .grid-quem{
+
     grid-template-columns:1fr;
+
   }
+
 
 }
 
 
-/* CELULAR */
+
+/* ==============================
+   CELULAR
+============================== */
+
 
 @media(max-width:680px){
 
+
   body{
-    padding-bottom:82px;
+    padding-bottom:78px;
   }
+
 
   .container{
-    width:calc(100% - 28px);
+
+    width:
+      calc(
+        100% - 28px
+      );
+
   }
 
-  .topo{
-    padding:10px 0 4px;
-  }
-
-  .logo{
-    width:195px;
-    height:92px;
-  }
-
-  .status{
-    font-size:.57rem;
-    letter-spacing:.08em;
-    white-space:nowrap;
-  }
-
-  .hero{
-    min-height:auto;
-    padding:118px 0 58px;
-  }
-
-  .hero-grid{
-    gap:42px;
-  }
-
-  h1{
-    font-size:clamp(2.9rem,13vw,4rem);
-    line-height:1;
-    margin-bottom:20px;
-  }
-
-  h2{
-    font-size:clamp(2.2rem,9.7vw,3.25rem);
-    line-height:1.03;
-  }
-
-  h3{
-    line-height:1.08;
-  }
-
-  p{
-    line-height:1.62;
-  }
 
   section{
-    padding:72px 0;
+    padding:70px 0;
   }
 
-  .lead{
-    font-size:1.05rem;
+
+  .topo{
+    padding:7px 0;
   }
+
+
+  .logo{
+
+    width:190px;
+
+    height:88px;
+
+  }
+
+
+  .top-status{
+
+    font-size:.52rem;
+
+    letter-spacing:.07em;
+
+  }
+
+
+  .hero{
+
+    min-height:auto;
+
+    padding:
+      110px
+      0
+      55px;
+
+  }
+
+
+  .hero-grid{
+    gap:38px;
+  }
+
+
+  h1{
+
+    font-size:
+      clamp(
+        2.85rem,
+        12.8vw,
+        4rem
+      );
+
+    line-height:.99;
+
+  }
+
+
+  h2{
+
+    font-size:
+      clamp(
+        2.2rem,
+        9.5vw,
+        3.25rem
+      );
+
+  }
+
+
+  .hero-lead{
+
+    font-size:1.04rem;
+
+    line-height:1.58;
+
+  }
+
 
   .hero-actions{
+
     display:grid;
-    gap:10px;
-    margin-top:28px;
+
+    gap:9px;
+
+    margin-top:27px;
+
   }
+
 
   .hero-actions .btn{
+
     width:100% !important;
+
   }
+
+
+  .hero-mini{
+
+    font-size:.76rem;
+
+  }
+
 
   .hero-photo{
+
     aspect-ratio:4/4.7;
-    border-radius:22px 22px 70px 22px;
+
+    border-radius:
+      21px
+      21px
+      62px
+      21px;
+
   }
+
 
   .hero-badge{
-    left:12px;
-    bottom:12px;
-    max-width:200px;
-    padding:14px 16px;
+
+    left:10px;
+
+    bottom:10px;
+
+    max-width:190px;
+
+    padding:
+      13px
+      15px;
+
   }
 
-  .video-intro{
-    margin-bottom:26px;
+
+  .hero-badge strong{
+    font-size:1.55rem;
   }
+
+
+  .preco-hero{
+
+    padding:34px 0;
+
+  }
+
+
+  .preco-hero-grid{
+    gap:23px;
+  }
+
+
+  .preco-parcelado{
+
+    font-size:2.95rem;
+
+  }
+
+
+  .preco-cta .btn{
+
+    width:100% !important;
+
+    min-width:0;
+
+  }
+
+
+  .dor-grid,
+
+  .solucao-grid{
+
+    gap:25px;
+
+  }
+
+
+  .dor-destaque,
+
+  .solucao-grande{
+
+    font-size:2.25rem;
+
+  }
+
+
+  .dor-item,
+
+  .solucao-item{
+
+    grid-template-columns:
+      35px
+      1fr;
+
+    gap:10px;
+
+  }
+
+
+  .video-header{
+
+    gap:15px;
+
+    margin-bottom:26px;
+
+  }
+
 
   .video-box{
+
     padding:6px;
-    border-radius:18px;
+
+    border-radius:17px;
+
   }
+
 
   .video-stage{
-    border-radius:13px;
+    border-radius:12px;
   }
+
 
   .play{
-    width:66px;
-    height:66px;
+
+    width:64px;
+
+    height:64px;
+
     font-size:1.4rem;
+
   }
+
 
   .quotes{
-    gap:11px;
+
+    gap:10px;
+
+    margin-top:28px;
+
   }
+
 
   .quote{
+
     min-height:auto;
-    padding:24px;
+
+    padding:23px;
+
   }
+
 
   .quote blockquote{
-    font-size:1.24rem;
+
+    font-size:1.22rem;
+
   }
 
-  .realidade-grid,
-  .consultivo-grid{
-    gap:28px;
-  }
-
-  .realidade-frase,
-  .frase-grande{
-    font-size:2.25rem !important;
-  }
 
   .pilares{
-    gap:11px;
+    gap:10px;
   }
+
 
   .pilar{
-    padding:24px;
-    gap:21px;
+    padding:23px;
   }
 
-  .modulo{
-    grid-template-columns:1fr;
-    gap:7px;
-    padding:23px 0;
+
+  .modulos-head{
+
+    gap:10px;
+
+    margin-bottom:30px;
+
   }
+
+
+  .modulo{
+
+    grid-template-columns:1fr;
+
+    gap:7px;
+
+    padding:
+      21px
+      0;
+
+  }
+
 
   .modulo p{
     grid-column:1;
   }
 
+
   .modulo-destaque{
-    gap:16px;
-    padding:25px;
-    margin:20px 0;
+
+    gap:13px;
+
+    padding:24px;
+
   }
+
 
   .story-grid{
-    columns:2 145px;
+
+    columns:
+      2
+      145px;
+
     column-gap:8px;
+
   }
+
 
   .story{
+
     margin-bottom:8px;
-    border-radius:11px;
+
+    border-radius:10px;
+
   }
+
 
   .grid-quem{
-    gap:10px;
+    gap:9px;
   }
+
 
   .card-quem{
-    padding:24px;
+    padding:23px;
   }
+
 
   .apresentacao-grid{
-    gap:31px;
+    gap:28px;
   }
+
 
   .apresentacao-foto{
+
     aspect-ratio:16/11;
-    border-radius:20px;
+
+    border-radius:18px;
+
   }
+
 
   .numeros{
-    grid-template-columns:1fr 1fr;
+
+    grid-template-columns:
+      1fr
+      1fr;
+
     gap:8px;
+
   }
+
+
+  .numero{
+    padding:16px;
+  }
+
 
   .oferta-grid{
-    gap:31px;
+    gap:27px;
   }
+
 
   .oferta-card{
-    padding:25px;
+
+    padding:24px;
+
     border-radius:20px;
+
   }
 
-  .final{
-    padding:74px 0 105px;
+
+  .preco-card-atual{
+    font-size:2.65rem;
+  }
+
+
+  .urgencia{
+
+    padding:
+      68px
+      0
+      95px;
+
   }
 
 
   .float{
-    left:10px;
-    right:10px;
 
-    bottom:max(10px,env(safe-area-inset-bottom));
+    left:9px;
 
-    padding:7px;
+    right:9px;
 
-    background:rgba(9,9,9,.96);
+    bottom:
+      max(
+        9px,
+        env(
+          safe-area-inset-bottom
+        )
+      );
 
-    box-shadow:
-      0 10px 35px
-      rgba(0,0,0,.34);
   }
+
 
   .float .btn{
+
     width:100% !important;
-    min-height:54px !important;
-    padding:13px 16px !important;
-    font-size:.72rem !important;
-    letter-spacing:.055em !important;
+
+    min-height:52px !important;
+
+    padding:
+      12px
+      15px !important;
+
+    font-size:.69rem !important;
+
   }
 
-  footer{
-    padding-bottom:105px;
-  }
 
 }
 
 
 @media(max-width:390px){
 
+
   .logo{
-    width:178px;
-    height:84px;
+
+    width:172px;
+
+    height:80px;
+
   }
 
-  .status{
-    font-size:.52rem;
+
+  .top-status{
+    font-size:.48rem;
   }
+
 
   h1{
-    font-size:2.75rem;
+    font-size:2.68rem;
   }
 
+
   .numeros{
+
     grid-template-columns:1fr;
+
   }
+
 
 }
 
@@ -1406,7 +3015,10 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
 
   <div class="container topo-inner">
 
-    <a href="#inicio" class="logo">
+    <a
+      href="#inicio"
+      class="logo"
+    >
 
       <img
         src="assets/assets/logo-dna-nova.png"
@@ -1415,8 +3027,11 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
 
     </a>
 
-    <div class="status">
-      3ª turma
+
+    <div class="top-status">
+
+      3ª turma · inscrições abertas
+
     </div>
 
   </div>
@@ -1428,73 +3043,120 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
 <main>
 
 
-<section class="hero" id="inicio">
+<!-- ====================================
+     PRIMEIRA DOBRA
+==================================== -->
+
+
+<section
+  class="hero"
+  id="inicio"
+>
 
   <div class="container hero-grid">
 
+
     <div>
 
+
       <p class="eyebrow">
+
         DNA dos Contratos · 3ª turma
+
       </p>
+
 
       <h1>
-        Aprenda contratos para além do modelo pronto.
+
+        Pare de depender apenas de processos
+        para ganhar dinheiro na advocacia.
+
       </h1>
 
-      <p class="lead">
 
-        Uma formação para transformar conhecimento jurídico
-        em raciocínio contratual, visão de negócio e uma atuação
-        consultiva que o cliente entende, valoriza e contrata.
+      <p class="hero-lead">
+
+        Aprenda a transformar contratos em uma
+        <strong>
+          área consultiva dentro do seu escritório
+        </strong>,
+        com serviços que você sabe executar,
+        apresentar, precificar e cobrar.
 
       </p>
+
 
       <div class="hero-actions">
 
-        <a href="#video" class="btn btn-malbec">
-          Conheça o DNA dos Contratos ↓
+
+        <a
+          onclick="return false;"
+          href="https://pay.hotmart.com/P103421770X?checkoutMode=2&off=i0qcmbyf"
+          class="btn btn-malbec hotmart-fb hotmart__button-checkout"
+        >
+
+          Quero entrar para o DNA dos Contratos →
+
         </a>
 
-        <a href="#relatos" class="btn btn-outline">
-          Ver o que os alunos dizem
+
+        <a
+          href="#video"
+          class="btn btn-outline"
+        >
+
+          Conhecer o DNA ↓
+
         </a>
+
 
       </div>
 
-      <p class="hero-note">
 
-        Técnica contratual, análise,
-        atendimento, precificação
-        e construção de uma atuação consultiva.
+      <p class="hero-mini">
+
+        Técnica contratual, análise, atendimento,
+        precificação, comercial e construção
+        de uma atuação consultiva.
 
       </p>
+
 
     </div>
 
 
-    <div class="hero-photo-wrap">
+
+    <div class="hero-side">
+
 
       <div class="hero-photo">
 
         <img
           src="assets/assets/daniella-mesa.png"
-          alt="Daniella Almada estudando à mesa"
+          alt="Daniella Almada"
         >
 
       </div>
 
+
       <div class="hero-badge">
 
-        <strong>150+</strong>
+        <strong>
+          150+
+        </strong>
 
         <span>
-          alunos já passaram pelo DNA dos Contratos.
+
+          alunos já passaram
+          pelo DNA dos Contratos.
+
         </span>
 
       </div>
 
+
     </div>
+
 
   </div>
 
@@ -1502,44 +3164,462 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
 
 
 
-<section class="video-section" id="video">
+<!-- ====================================
+     PREÇO
+==================================== -->
 
-  <div class="container">
 
-    <div class="video-intro">
+<section class="preco-hero">
 
-      <p class="eyebrow">
-        Comece por aqui
+  <div class="container preco-hero-grid">
+
+
+    <div class="preco-copy">
+
+
+      <small>
+
+        Condição da 3ª turma
+
+      </small>
+
+
+      <p class="preco-antigo">
+
+        De R$ 1.497
+
       </p>
 
-      <h2>
-        Conheça o DNA dos Contratos.
-      </h2>
+
+      <p class="preco-parcelado">
+
+        <strong>
+          12x de R$ 99,06*
+        </strong>
+
+      </p>
+
+
+      <p class="mensalidade">
+
+        <strong>
+          Menos de R$ 100 por mês
+        </strong>
+        para mudar a forma como você trabalha
+        na advocacia e começar a construir
+        uma nova frente consultiva.
+
+      </p>
+
+
+      <p class="obs-preco">
+
+        *Condição de parcelamento apresentada
+        atualmente no checkout.
+        O valor total pode variar conforme
+        a forma de pagamento escolhida.
+
+      </p>
+
 
     </div>
 
 
+
+    <div class="preco-cta">
+
+
+      <a
+        onclick="return false;"
+        href="https://pay.hotmart.com/P103421770X?checkoutMode=2&off=i0qcmbyf"
+        class="btn btn-malbec hotmart-fb hotmart__button-checkout"
+      >
+
+        Quero garantir minha vaga →
+
+      </a>
+
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- ====================================
+     DOR
+==================================== -->
+
+
+<section class="dor">
+
+  <div class="container dor-grid">
+
+
+    <div>
+
+
+      <p class="eyebrow">
+
+        A realidade de muitos escritórios
+
+      </p>
+
+
+      <h2>
+
+        Quanto custa continuar dependendo
+        apenas do contencioso?
+
+      </h2>
+
+
+    </div>
+
+
+
+    <div class="dor-texto">
+
+
+      <p class="dor-destaque">
+
+        Você recebe os honorários hoje
+        e pode passar anos trabalhando
+        para aquele mesmo cliente.
+
+      </p>
+
+
+      <p>
+
+        Durante esse período chegam mensagens,
+        telefonemas, pedidos de atualização,
+        documentos para analisar,
+        reuniões e dúvidas que precisam
+        ser respondidas.
+
+      </p>
+
+
+      <p>
+
+        O processo continua.
+        O atendimento continua.
+        O trabalho continua.
+
+      </p>
+
+
+      <p>
+
+        E muitas vezes os honorários foram
+        combinados e recebidos anos antes.
+
+      </p>
+
+
+
+      <div class="dor-lista">
+
+
+        <div class="dor-item">
+
+          <b>01</b>
+
+          <span>
+
+            Você depende do tempo do Judiciário
+            para encerrar boa parte dos seus trabalhos.
+
+          </span>
+
+        </div>
+
+
+        <div class="dor-item">
+
+          <b>02</b>
+
+          <span>
+
+            O mesmo cliente pode consumir horas
+            do escritório durante anos.
+
+          </span>
+
+        </div>
+
+
+        <div class="dor-item">
+
+          <b>03</b>
+
+          <span>
+
+            Muitas orientações, análises e reuniões
+            acabam sendo realizadas sem uma cobrança própria.
+
+          </span>
+
+        </div>
+
+
+        <div class="dor-item">
+
+          <b>04</b>
+
+          <span>
+
+            O faturamento do mês seguinte
+            continua difícil de prever.
+
+          </span>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- ====================================
+     SOLUÇÃO
+==================================== -->
+
+
+<section class="solucao">
+
+  <div class="container solucao-grid">
+
+
+    <div>
+
+
+      <p class="eyebrow">
+
+        Uma nova frente dentro do escritório
+
+      </p>
+
+
+      <h2>
+
+        Contratos podem se tornar
+        uma área profissional da sua advocacia.
+
+      </h2>
+
+
+    </div>
+
+
+
+    <div class="solucao-texto">
+
+
+      <p class="solucao-grande">
+
+        Uma demanda chega.
+        Você entende o problema,
+        define o escopo,
+        estabelece um prazo
+        e apresenta os honorários.
+
+      </p>
+
+
+      <p>
+
+        Elaboração contratual, revisão,
+        análise de risco, negociação,
+        notificações, propostas,
+        consultorias e acompanhamento
+        contratual podem integrar
+        uma frente consultiva do escritório.
+
+      </p>
+
+
+      <p>
+
+        O DNA dos Contratos foi estruturado
+        para ensinar a técnica jurídica
+        e também a organização necessária
+        para transformar esse conhecimento
+        em serviço.
+
+      </p>
+
+
+
+      <div class="solucao-lista">
+
+
+        <div class="solucao-item">
+
+          <b>01</b>
+
+          <span>
+            Entender o negócio do cliente.
+          </span>
+
+        </div>
+
+
+        <div class="solucao-item">
+
+          <b>02</b>
+
+          <span>
+            Identificar riscos antes de redigir.
+          </span>
+
+        </div>
+
+
+        <div class="solucao-item">
+
+          <b>03</b>
+
+          <span>
+            Estruturar contratos adequados ao caso concreto.
+          </span>
+
+        </div>
+
+
+        <div class="solucao-item">
+
+          <b>04</b>
+
+          <span>
+            Apresentar, precificar e cobrar pelo serviço.
+          </span>
+
+        </div>
+
+
+      </div>
+
+
+      <div style="margin-top:30px;">
+
+
+        <a
+          onclick="return false;"
+          href="https://pay.hotmart.com/P103421770X?checkoutMode=2&off=i0qcmbyf"
+          class="btn btn-malbec hotmart-fb hotmart__button-checkout"
+        >
+
+          Quero construir minha atuação consultiva →
+
+        </a>
+
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- ====================================
+     VÍDEO
+==================================== -->
+
+
+<section
+  class="video-section"
+  id="video"
+>
+
+  <div class="container">
+
+
+    <div class="video-header">
+
+
+      <div>
+
+
+        <p class="eyebrow">
+
+          Conheça por dentro
+
+        </p>
+
+
+        <h2>
+
+          Entre por 3 minutos
+          no DNA dos Contratos.
+
+        </h2>
+
+
+      </div>
+
+
+      <p>
+
+        Veja como Daniella recebe
+        os alunos que entram para a formação
+        e conheça um pouco da proposta
+        do DNA dos Contratos.
+
+      </p>
+
+
+    </div>
+
+
+
     <div class="video-box">
+
 
       <div
         class="video-stage"
         id="videoStage"
         role="button"
         tabindex="0"
+        aria-label="Reproduzir vídeo"
       >
+
 
         <img
           src="assets/assets/thumbnail-video.webp"
           alt="Conheça o DNA dos Contratos"
         >
 
+
         <div class="play">
+
           ▶
+
         </div>
+
 
       </div>
 
+
     </div>
+
 
   </div>
 
@@ -1547,22 +3627,31 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
 
 
 
-<section class="relatos" id="relatos">
+<!-- ====================================
+     RELATOS
+==================================== -->
+
+
+<section class="relatos">
+
 
   <div class="container">
 
-    <div class="relatos-head">
 
-      <p class="eyebrow">
-        Relatos de alunos
-      </p>
+    <p class="eyebrow">
 
-      <h2>
-        O que muda quando o conteúdo
-        sai da aula e chega ao trabalho.
-      </h2>
+      Relatos de alunos
 
-    </div>
+    </p>
+
+
+    <h2>
+
+      Quando o conteúdo
+      chega ao trabalho.
+
+    </h2>
+
 
 
     <div class="quotes">
@@ -1570,175 +3659,127 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
 
       <article class="quote">
 
+
         <div>
 
-          <div class="quote-mark">“</div>
+
+          <div class="quote-mark">
+
+            “
+
+          </div>
+
 
           <blockquote>
-            Só quero dizer que já tive o dobro
-            de retorno do que investi no curso.
-            É só o começo!
+
+            Só quero dizer que já tive
+            o dobro de retorno do que investi
+            no curso. É só o começo!
+
           </blockquote>
+
 
         </div>
 
+
         <small>
-          <strong>Karine</strong> — Aluna do DNA
+
+          <strong>
+            Karine
+          </strong>
+
+          — Aluna do DNA
+
         </small>
 
+
       </article>
+
 
 
       <article class="quote">
 
+
         <div>
 
-          <div class="quote-mark">“</div>
+
+          <div class="quote-mark">
+
+            “
+
+          </div>
+
 
           <blockquote>
-            Comecei a aplicar o que aprendi no meu trabalho.
-            Meu chefe se impressionou comigo,
-            tive um aumento e uma promoção.
+
+            Comecei a aplicar o que aprendi
+            no meu trabalho. Meu chefe se
+            impressionou comigo, tive um aumento
+            e uma promoção.
+
           </blockquote>
+
 
         </div>
 
+
         <small>
-          <strong>Amanda</strong> — Aluna do DNA
+
+          <strong>
+            Amanda
+          </strong>
+
+          — Aluna do DNA
+
         </small>
 
+
       </article>
+
 
 
       <article class="quote">
 
+
         <div>
 
-          <div class="quote-mark">“</div>
+
+          <div class="quote-mark">
+
+            “
+
+          </div>
+
 
           <blockquote>
-            Seu curso me ajudou a me recolocar no mercado.
-            Comecei fazendo revisões contratuais
-            e depois surgiu uma oportunidade na área.
+
+            Seu curso me ajudou a me recolocar
+            no mercado. Comecei fazendo revisões
+            contratuais e depois surgiu
+            uma oportunidade na área.
+
           </blockquote>
+
 
         </div>
 
+
         <small>
-          <strong>Roberta</strong> — Aluna do DNA
+
+          <strong>
+            Roberta
+          </strong>
+
+          — Aluna do DNA
+
         </small>
+
 
       </article>
 
 
     </div>
 
-  </div>
-
-</section>
-
-
-
-<section class="realidade">
-
-  <div class="container realidade-grid">
-
-
-    <div>
-
-      <p class="eyebrow">
-        A rotina de muitos escritórios
-      </p>
-
-      <h2>
-        Quanto do seu trabalho
-        ainda depende do tempo do processo?
-      </h2>
-
-    </div>
-
-
-    <div class="realidade-texto">
-
-      <p class="realidade-frase">
-
-        Há advogados trabalhando há anos
-        para o mesmo cliente com honorários
-        definidos quando o processo começou.
-
-      </p>
-
-      <p>
-
-        Nesse intervalo chegam mensagens,
-        telefonemas, pedidos de atualização,
-        dúvidas, reuniões, documentos para analisar
-        e decisões que precisam ser explicadas.
-
-        O processo continua aberto.
-        O trabalho também.
-
-      </p>
-
-      <p>
-
-        Muitas dessas atividades acabam absorvidas
-        pela rotina do escritório sem uma cobrança própria,
-        mesmo quando representam horas de trabalho técnico.
-
-      </p>
-
-
-      <div class="realidade-lista">
-
-        <div class="realidade-item">
-
-          <b>01</b>
-
-          <span>
-            Processos que levam anos para produzir resultado
-            e mantêm o escritório comprometido durante todo esse período.
-          </span>
-
-        </div>
-
-        <div class="realidade-item">
-
-          <b>02</b>
-
-          <span>
-            Clientes que continuam exigindo atendimento
-            muito depois da contratação inicial.
-          </span>
-
-        </div>
-
-        <div class="realidade-item">
-
-          <b>03</b>
-
-          <span>
-            Horas gastas respondendo dúvidas,
-            estudando documentos e solucionando questões
-            que nem sempre se transformam em novos honorários.
-          </span>
-
-        </div>
-
-        <div class="realidade-item">
-
-          <b>04</b>
-
-          <span>
-            Pouca previsibilidade sobre quando o trabalho termina,
-            quando o processo anda e quando entra uma nova receita.
-          </span>
-
-        </div>
-
-      </div>
-
-    </div>
 
   </div>
 
@@ -1746,112 +3787,43 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
 
 
 
-<section class="consultivo">
-
-  <div class="container consultivo-grid">
-
-
-    <div>
-
-      <p class="eyebrow">
-        Atuação consultiva
-      </p>
-
-      <h2>
-        Contratos podem ocupar
-        um espaço próprio dentro
-        do seu escritório.
-      </h2>
-
-    </div>
-
-
-    <div class="consultivo-texto">
-
-      <p class="frase-grande">
-
-        Uma demanda chega,
-        você diagnostica o problema,
-        define o escopo,
-        estabelece um prazo
-        e apresenta os honorários.
-
-      </p>
-
-      <p>
-
-        Elaboração contratual, revisão,
-        análise de risco, negociação,
-        notificações, propostas,
-        estruturação de relações comerciais
-        e consultorias podem integrar
-        uma frente consultiva do escritório.
-
-      </p>
-
-      <p>
-
-        Essa atuação exige técnica contratual,
-        conhecimento sobre o negócio do cliente,
-        capacidade de análise
-        e organização comercial do serviço.
-
-      </p>
-
-
-      <div class="consultivo-list">
-
-        <div class="consultivo-item">
-          <b>01</b>
-          <span>Entender a operação antes de redigir.</span>
-        </div>
-
-        <div class="consultivo-item">
-          <b>02</b>
-          <span>Identificar e distribuir riscos.</span>
-        </div>
-
-        <div class="consultivo-item">
-          <b>03</b>
-          <span>Estruturar contratos coerentes com o caso concreto.</span>
-        </div>
-
-        <div class="consultivo-item">
-          <b>04</b>
-          <span>Apresentar, precificar e entregar o serviço.</span>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
+<!-- ====================================
+     PILARES
+==================================== -->
 
 
 <section class="metodo">
 
+
   <div class="container">
 
+
     <p class="eyebrow">
+
       A formação
+
     </p>
+
 
     <h2>
+
       Técnica, negócio e mercado
       na mesma formação.
+
     </h2>
 
-    <p class="intro">
 
-      O DNA foi estruturado para acompanhar
-      as etapas que fazem parte da atuação contratual,
-      desde a compreensão jurídica do contrato
-      até a relação com o cliente e a cobrança do serviço.
+    <p class="metodo-intro">
+
+      O DNA acompanha as etapas
+      da atuação contratual,
+      desde a compreensão jurídica
+      até a relação com o cliente,
+      a apresentação do serviço
+      e a cobrança dos honorários.
 
     </p>
+
 
 
     <div class="pilares">
@@ -1859,70 +3831,99 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
 
       <article class="pilar">
 
-        <span class="pilar-num">01</span>
 
-        <div class="pilar-conteudo">
+        <div class="pilar-num">
 
-          <h3>Técnica contratual</h3>
-
-          <p>
-
-            Formação, vícios, evicção,
-            extinção, responsabilidade civil,
-            estrutura e interpretação dos contratos.
-
-          </p>
+          01
 
         </div>
+
+
+        <h3>
+
+          Técnica contratual
+
+        </h3>
+
+
+        <p>
+
+          Formação, vícios, evicção,
+          extinção, responsabilidade civil,
+          estrutura e interpretação
+          dos contratos.
+
+        </p>
+
 
       </article>
 
 
+
       <article class="pilar">
 
-        <span class="pilar-num">02</span>
 
-        <div class="pilar-conteudo">
+        <div class="pilar-num">
 
-          <h3>Visão negocial</h3>
-
-          <p>
-
-            Tratativas com o cliente,
-            análise da operação,
-            distribuição de riscos
-            e construção de soluções aplicáveis ao negócio.
-
-          </p>
+          02
 
         </div>
+
+
+        <h3>
+
+          Visão negocial
+
+        </h3>
+
+
+        <p>
+
+          Tratativas com o cliente,
+          análise da operação,
+          distribuição de riscos
+          e construção de soluções
+          aplicáveis ao negócio.
+
+        </p>
+
 
       </article>
 
 
+
       <article class="pilar">
 
-        <span class="pilar-num">03</span>
 
-        <div class="pilar-conteudo">
+        <div class="pilar-num">
 
-          <h3>Construção comercial</h3>
-
-          <p>
-
-            Comercial, precificação,
-            organização da entrega
-            e marketing jurídico
-            aplicados à atuação consultiva.
-
-          </p>
+          03
 
         </div>
+
+
+        <h3>
+
+          Construção comercial
+
+        </h3>
+
+
+        <p>
+
+          Comercial, precificação,
+          organização da entrega
+          e marketing jurídico aplicados
+          à atuação consultiva.
+
+        </p>
+
 
       </article>
 
 
     </div>
+
 
   </div>
 
@@ -1930,37 +3931,52 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
 
 
 
+<!-- ====================================
+     MÓDULOS
+==================================== -->
+
+
 <section class="conteudo">
+
 
   <div class="container">
 
 
-    <div class="modulos-intro">
+    <div class="modulos-head">
+
 
       <div>
 
+
         <p class="eyebrow">
+
           O que você vai estudar
+
         </p>
 
+
         <h2>
+
           Do fundamento à prática.
+
         </h2>
+
 
       </div>
 
+
       <p>
 
-        A formação percorre os principais pontos
-        da atuação contratual:
-        fundamentos, estrutura,
-        relacionamento com o cliente,
-        precificação, análise
-        e aplicação prática.
+        Uma formação que percorre
+        os principais pontos da atuação
+        contratual e também o lado
+        comercial do serviço.
 
       </p>
 
+
     </div>
+
 
 
     <div class="lista-modulos">
@@ -1968,12 +3984,17 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
 
       <div class="modulo">
 
-        <span class="modulo-num">01</span>
+        <span class="modulo-num">
+          01
+        </span>
 
-        <h3>O que é um contrato</h3>
+        <h3>
+          O que é um contrato
+        </h3>
 
         <p>
-          Função, natureza e lógica das relações contratuais.
+          Função, natureza e lógica
+          das relações contratuais.
         </p>
 
       </div>
@@ -1981,13 +4002,18 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
 
       <div class="modulo">
 
-        <span class="modulo-num">02</span>
+        <span class="modulo-num">
+          02
+        </span>
 
-        <h3>Formação dos contratos</h3>
+        <h3>
+          Formação dos contratos
+        </h3>
 
         <p>
-          Formação da relação, produção de efeitos
-          e elementos do negócio jurídico.
+          Formação da relação,
+          produção de efeitos
+          e negócio jurídico.
         </p>
 
       </div>
@@ -1995,12 +4021,16 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
 
       <div class="modulo">
 
-        <span class="modulo-num">03</span>
+        <span class="modulo-num">
+          03
+        </span>
 
-        <h3>Vícios redibitórios e evicção</h3>
+        <h3>
+          Vícios redibitórios e evicção
+        </h3>
 
         <p>
-          Riscos relacionados ao objeto contratado
+          Riscos relacionados ao objeto
           e responsabilidade das partes.
         </p>
 
@@ -2009,13 +4039,17 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
 
       <div class="modulo">
 
-        <span class="modulo-num">04</span>
+        <span class="modulo-num">
+          04
+        </span>
 
-        <h3>Extinção contratual</h3>
+        <h3>
+          Extinção contratual
+        </h3>
 
         <p>
-          Resolução, rescisão, distrato,
-          inadimplemento e encerramento da relação.
+          Resolução, rescisão,
+          distrato e inadimplemento.
         </p>
 
       </div>
@@ -2023,13 +4057,17 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
 
       <div class="modulo">
 
-        <span class="modulo-num">05</span>
+        <span class="modulo-num">
+          05
+        </span>
 
-        <h3>Responsabilidade civil</h3>
+        <h3>
+          Responsabilidade civil
+        </h3>
 
         <p>
-          Responsabilidade, dano,
-          descumprimento e alocação de riscos.
+          Responsabilidade,
+          dano e alocação de riscos.
         </p>
 
       </div>
@@ -2038,31 +4076,43 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
     </div>
 
 
+
     <div class="modulo-destaque">
+
 
       <div>
 
+
         <p class="eyebrow">
+
           Módulo 6
+
         </p>
 
+
         <h3>
+
           Estrutura dos Contratos
+
         </h3>
 
+
       </div>
+
 
       <p>
 
         Organização do documento,
         estrutura, cláusulas
         e elementos necessários
-        para transformar o raciocínio jurídico
-        em um contrato claro e funcional.
+        para transformar raciocínio jurídico
+        em contrato funcional.
 
       </p>
 
+
     </div>
+
 
 
     <div class="lista-modulos">
@@ -2070,13 +4120,18 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
 
       <div class="modulo">
 
-        <span class="modulo-num">07</span>
+        <span class="modulo-num">
+          07
+        </span>
 
-        <h3>Tratativas com o cliente</h3>
+        <h3>
+          Tratativas com o cliente
+        </h3>
 
         <p>
-          Atendimento, levantamento de informações
-          e compreensão da operação.
+          Atendimento, levantamento
+          de informações e compreensão
+          da operação.
         </p>
 
       </div>
@@ -2084,13 +4139,17 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
 
       <div class="modulo">
 
-        <span class="modulo-num">08</span>
+        <span class="modulo-num">
+          08
+        </span>
 
-        <h3>Comercial</h3>
+        <h3>
+          Comercial
+        </h3>
 
         <p>
           Organização e apresentação
-          do serviço contratual ao cliente.
+          do serviço contratual.
         </p>
 
       </div>
@@ -2098,13 +4157,17 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
 
       <div class="modulo">
 
-        <span class="modulo-num">09</span>
+        <span class="modulo-num">
+          09
+        </span>
 
-        <h3>Precificação</h3>
+        <h3>
+          Precificação
+        </h3>
 
         <p>
-          Critérios para calcular e apresentar
-          honorários na atuação contratual.
+          Critérios para calcular
+          e apresentar honorários.
         </p>
 
       </div>
@@ -2112,9 +4175,13 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
 
       <div class="modulo">
 
-        <span class="modulo-num">10</span>
+        <span class="modulo-num">
+          10
+        </span>
 
-        <h3>Modelos contratuais</h3>
+        <h3>
+          Modelos contratuais
+        </h3>
 
         <p>
           Modelos como repertório
@@ -2127,31 +4194,43 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
     </div>
 
 
+
     <div class="modulo-destaque">
+
 
       <div>
 
+
         <p class="eyebrow">
+
           Módulo 11
+
         </p>
 
+
         <h3>
+
           Análises Contratuais
+
         </h3>
 
+
       </div>
+
 
       <p>
 
         Análise de documentos,
         identificação de fragilidades,
         escolhas de redação
-        e desenvolvimento do raciocínio
-        necessário à revisão contratual.
+        e desenvolvimento
+        do raciocínio contratual.
 
       </p>
 
+
     </div>
+
 
 
     <div class="lista-modulos">
@@ -2159,9 +4238,13 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
 
       <div class="modulo">
 
-        <span class="modulo-num">12</span>
+        <span class="modulo-num">
+          12
+        </span>
 
-        <h3>Contratos em espécie</h3>
+        <h3>
+          Contratos em espécie
+        </h3>
 
         <p>
           Aplicação do raciocínio
@@ -2173,13 +4256,17 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
 
       <div class="modulo">
 
-        <span class="modulo-num">13</span>
+        <span class="modulo-num">
+          13
+        </span>
 
-        <h3>Interpretação dos contratos</h3>
+        <h3>
+          Interpretação dos contratos
+        </h3>
 
         <p>
-          Critérios para interpretação
-          de cláusulas e comportamento das partes.
+          Interpretação de cláusulas
+          e comportamento das partes.
         </p>
 
       </div>
@@ -2187,13 +4274,18 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
 
       <div class="modulo">
 
-        <span class="modulo-num">BÔNUS</span>
+        <span class="modulo-num">
+          BÔNUS
+        </span>
 
-        <h3>Marketing jurídico</h3>
+        <h3>
+          Marketing Jurídico
+        </h3>
 
         <p>
           Comunicação e apresentação
-          da atuação profissional ao mercado.
+          da atuação profissional
+          ao mercado.
         </p>
 
       </div>
@@ -2208,99 +4300,206 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
 
 
 
+<!-- ====================================
+     MENSAGENS
+==================================== -->
+
+
 <section class="mensagens">
+
 
   <div class="container">
 
 
     <div class="mensagens-head">
 
+
       <p class="eyebrow">
+
         Mensagens dos alunos
+
       </p>
+
 
       <h2>
-        O curso continua
-        quando o aluno começa a aplicar.
+
+        O DNA já faz parte
+        da rotina profissional
+        de quem entrou nas turmas anteriores.
+
       </h2>
 
+
       <p>
-        Algumas das mensagens recebidas
-        ao longo das turmas do DNA dos Contratos.
+
+        Algumas das mensagens
+        recebidas ao longo
+        das turmas do curso.
+
       </p>
 
+
     </div>
+
 
 
     <div class="story-grid">
 
 
       <figure class="story">
+
         <img
           src="assets/assets/depoimento-01-novo.png"
-          alt="Mensagem de aluna do DNA dos Contratos"
+          alt="Mensagem de aluna"
         >
+
       </figure>
 
 
       <figure class="story">
+
         <img
           src="assets/assets/depoimento-virada.jpg"
-          alt="Mensagem de aluna sobre atuação consultiva"
+          alt="Mensagem de aluna"
         >
+
       </figure>
 
 
       <figure class="story">
-        <img loading="lazy" src="assets/assets/depoimento-02.webp" alt="Mensagem de aluno">
+
+        <img
+          loading="lazy"
+          src="assets/assets/depoimento-02.webp"
+          alt="Mensagem de aluno"
+        >
+
       </figure>
 
-      <figure class="story">
-        <img loading="lazy" src="assets/assets/depoimento-03.webp" alt="Mensagem de aluno">
-      </figure>
 
       <figure class="story">
-        <img loading="lazy" src="assets/assets/depoimento-04.webp" alt="Mensagem de aluno">
+
+        <img
+          loading="lazy"
+          src="assets/assets/depoimento-03.webp"
+          alt="Mensagem de aluno"
+        >
+
       </figure>
 
-      <figure class="story">
-        <img loading="lazy" src="assets/assets/depoimento-05.webp" alt="Mensagem de aluno">
-      </figure>
 
       <figure class="story">
-        <img loading="lazy" src="assets/assets/depoimento-06.webp" alt="Mensagem de aluno">
+
+        <img
+          loading="lazy"
+          src="assets/assets/depoimento-04.webp"
+          alt="Mensagem de aluno"
+        >
+
       </figure>
 
-      <figure class="story">
-        <img loading="lazy" src="assets/assets/depoimento-07.webp" alt="Mensagem de aluno">
-      </figure>
 
       <figure class="story">
-        <img loading="lazy" src="assets/assets/depoimento-08.webp" alt="Mensagem de aluno">
+
+        <img
+          loading="lazy"
+          src="assets/assets/depoimento-05.webp"
+          alt="Mensagem de aluno"
+        >
+
       </figure>
 
-      <figure class="story">
-        <img loading="lazy" src="assets/assets/depoimento-09.webp" alt="Mensagem de aluno">
-      </figure>
 
       <figure class="story">
-        <img loading="lazy" src="assets/assets/depoimento-10.webp" alt="Mensagem de aluno">
+
+        <img
+          loading="lazy"
+          src="assets/assets/depoimento-06.webp"
+          alt="Mensagem de aluno"
+        >
+
       </figure>
 
-      <figure class="story">
-        <img loading="lazy" src="assets/assets/depoimento-11.webp" alt="Mensagem de aluno">
-      </figure>
 
       <figure class="story">
-        <img loading="lazy" src="assets/assets/depoimento-12.webp" alt="Mensagem de aluno">
+
+        <img
+          loading="lazy"
+          src="assets/assets/depoimento-07.webp"
+          alt="Mensagem de aluno"
+        >
+
       </figure>
 
+
       <figure class="story">
-        <img loading="lazy" src="assets/assets/depoimento-13.webp" alt="Mensagem de aluno">
+
+        <img
+          loading="lazy"
+          src="assets/assets/depoimento-08.webp"
+          alt="Mensagem de aluno"
+        >
+
+      </figure>
+
+
+      <figure class="story">
+
+        <img
+          loading="lazy"
+          src="assets/assets/depoimento-09.webp"
+          alt="Mensagem de aluno"
+        >
+
+      </figure>
+
+
+      <figure class="story">
+
+        <img
+          loading="lazy"
+          src="assets/assets/depoimento-10.webp"
+          alt="Mensagem de aluno"
+        >
+
+      </figure>
+
+
+      <figure class="story">
+
+        <img
+          loading="lazy"
+          src="assets/assets/depoimento-11.webp"
+          alt="Mensagem de aluno"
+        >
+
+      </figure>
+
+
+      <figure class="story">
+
+        <img
+          loading="lazy"
+          src="assets/assets/depoimento-12.webp"
+          alt="Mensagem de aluno"
+        >
+
+      </figure>
+
+
+      <figure class="story">
+
+        <img
+          loading="lazy"
+          src="assets/assets/depoimento-13.webp"
+          alt="Mensagem de aluno"
+        >
+
       </figure>
 
 
     </div>
+
 
   </div>
 
@@ -2308,33 +4507,46 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
 
 
 
+<!-- ====================================
+     PARA QUEM
+==================================== -->
+
+
 <section class="para-quem">
+
 
   <div class="container">
 
 
     <div class="para-quem-intro">
 
+
       <p class="eyebrow">
-        Seu próximo passo na advocacia contratual
+
+        Seu próximo passo
+
       </p>
+
 
       <h2>
 
-        Transforme contratos em uma área
-        mais segura, valorizada
-        e rentável da sua atuação.
+        Construa uma área contratual
+        dentro da sua advocacia.
 
       </h2>
 
+
       <p>
 
-        Há diferentes caminhos até a advocacia contratual.
-        Veja em qual momento da carreira você está agora.
+        O DNA atende advogados
+        em diferentes momentos
+        da carreira.
 
       </p>
 
+
     </div>
+
 
 
     <div class="grid-quem">
@@ -2342,15 +4554,20 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
 
       <article class="card-quem">
 
-        <span>Quero começar</span>
+
+        <span>
+          Quero começar
+        </span>
+
 
         <h3>
 
           Você quer atuar com contratos
-          e busca uma formação prática
-          para construir essa base.
+          e precisa construir
+          uma base prática.
 
         </h3>
+
 
         <p>
 
@@ -2360,83 +4577,104 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
 
         </p>
 
+
       </article>
+
 
 
       <article class="card-quem">
 
-        <span>Já elaboro contratos</span>
+
+        <span>
+          Já elaboro contratos
+        </span>
+
 
         <h3>
 
-          Você atende clientes
-          e quer desenvolver mais autonomia
-          na elaboração dos documentos.
+          Você quer ter mais autonomia
+          e segurança na elaboração.
 
         </h3>
 
+
         <p>
 
-          O DNA amplia o repertório
+          Desenvolva repertório
           para analisar riscos,
           adaptar cláusulas
-          e construir contratos
-          conforme cada operação.
+          e compreender a operação.
 
         </p>
+
 
       </article>
 
 
+
       <article class="card-quem">
 
-        <span>Quero cobrar melhor</span>
+
+        <span>
+          Quero cobrar melhor
+        </span>
+
 
         <h3>
 
-          Você executa trabalhos técnicos
-          e quer ter mais clareza
-          para definir os honorários.
+          Você trabalha muito,
+          mas ainda hesita
+          ao definir seus honorários.
 
         </h3>
 
+
         <p>
 
-          Precificação, escopo,
-          relacionamento com o cliente
-          e apresentação do serviço
-          também fazem parte da formação.
+          Precificação,
+          escopo e apresentação
+          do serviço também
+          fazem parte da formação.
 
         </p>
+
 
       </article>
 
 
+
       <article class="card-quem">
 
-        <span>Quero ampliar minha receita</span>
+
+        <span>
+          Quero ampliar minha receita
+        </span>
+
 
         <h3>
 
-          Você atua no contencioso
-          e quer desenvolver
-          uma frente consultiva no escritório.
+          Você quer desenvolver
+          uma frente consultiva
+          além do contencioso.
 
         </h3>
 
+
         <p>
 
-          Elaboração, revisão,
-          negociação e análise contratual
+          Elaboração, revisão
+          e análise contratual
           podem se tornar serviços
-          com escopo e honorários próprios.
+          próprios do escritório.
 
         </p>
+
 
       </article>
 
 
     </div>
+
 
   </div>
 
@@ -2444,22 +4682,39 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
 
 
 
+<!-- ====================================
+     DANIELLA
+==================================== -->
+
+
 <section class="apresentacao">
+
 
   <div class="container apresentacao-grid">
 
 
     <div class="apresentacao-foto">
 
+
       <img
         src="assets/assets/daniella-microfone.png"
-        alt="Daniella Almada durante uma aula"
+        alt="Daniella Almada"
       >
+
 
     </div>
 
 
+
     <div class="apresentacao-texto">
+
+
+      <p class="eyebrow">
+
+        Daniella Almada
+
+      </p>
+
 
       <h2>
 
@@ -2468,16 +4723,19 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
 
       </h2>
 
+
       <p>
 
-        Daniella Almada é advogada contratualista
-        e criou o DNA dos Contratos
+        Daniella Almada é advogada
+        contratualista e criou
+        o DNA dos Contratos
         para organizar em uma formação
         o raciocínio utilizado
         na elaboração, revisão
         e análise de contratos.
 
       </p>
+
 
       <p>
 
@@ -2491,31 +4749,41 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
       </p>
 
 
+
       <div class="numeros">
 
+
         <div class="numero">
 
-          <strong>150+</strong>
+          <strong>
+            150+
+          </strong>
 
           <span>
-            alunos no DNA dos Contratos
+            alunos no DNA
           </span>
 
         </div>
 
+
         <div class="numero">
 
-          <strong>3 eixos</strong>
+          <strong>
+            3 eixos
+          </strong>
 
           <span>
-            técnica, negocial e comercial
+            técnico, negocial e comercial
           </span>
 
         </div>
+
 
       </div>
 
+
     </div>
+
 
   </div>
 
@@ -2523,66 +4791,145 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
 
 
 
-<section class="oferta" id="oferta">
+<!-- ====================================
+     OFERTA
+==================================== -->
+
+
+<section
+  class="oferta"
+  id="oferta"
+>
+
 
   <div class="container oferta-grid">
 
 
     <div class="oferta-texto">
 
+
       <p class="eyebrow">
+
         3ª turma
+
       </p>
+
 
       <h2>
+
         Entre para o DNA dos Contratos.
+
       </h2>
 
-      <p>
-
-        Uma formação para quem quer
-        organizar a atuação contratual
-        dentro do escritório
-        com técnica, segurança
-        e clareza comercial.
-
-      </p>
 
       <p>
 
-        Você terá acesso ao conteúdo
-        para estudar, revisar
-        e consultar conforme
-        novos contratos aparecerem
-        na sua rotina.
+        Desenvolva técnica contratual,
+        organização comercial
+        e uma nova frente consultiva
+        dentro do seu escritório.
 
       </p>
+
+
+      <p>
+
+        O acesso é de 24 meses,
+        permitindo que você volte
+        às aulas sempre que um novo
+        caso aparecer na sua rotina.
+
+      </p>
+
 
     </div>
 
 
+
     <aside class="oferta-card">
 
+
       <p>
+
         SUA INSCRIÇÃO INCLUI
+
       </p>
 
+
       <h3>
+
         DNA dos Contratos
+
       </h3>
+
 
       <ul>
 
-        <li>Formação técnica contratual</li>
-        <li>Estrutura dos contratos</li>
-        <li>Análises contratuais</li>
-        <li>Tratativas com o cliente</li>
-        <li>Comercial e precificação</li>
-        <li>Modelos e materiais de apoio</li>
-        <li>Bônus de Marketing Jurídico</li>
-        <li>24 meses de acesso</li>
+        <li>
+          Formação técnica contratual
+        </li>
+
+        <li>
+          Estrutura dos contratos
+        </li>
+
+        <li>
+          Análises contratuais
+        </li>
+
+        <li>
+          Tratativas com o cliente
+        </li>
+
+        <li>
+          Comercial e precificação
+        </li>
+
+        <li>
+          Modelos e materiais de apoio
+        </li>
+
+        <li>
+          Bônus de Marketing Jurídico
+        </li>
+
+        <li>
+          24 meses de acesso
+        </li>
 
       </ul>
+
+
+
+      <div class="preco-card">
+
+
+        <p class="preco-card-antigo">
+
+          De R$ 1.497
+
+        </p>
+
+
+        <p class="preco-card-atual">
+
+          12x de R$ 99,06*
+
+        </p>
+
+
+        <p class="preco-card-texto">
+
+          Menos de R$ 100 por mês
+          para começar a construir
+          uma nova forma de atuar
+          na advocacia.
+
+        </p>
+
+
+      </div>
+
 
 
       <a
@@ -2593,7 +4940,6 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
           background:#ffffff !important;
           color:#090909 !important;
           -webkit-text-fill-color:#090909 !important;
-          text-shadow:none !important;
         "
       >
 
@@ -2603,15 +4949,20 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
             -webkit-text-fill-color:#090909 !important;
           "
         >
+
           Quero entrar para a 3ª turma →
+
         </span>
 
       </a>
 
 
       <p class="checkout-info">
+
         Pagamento processado pela Hotmart.
+
       </p>
+
 
     </aside>
 
@@ -2622,133 +4973,38 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
 
 
 
-<section class="faq">
+<!-- ====================================
+     URGÊNCIA
+==================================== -->
+
+
+<section class="urgencia">
+
 
   <div class="container">
 
-    <p class="eyebrow">
-      Dúvidas frequentes
-    </p>
-
-    <h2>
-      Antes de entrar.
-    </h2>
-
-
-    <div class="faq-list">
-
-
-      <details>
-
-        <summary>
-          Preciso já atuar com contratos?
-        </summary>
-
-        <p>
-
-          Não. O curso atende tanto quem está iniciando
-          quanto quem já trabalha com elaboração
-          e revisão contratual.
-
-        </p>
-
-      </details>
-
-
-      <details>
-
-        <summary>
-          O DNA entrega modelos?
-        </summary>
-
-        <p>
-
-          Sim. A formação inclui modelos
-          e materiais de apoio,
-          além das aulas voltadas à estrutura,
-          análise e adaptação dos contratos.
-
-        </p>
-
-      </details>
-
-
-      <details>
-
-        <summary>
-          Existe conteúdo de precificação?
-        </summary>
-
-        <p>
-
-          Sim. Precificação,
-          comercial e tratativas com o cliente
-          fazem parte da formação.
-
-        </p>
-
-      </details>
-
-
-      <details>
-
-        <summary>
-          Há análises práticas de contratos?
-        </summary>
-
-        <p>
-
-          Sim. Existe um módulo dedicado
-          à análise contratual,
-          com estudo de documentos
-          e identificação de fragilidades.
-
-        </p>
-
-      </details>
-
-
-      <details>
-
-        <summary>
-          Por quanto tempo tenho acesso?
-        </summary>
-
-        <p>
-          O acesso desta oferta é de 24 meses.
-        </p>
-
-      </details>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<section class="final">
-
-  <div class="container">
 
     <p class="eyebrow">
-      3ª turma
+
+      Inscrições abertas
+
     </p>
+
 
     <h2>
 
-      Desenvolva uma atuação contratual
-      que você saiba executar,
-      apresentar e cobrar.
+      A 3ª turma do DNA dos Contratos
+      está aberta agora.
 
     </h2>
+
 
     <p>
 
-      As inscrições para a nova turma
-      do DNA dos Contratos estão abertas.
+      Esta é a condição disponível
+      durante a abertura da terceira turma.
+      Quando as inscrições forem encerradas,
+      o acesso por esta oferta também será encerrado.
 
     </p>
 
@@ -2757,24 +5013,193 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
       onclick="return false;"
       href="https://pay.hotmart.com/P103421770X?checkoutMode=2&off=i0qcmbyf"
       class="btn btn-malbec hotmart-fb hotmart__button-checkout"
-      style="
-        background:#67162f !important;
-        color:#ffffff !important;
-        -webkit-text-fill-color:#ffffff !important;
-        text-shadow:none !important;
-      "
     >
 
-      <span
-        style="
-          color:#ffffff !important;
-          -webkit-text-fill-color:#ffffff !important;
-        "
-      >
-        Quero entrar para o DNA dos Contratos →
-      </span>
+      Quero garantir minha vaga →
 
     </a>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- ====================================
+     FAQ
+==================================== -->
+
+
+<section class="faq">
+
+
+  <div class="container">
+
+
+    <p class="eyebrow">
+
+      Dúvidas frequentes
+
+    </p>
+
+
+    <h2>
+
+      Antes de entrar.
+
+    </h2>
+
+
+
+    <div class="faq-list">
+
+
+      <details>
+
+
+        <summary>
+
+          Preciso já atuar com contratos?
+
+        </summary>
+
+
+        <p>
+
+          Não. A formação atende
+          quem está iniciando
+          e também quem já trabalha
+          com elaboração e revisão contratual.
+
+        </p>
+
+
+      </details>
+
+
+
+      <details>
+
+
+        <summary>
+
+          O DNA entrega modelos?
+
+        </summary>
+
+
+        <p>
+
+          Sim. A formação inclui modelos
+          e materiais de apoio,
+          além das aulas de estrutura,
+          análise e adaptação contratual.
+
+        </p>
+
+
+      </details>
+
+
+
+      <details>
+
+
+        <summary>
+
+          Existe conteúdo sobre honorários?
+
+        </summary>
+
+
+        <p>
+
+          Sim. Precificação,
+          comercial e tratativas
+          com o cliente fazem parte
+          da formação.
+
+        </p>
+
+
+      </details>
+
+
+
+      <details>
+
+
+        <summary>
+
+          Há análises práticas?
+
+        </summary>
+
+
+        <p>
+
+          Sim. Existe um módulo
+          dedicado à análise contratual
+          e ao desenvolvimento
+          do raciocínio necessário
+          para revisar documentos.
+
+        </p>
+
+
+      </details>
+
+
+
+      <details>
+
+
+        <summary>
+
+          Por quanto tempo tenho acesso?
+
+        </summary>
+
+
+        <p>
+
+          O acesso é de 24 meses.
+
+        </p>
+
+
+      </details>
+
+
+
+      <details>
+
+
+        <summary>
+
+          Quais formas de pagamento estão disponíveis?
+
+        </summary>
+
+
+        <p>
+
+          O checkout da Hotmart disponibiliza
+          diferentes formas de pagamento,
+          incluindo cartão, Pix
+          e outras modalidades
+          conforme disponibilidade
+          para o comprador.
+
+        </p>
+
+
+      </details>
+
+
+    </div>
+
 
   </div>
 
@@ -2787,56 +5212,67 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
 
 <footer>
 
+
   <div class="container">
 
-    © <span id="ano"></span>
+    ©
+    <span id="ano"></span>
+
     DNA dos Contratos.
+
     Todos os direitos reservados.
 
   </div>
+
 
 </footer>
 
 
 
+<!-- ====================================
+     CTA FIXO
+==================================== -->
+
+
 <div class="float">
+
 
   <a
     onclick="return false;"
     href="https://pay.hotmart.com/P103421770X?checkoutMode=2&off=i0qcmbyf"
     class="btn btn-malbec hotmart-fb hotmart__button-checkout"
-    style="
-      background:#67162f !important;
-      color:#ffffff !important;
-      -webkit-text-fill-color:#ffffff !important;
-      text-shadow:none !important;
-    "
   >
 
-    <span
-      style="
-        color:#ffffff !important;
-        -webkit-text-fill-color:#ffffff !important;
-      "
-    >
-      Quero entrar para o DNA dos Contratos
-    </span>
+    Quero entrar para o DNA dos Contratos
 
   </a>
+
 
 </div>
 
 
 
-<div class="lightbox" id="lightbox">
+<!-- ====================================
+     LIGHTBOX
+==================================== -->
+
+
+<div
+  class="lightbox"
+  id="lightbox"
+>
+
 
   <button
     class="fechar"
     id="fechar"
     aria-label="Fechar"
   >
+
     ×
+
   </button>
+
 
   <img
     id="lightboxImg"
@@ -2844,40 +5280,66 @@ a.btn-malbec.hotmart-fb.hotmart__button-checkout{
     alt="Mensagem ampliada"
   >
 
+
 </div>
 
 
 
+<!-- ====================================
+     HOTMART
+==================================== -->
+
+
 <script type="text/javascript">
+
 
 function importHotmart(){
 
+
   var imported =
-    document.createElement('script');
+    document.createElement(
+      'script'
+    );
+
 
   imported.src =
     'https://static.hotmart.com/checkout/widget.min.js';
 
-  document.head.appendChild(imported);
+
+  document.head.appendChild(
+    imported
+  );
+
 
 
   var link =
-    document.createElement('link');
+    document.createElement(
+      'link'
+    );
+
 
   link.rel =
     'stylesheet';
 
+
   link.type =
     'text/css';
+
 
   link.href =
     'https://static.hotmart.com/css/hotmart-fb.min.css';
 
-  document.head.appendChild(link);
+
+  document.head.appendChild(
+    link
+  );
+
 
 }
 
+
 importHotmart();
+
 
 </script>
 
@@ -2885,8 +5347,10 @@ importHotmart();
 
 <script>
 
+
 const VIDEO_ID =
 "7bw6hv2zOcI";
+
 
 
 document
@@ -2896,15 +5360,29 @@ new Date().getFullYear();
 
 
 
+/* VÍDEO */
+
+
 const videoStage =
-document.getElementById("videoStage");
+document.getElementById(
+  "videoStage"
+);
+
 
 
 function playVideo(){
 
-  if(videoStage.querySelector("iframe")){
+
+  if(
+    videoStage.querySelector(
+      "iframe"
+    )
+  ){
+
     return;
+
   }
+
 
   videoStage.innerHTML = `
 
@@ -2912,7 +5390,7 @@ function playVideo(){
 
       src="https://www.youtube-nocookie.com/embed/${VIDEO_ID}?autoplay=1&rel=0&playsinline=1"
 
-      title="Conheça o DNA dos Contratos"
+      title="DNA dos Contratos"
 
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 
@@ -2924,7 +5402,9 @@ function playVideo(){
 
   `;
 
+
 }
+
 
 
 videoStage.addEventListener(
@@ -2933,9 +5413,11 @@ videoStage.addEventListener(
 );
 
 
+
 videoStage.addEventListener(
   "keydown",
   e => {
+
 
     if(
       e.key === "Enter"
@@ -2944,56 +5426,94 @@ videoStage.addEventListener(
     ){
 
       e.preventDefault();
+
       playVideo();
 
     }
+
 
   }
 );
 
 
 
+/* LIGHTBOX */
+
+
 const lightbox =
-document.getElementById("lightbox");
+document.getElementById(
+  "lightbox"
+);
+
 
 const lightboxImg =
-document.getElementById("lightboxImg");
+document.getElementById(
+  "lightboxImg"
+);
+
 
 const fechar =
-document.getElementById("fechar");
+document.getElementById(
+  "fechar"
+);
+
 
 
 document
-.querySelectorAll(".story img")
-.forEach(img => {
+.querySelectorAll(
+  ".story img"
+)
+.forEach(
+  img => {
 
-  img.addEventListener(
-    "click",
-    () => {
 
-      lightboxImg.src =
-        img.src;
+    img.addEventListener(
+      "click",
+      () => {
 
-      lightbox.classList.add("open");
 
-      document.body.classList.add("no-scroll");
+        lightboxImg.src =
+          img.src;
 
-    }
 
-  );
+        lightbox.classList.add(
+          "open"
+        );
 
-});
+
+        document.body.classList.add(
+          "no-scroll"
+        );
+
+
+      }
+    );
+
+
+  }
+);
+
 
 
 function fecharLightbox(){
 
-  lightbox.classList.remove("open");
 
-  document.body.classList.remove("no-scroll");
+  lightbox.classList.remove(
+    "open"
+  );
 
-  lightboxImg.src = "";
+
+  document.body.classList.remove(
+    "no-scroll"
+  );
+
+
+  lightboxImg.src =
+    "";
+
 
 }
+
 
 
 fechar.addEventListener(
@@ -3002,31 +5522,47 @@ fechar.addEventListener(
 );
 
 
+
 lightbox.addEventListener(
   "click",
   e => {
 
-    if(e.target === lightbox){
+
+    if(
+      e.target === lightbox
+    ){
+
       fecharLightbox();
+
     }
+
 
   }
 );
+
 
 
 document.addEventListener(
   "keydown",
   e => {
 
-    if(e.key === "Escape"){
+
+    if(
+      e.key === "Escape"
+    ){
+
       fecharLightbox();
+
     }
+
 
   }
 );
+
 
 </script>
 
 
 </body>
+
 </html>
