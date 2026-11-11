@@ -1,163 +1,189 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DNA dos Contratos | Daniella Almada</title><meta name="description" content="Daniella Almada — advocacia contratual, artigos, livros e projetos editoriais."><meta name="theme-color" content="#5c1832"><style>
-:root{
-  --ink:#0b0b0b;--paper:#f5f0e7;--cream:#fffaf1;--wine:#5c1832;--blue:#1637ff;--coral:#ff6a4d;--lime:#d8f45b;--lav:#c9b8ff;--sky:#bfe8f7;--yellow:#ffd84d;--pink:#ffb3c6;--line:rgba(11,11,11,.22);--max:1500px;
-}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}.wrap{width:min(var(--max),calc(100% - 34px));margin:auto}
-.topline{background:var(--lime);border-bottom:1px solid var(--ink);font-size:12px;text-transform:uppercase;letter-spacing:.12em;padding:8px 0;text-align:center}.header{position:sticky;top:0;z-index:30;background:rgba(245,240,231,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--ink)}.header-row{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:20px;padding:15px 0}.menu-btn{border:1px solid var(--ink);background:transparent;border-radius:999px;padding:10px 15px;font-weight:700;cursor:pointer;width:max-content}.brand{font-family:Georgia,'Times New Roman',serif;font-weight:700;text-transform:uppercase;font-size:clamp(24px,3.1vw,48px);letter-spacing:-.055em;line-height:.9;text-align:center}.header-actions{display:flex;justify-content:flex-end;gap:8px}.pill{border:1px solid var(--ink);border-radius:999px;padding:10px 14px;font-size:12px;text-transform:uppercase;letter-spacing:.06em;font-weight:700}.pill.dark{background:var(--ink);color:white}.nav{border-top:1px solid var(--ink);overflow-x:auto;white-space:nowrap}.nav .wrap{display:flex;justify-content:center;gap:26px;padding:9px 0;font-size:12px;text-transform:uppercase;font-weight:700;letter-spacing:.08em}.nav a:hover{text-decoration:underline;text-underline-offset:3px}.mobile-drawer{position:fixed;inset:0;z-index:80;background:var(--blue);color:white;display:none;padding:26px}.mobile-drawer.open{display:block}.drawer-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid white;padding-bottom:16px}.drawer-links{display:grid;margin-top:28px}.drawer-links a{font-family:Georgia,serif;font-size:clamp(32px,8vw,70px);line-height:1;border-bottom:1px solid rgba(255,255,255,.35);padding:13px 0}.drawer-close{background:white;border:0;border-radius:999px;padding:10px 16px;font-weight:700}
-.hero{border-bottom:1px solid var(--ink);background:var(--coral)}.hero-grid{display:grid;grid-template-columns:1.18fr .82fr;min-height:650px}.hero-copy{padding:48px 34px 40px 0;display:flex;flex-direction:column;justify-content:space-between;border-right:1px solid var(--ink)}.kicker{font-size:12px;text-transform:uppercase;letter-spacing:.12em;font-weight:800}.hero h1,.display{font-family:Georgia,'Times New Roman',serif;font-weight:700;letter-spacing:-.06em;line-height:.88;margin:18px 0 24px;font-size:clamp(58px,8.8vw,142px)}.hero p{max-width:720px;font-size:clamp(18px,2vw,30px);line-height:1.12;margin:0}.hero-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}.cta{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 20px;border:1px solid var(--ink);border-radius:999px;background:var(--ink);color:white;font-size:12px;text-transform:uppercase;font-weight:800;letter-spacing:.06em}.cta.alt{background:transparent;color:var(--ink)}.hero-art{position:relative;min-height:650px;overflow:hidden;background:var(--lav);display:flex;align-items:center;justify-content:center}.hero-art:before{content:'';position:absolute;width:72%;aspect-ratio:1;border-radius:50%;background:var(--blue);top:-10%;right:-14%}.hero-art:after{content:'';position:absolute;width:55%;height:78%;background:var(--cream);border:1px solid var(--ink);transform:rotate(-4deg);box-shadow:18px 18px 0 var(--wine)}.portrait-mark{position:relative;z-index:2;font-family:Georgia,serif;font-size:clamp(110px,17vw,300px);color:var(--wine);letter-spacing:-.08em}.photo-label{position:absolute;z-index:3;bottom:22px;left:22px;background:var(--lime);border:1px solid var(--ink);padding:9px 11px;font-size:11px;text-transform:uppercase;font-weight:800;transform:rotate(-2deg)}
-.ticker{overflow:hidden;background:var(--ink);color:white;border-bottom:1px solid var(--ink)}.ticker-track{display:flex;width:max-content;gap:28px;padding:13px 0;animation:ticker 28s linear infinite;text-transform:uppercase;font-weight:800;letter-spacing:.08em}.ticker-track span:after{content:'DA';margin-left:0;width:21px;height:21px;border:1px solid var(--lime);border-radius:50%;display:inline-grid;place-items:center;color:var(--lime);font-size:7px;line-height:1;font-weight:900;letter-spacing:-.03em;transform:rotate(-8deg);font-family:Arial,Helvetica,sans-serif}@keyframes ticker{to{transform:translateX(-50%)}}
-.section{padding:78px 0;border-bottom:1px solid var(--ink)}.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:30px}.section-head h2{font-family:Georgia,serif;font-size:clamp(42px,6vw,90px);letter-spacing:-.055em;line-height:.9;margin:6px 0 0}.section-head p{max-width:580px;font-size:18px;margin:0}.arrow-link{font-size:12px;text-transform:uppercase;font-weight:800;letter-spacing:.08em;border-bottom:1px solid var(--ink);padding-bottom:4px}
-.story-grid{display:grid;grid-template-columns:1.25fr .75fr .75fr;gap:12px}.story-card{border:1px solid var(--ink);background:var(--cream);min-height:380px;display:flex;flex-direction:column}.story-card.big{grid-row:span 2;min-height:772px}.visual{min-height:210px;border-bottom:1px solid var(--ink);position:relative;overflow:hidden}.big .visual{min-height:500px}.visual.v1{background:var(--blue)}.visual.v1:before{content:'';position:absolute;width:72%;aspect-ratio:1;border-radius:50%;background:var(--yellow);top:12%;left:12%}.visual.v1:after{content:'CONTRATO';position:absolute;bottom:20px;left:20px;color:white;font-size:clamp(38px,5vw,78px);font-weight:900;letter-spacing:-.06em;transform:rotate(-5deg)}.visual.v2{background:var(--pink)}.visual.v2:before{content:'SIM?';position:absolute;font-family:Georgia,serif;font-size:120px;right:8px;top:40px;color:var(--wine);transform:rotate(7deg)}.visual.v3{background:var(--lime)}.visual.v3:before{content:'IA';position:absolute;font-family:Georgia,serif;font-size:150px;left:18px;bottom:-16px;color:var(--blue)}.visual.v4{background:var(--sky)}.visual.v4:before{content:'↗';position:absolute;font-size:160px;right:20px;bottom:-10px;color:var(--wine)}.visual.v5{background:var(--yellow)}.visual.v5:before{content:'ACORDO';position:absolute;font-weight:900;font-size:52px;left:18px;top:50%;transform:translateY(-50%) rotate(-4deg);color:var(--ink)}.story-copy{padding:20px;display:flex;flex-direction:column;gap:12px;flex:1}.tag{font-size:11px;text-transform:uppercase;letter-spacing:.1em;font-weight:800}.story-copy h3{font-family:Georgia,serif;font-size:clamp(25px,2.2vw,38px);line-height:.98;letter-spacing:-.035em;margin:0}.story-copy p{margin:0;line-height:1.35}.meta{margin-top:auto;padding-top:15px;border-top:1px solid var(--line);font-size:11px;text-transform:uppercase;display:flex;justify-content:space-between;gap:10px}
-.split-band{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--ink)}.consult{background:var(--ink);color:white;padding:70px max(30px,calc((100vw - var(--max))/2 + 17px)) 70px 30px}.consult h2,.club h2,.dna h2,.memory h2,.newsletter h2{font-family:Georgia,serif;font-size:clamp(48px,6.5vw,96px);line-height:.9;letter-spacing:-.055em;margin:14px 0 22px}.consult p{font-size:20px;max-width:670px;line-height:1.25}.consult .cta{background:var(--lime);color:var(--ink);border-color:white}.service-list{background:var(--sky);padding:44px 30px 44px max(30px,calc((100vw - var(--max))/2 + 17px));display:flex;flex-direction:column;justify-content:center}.service-list a{font-family:Georgia,serif;font-size:clamp(26px,3vw,46px);padding:20px 0;border-bottom:1px solid var(--ink);display:flex;justify-content:space-between;gap:20px}.service-list a:first-child{border-top:1px solid var(--ink)}
-.club{background:var(--lav);position:relative;overflow:hidden}.club-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center}.giant12{font-family:Arial Black,Arial,sans-serif;font-size:clamp(240px,38vw,620px);line-height:.65;letter-spacing:-.11em;color:var(--blue);transform:translateX(-5%)}.club-copy{padding:60px 0;position:relative;z-index:2}.club-copy p{font-size:20px;max-width:650px}.mini-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:26px 0}.mini-list div{border:1px solid var(--ink);padding:15px;background:rgba(255,255,255,.35);font-size:13px;font-weight:700}.book-spines{display:flex;height:170px;align-items:flex-end;gap:8px;margin-top:30px}.spine{width:42px;border:1px solid var(--ink);display:flex;align-items:center;justify-content:center;writing-mode:vertical-rl;text-transform:uppercase;font-size:10px;font-weight:800;padding:10px 0}.spine:nth-child(1){height:150px;background:var(--lime)}.spine:nth-child(2){height:130px;background:var(--coral)}.spine:nth-child(3){height:160px;background:var(--cream)}.spine:nth-child(4){height:145px;background:var(--blue);color:white}.spine:nth-child(5){height:120px;background:var(--yellow)}.spine:nth-child(6){height:155px;background:var(--pink)}
-.shelf{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.book{border:1px solid var(--ink);background:var(--cream);padding:12px}.cover{aspect-ratio:2/3;border:1px solid var(--ink);margin-bottom:14px;display:flex;align-items:center;justify-content:center;text-align:center;padding:14px;font-family:Georgia,serif;font-size:24px;line-height:.95}.book:nth-child(1) .cover{background:var(--wine);color:white}.book:nth-child(2) .cover{background:var(--yellow)}.book:nth-child(3) .cover{background:var(--sky)}.book:nth-child(4) .cover{background:var(--coral)}.book:nth-child(5) .cover{background:var(--lime)}.book:nth-child(6) .cover{background:var(--lav)}.book h3{font-size:15px;margin:0 0 4px}.book small{font-size:11px}
-.dna{background:var(--wine);color:white}.dna-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:start}.dna p{font-size:20px;max-width:720px}.dna-stats{display:grid;grid-template-columns:1fr 1fr;border:1px solid white}.stat{padding:26px;border-right:1px solid white;border-bottom:1px solid white}.stat:nth-child(2n){border-right:0}.stat:nth-child(n+3){border-bottom:0}.stat strong{display:block;font-family:Georgia,serif;font-size:56px;letter-spacing:-.05em}.stat span{font-size:11px;text-transform:uppercase;letter-spacing:.1em}.quote-card{border:1px solid white;padding:26px;margin-top:12px;background:rgba(255,255,255,.07)}.quote-card blockquote{font-family:Georgia,serif;font-size:27px;line-height:1.1;margin:0 0 20px}
-.travel-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-template-rows:360px 320px;gap:12px}.travel{border:1px solid var(--ink);position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:20px}.travel:nth-child(1){grid-row:1/3;background:linear-gradient(140deg,var(--coral),var(--yellow) 45%,var(--blue) 46%,var(--blue) 65%,var(--cream) 66%)}.travel:nth-child(2){background:linear-gradient(45deg,var(--sky) 0 55%,var(--wine) 55%)}.travel:nth-child(3){background:radial-gradient(circle at 70% 30%,var(--lime) 0 22%,transparent 23%),var(--lav)}.travel:nth-child(4){grid-column:2/4;background:linear-gradient(100deg,var(--ink) 0 42%,var(--pink) 42% 64%,var(--yellow) 64%)}.travel .label{background:var(--cream);border:1px solid var(--ink);padding:11px 13px;max-width:260px}.travel h3{font-family:Georgia,serif;font-size:30px;margin:0 0 5px}.travel p{font-size:12px;margin:0;line-height:1.3}
-.memory{background:var(--sky)}.memory-grid{display:grid;grid-template-columns:1fr .85fr;gap:50px;align-items:center}.memory p{font-size:20px;max-width:700px;line-height:1.25}.memory-frame{aspect-ratio:4/5;border:1px solid var(--ink);background:var(--cream);padding:18px;transform:rotate(2deg);box-shadow:18px 18px 0 var(--wine)}.memory-inner{height:100%;background:linear-gradient(145deg,#d7d0c4,#7f756c);position:relative;display:flex;align-items:center;justify-content:center}.memory-inner:before{content:'ARQUIVO\A AFETIVO';white-space:pre;text-align:center;font-family:Georgia,serif;font-size:54px;color:var(--cream);line-height:.9}.memory-note{font-family:Georgia,serif;font-size:28px;font-style:italic;border-left:5px solid var(--wine);padding-left:20px;margin:28px 0}
-.newsletter{background:var(--yellow)}.newsletter-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end}.newsletter p{font-size:20px}.signup{display:flex;border:1px solid var(--ink);background:var(--cream);min-height:58px}.signup input{flex:1;border:0;background:transparent;padding:0 16px;font-size:16px;min-width:0}.signup button{border:0;border-left:1px solid var(--ink);background:var(--blue);color:white;padding:0 22px;font-weight:800;text-transform:uppercase}
-.footer{background:var(--ink);color:white;padding:60px 0 24px}.footer-grid{display:grid;grid-template-columns:1.2fr repeat(3,.8fr);gap:35px}.footer-brand{font-family:Georgia,serif;font-size:clamp(44px,5vw,82px);line-height:.85;letter-spacing:-.06em}.footer h4{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--lime);margin:0 0 12px}.footer a,.footer span{display:block;font-size:14px;padding:5px 0}.footer-bottom{border-top:1px solid rgba(255,255,255,.3);margin-top:40px;padding-top:18px;display:flex;justify-content:space-between;gap:20px;font-size:11px;color:#ccc}
-.page-hero{padding:70px 0 50px;border-bottom:1px solid var(--ink)}.page-hero h1{font-family:Georgia,serif;font-size:clamp(64px,10vw,150px);letter-spacing:-.065em;line-height:.82;margin:15px 0 22px}.page-hero p{font-size:22px;max-width:820px;line-height:1.2}.page-hero.blue{background:var(--blue);color:white}.page-hero.lav{background:var(--lav)}.page-hero.wine{background:var(--wine);color:white}.page-hero.lime{background:var(--lime)}.page-hero.coral{background:var(--coral)}.page-hero.sky{background:var(--sky)}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.card{border:1px solid var(--ink);background:var(--cream);padding:24px;min-height:260px}.card h3{font-family:Georgia,serif;font-size:34px;letter-spacing:-.035em;margin:12px 0}.card p{line-height:1.45}.card:nth-child(2n){background:var(--sky)}.card:nth-child(3n){background:var(--lime)}
-.long-copy{max-width:900px;font-family:Georgia,serif;font-size:22px;line-height:1.55}.long-copy h2{font-family:Arial,Helvetica,sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:.12em;margin-top:46px}.article-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}.article-item{border:1px solid var(--ink);padding:24px;background:var(--cream)}.article-item:nth-child(4n+2){background:var(--pink)}.article-item:nth-child(4n+3){background:var(--sky)}.article-item:nth-child(4n+4){background:var(--lime)}.article-item h2{font-family:Georgia,serif;font-size:clamp(30px,3.2vw,50px);line-height:.95;letter-spacing:-.04em;margin:12px 0}.article-item p{font-size:16px;line-height:1.4}.article-item .cta{margin-top:12px}.contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.contact-box{border:1px solid var(--ink);padding:30px;min-height:220px;background:var(--cream)}.contact-box:nth-child(2){background:var(--lime)}.contact-box:nth-child(3){background:var(--sky)}.contact-box:nth-child(4){background:var(--lav)}.contact-box h3{font-family:Georgia,serif;font-size:38px;margin:10px 0}.note{font-size:12px;color:#555;margin-top:20px}
-@media(max-width:980px){.nav{display:none}.header-row{grid-template-columns:auto 1fr auto}.brand{font-size:30px}.header-actions .pill:not(.dark){display:none}.hero-grid,.split-band,.club-grid,.dna-grid,.memory-grid,.newsletter-grid{grid-template-columns:1fr}.hero-copy{padding:38px 0;border-right:0;border-bottom:1px solid var(--ink);min-height:500px}.hero-art{min-height:520px}.story-grid{grid-template-columns:1fr 1fr}.story-card.big{grid-row:auto;grid-column:1/3;min-height:620px}.big .visual{min-height:380px}.shelf{grid-template-columns:repeat(3,1fr)}.travel-grid{grid-template-columns:1fr 1fr;grid-template-rows:420px 280px 280px}.travel:nth-child(1){grid-row:1;grid-column:1/3}.travel:nth-child(4){grid-column:1/3}.footer-grid{grid-template-columns:1fr 1fr}.cards{grid-template-columns:1fr 1fr}}
-@media(max-width:640px){.wrap{width:min(var(--max),calc(100% - 20px))}.header-row{padding:10px 0}.brand{font-size:24px}.menu-btn{padding:8px 11px}.header-actions .pill.dark{font-size:0;padding:9px 12px}.header-actions .pill.dark:after{content:'Agendar';font-size:10px}.hero-copy{min-height:440px}.hero h1,.display{font-size:58px}.hero-art{min-height:430px}.story-grid,.article-list,.cards,.contact-grid{grid-template-columns:1fr}.story-card.big{grid-column:auto;min-height:auto}.big .visual,.visual{min-height:260px}.section{padding:54px 0}.section-head{align-items:flex-start;flex-direction:column}.service-list,.consult{padding:50px 20px}.giant12{font-size:260px}.club-copy{padding:0 0 50px}.mini-list{grid-template-columns:1fr}.shelf{grid-template-columns:repeat(2,1fr)}.dna-stats{grid-template-columns:1fr}.stat{border-right:0!important;border-bottom:1px solid white!important}.stat:last-child{border-bottom:0!important}.travel-grid{display:grid;grid-template-columns:1fr;grid-template-rows:auto}.travel,.travel:nth-child(1),.travel:nth-child(4){grid-column:auto;grid-row:auto;min-height:280px}.newsletter-grid{gap:12px}.signup{flex-direction:column}.signup input{min-height:58px}.signup button{min-height:54px;border-left:0;border-top:1px solid var(--ink)}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column}.page-hero h1{font-size:64px}.article-item h2{font-size:36px}}
-
-.social-icons{display:flex;align-items:center;gap:9px;flex-wrap:wrap}.social-icons a{width:42px;height:42px;border:1px solid var(--ink);border-radius:999px;display:inline-flex;align-items:center;justify-content:center;background:var(--cream);color:var(--ink);transition:transform .18s ease,background .18s ease,color .18s ease}.social-icons a:hover{transform:translateY(-2px);background:var(--ink);color:#fff}.social-icons svg{width:20px;height:20px;display:block;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.social-icons .icon-fill{fill:currentColor;stroke:none}.header-actions .social-icons{justify-content:flex-end;flex-wrap:nowrap}.footer .social-icons a{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}.footer .social-icons a:hover{background:#fff;color:#0b0b0b}.contact-box .social-icons{margin-top:18px}.contact-box .social-icons a{width:52px;height:52px}.contact-box .social-icons svg{width:24px;height:24px}@media(max-width:720px){.header-actions .social-icons a:nth-child(2),.header-actions .social-icons a:nth-child(3){display:none}.header-actions .social-icons a{width:38px;height:38px}.header-actions .social-icons svg{width:18px;height:18px}}
-
-/* ===== V6 — direção editorial inspirada na linguagem do Service95 ===== */
-:root{--ink:#0a0a0a;--paper:#fff;--cream:#fff;--wine:#0a0a0a;--blue:#ececec;--coral:#fff;--lime:#d9ff45;--lav:#f2f2f2;--sky:#f2f2f2;--yellow:#f2f2f2;--pink:#f2f2f2;--line:rgba(10,10,10,.55);--max:1460px}
-html,body{background:#fff;color:#0a0a0a}
-body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:15px;line-height:1.35}
-.wrap{width:min(var(--max),calc(100% - 64px))}
-.topline{display:none}
-.header{position:relative;top:auto;background:#fff;backdrop-filter:none;border-bottom:0}
-.header-row{min-height:84px;padding:18px 0;grid-template-columns:1fr auto 1fr}
-.brand{font-family:Arial Black,"Helvetica Neue",Arial,sans-serif;font-size:clamp(28px,2.25vw,38px);font-weight:900;letter-spacing:-.055em;line-height:1;text-transform:uppercase}
-.menu-btn{border:0;border-radius:0;padding:0;background:transparent;font-size:13px;text-transform:uppercase;letter-spacing:-.01em}
-.header-actions{gap:7px}.social-icons a{width:34px;height:34px;border:1px solid #111;background:#fff}.social-icons svg{width:15px;height:15px}
-.nav{border-top:1px dashed #666;border-bottom:1px dashed #666;overflow-x:auto}
-.nav .wrap{justify-content:space-between;gap:28px;padding:13px 0;font-size:13px;font-weight:700;letter-spacing:-.02em}
-.nav a{text-transform:uppercase}.nav a:hover{text-decoration:none;opacity:.55}
-.mobile-drawer{background:#fff;color:#0a0a0a}.drawer-head{border-color:#111}.drawer-links a{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:clamp(28px,7vw,54px);font-weight:700;border-color:#ddd}.drawer-close{border:1px solid #111;background:#fff}
-
-/* Home intro no lugar do painel colorido */
-.hero{background:#fff;border:0}.hero-grid{display:block;min-height:0}.hero-copy{padding:48px 0 18px;border:0;display:block;text-align:center;min-height:0}.hero-copy>div:first-child{max-width:820px;margin:0 auto}.hero-copy>div:last-child{display:none}
-.hero h1,.display{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:clamp(36px,4.1vw,62px);line-height:.98;letter-spacing:-.055em;font-weight:700;margin:14px auto 18px;max-width:760px}
-.hero p{font-size:16px;line-height:1.25;max-width:660px;margin:0 auto}
-.hero-cta{justify-content:center;margin-top:22px}.cta{min-height:38px;padding:0 15px;border-radius:0;border:1px solid #111;background:#111;color:#fff;font-size:11px;letter-spacing:.02em;font-weight:700}.cta.alt{background:#fff;color:#111}
-.hero-art{display:none}.ticker{display:none}
-.home-topics{display:flex;justify-content:center;gap:24px;margin:26px 0 34px;font-size:13px;font-style:italic;font-weight:700;text-transform:uppercase}
-.home-features{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:58px}
-.feature-card{display:block;text-align:center}.feature-photo{aspect-ratio:1.55/1;background:#e9e9e9;position:relative;overflow:hidden;margin-bottom:12px}.feature-photo:before{content:"";position:absolute;inset:0;background:linear-gradient(145deg,#d9d9d9 0 42%,#efefef 42% 68%,#cfcfcf 68%)}.feature-photo.alt:before{background:linear-gradient(25deg,#cfcfcf 0 31%,#eeeeee 31% 66%,#d8d8d8 66%)}.feature-photo.dark:before{background:linear-gradient(150deg,#202020 0 44%,#707070 44% 62%,#d2d2d2 62%)}
-.feature-photo span{position:absolute;left:12px;bottom:10px;background:#fff;padding:5px 7px;border:1px solid #111;font-size:9px;text-transform:uppercase;font-weight:700;letter-spacing:.03em}
-.feature-card .tag{font-style:italic;font-size:12px;letter-spacing:-.01em;margin-bottom:7px}.feature-card h3{font-size:15px;line-height:1.15;margin:0 auto;max-width:410px;font-weight:700}
-
-.section{padding:58px 0;border-bottom:0}
-.section+.section{border-top:1px solid #e3e3e3}
-.section-head{align-items:center;margin-bottom:28px;border-top:1px solid #111;padding-top:18px}
-.section-head h2{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:clamp(28px,2.5vw,40px);font-weight:700;line-height:1;letter-spacing:-.055em;margin:3px 0 0}
-.section-head p{font-size:15px}.kicker,.tag{font-size:11px;letter-spacing:-.01em;font-weight:700}.arrow-link{font-size:11px;letter-spacing:-.01em;border:0;text-decoration:underline;text-underline-offset:3px}
-.story-grid{grid-template-columns:repeat(3,1fr);gap:28px 10px}.story-card,.story-card.big{border:0;background:transparent;min-height:0;grid-row:auto}.visual,.big .visual{min-height:0;aspect-ratio:1.55/1;border:0;background:#e8e8e8!important;position:relative}.visual:before{content:""!important;position:absolute!important;inset:0!important;width:auto!important;height:auto!important;border-radius:0!important;left:0!important;right:0!important;top:0!important;bottom:0!important;transform:none!important;color:transparent!important;background:linear-gradient(140deg,#d1d1d1 0 38%,#ececec 38% 65%,#bdbdbd 65%)!important}.visual:after{display:none!important}.v2:before{background:linear-gradient(35deg,#e2e2e2 0 32%,#bdbdbd 32% 55%,#ededed 55%)!important}.v3:before{background:linear-gradient(120deg,#b8b8b8 0 26%,#ececec 26% 63%,#d4d4d4 63%)!important}.v4:before{background:linear-gradient(20deg,#d8d8d8 0 47%,#eeeeee 47% 75%,#bbbbbb 75%)!important}.v5:before{background:linear-gradient(160deg,#c9c9c9 0 42%,#f1f1f1 42% 70%,#d7d7d7 70%)!important}
-.story-copy{padding:11px 0 0;gap:7px;text-align:center}.story-copy h3{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:15px;line-height:1.14;letter-spacing:-.02em;font-weight:700}.story-copy p{font-size:13px;color:#3d3d3d}.story-card.big .story-copy p{display:none}.meta{justify-content:center;gap:14px;border:0;padding-top:4px;font-size:10px;color:#555}
-
-.split-band{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #111;border-bottom:1px solid #111;background:#fff}.consult,.service-list{background:#fff!important;color:#111!important;padding:48px max(32px,calc((100vw - var(--max))/2 + 32px))}.consult{border-right:1px solid #111}.consult h2,.club h2,.dna h2,.memory h2,.newsletter h2{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:clamp(28px,3vw,44px);line-height:1;letter-spacing:-.05em;font-weight:700;margin:10px 0 16px}.consult p,.club-copy p,.dna p,.memory p,.newsletter p{font-size:15px;line-height:1.35}.consult .cta{background:#111;color:#fff;border-color:#111}.service-list a{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:17px;font-weight:600;padding:15px 0}
-
-.club,.dna,.memory,.newsletter{background:#fff!important;color:#111!important}.club-grid,.dna-grid,.memory-grid,.newsletter-grid{gap:48px}.giant12{font-family:Arial Black,Arial,sans-serif;font-size:clamp(150px,20vw,310px);color:#111;line-height:.72;opacity:.08}.mini-list{gap:0;border-top:1px solid #111;border-bottom:1px solid #111}.mini-list div{border:0;border-right:1px solid #ddd;background:#fff;padding:13px;font-size:12px}.book-spines{display:none}.shelf{grid-template-columns:repeat(3,1fr);gap:24px 10px}.book{border:0;padding:0;background:#fff}.cover{aspect-ratio:1.55/1;border:0;background:#e9e9e9!important;margin-bottom:10px;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:17px}.book h3{font-size:14px;margin:0 0 3px}.book small{font-size:12px;color:#555}.dna{border-top:1px solid #111;border-bottom:1px solid #111}.stat{border-color:#ddd}.stat strong{font-size:36px}.quote-card{background:#f2f2f2!important;color:#111!important;border:0}.quote-card blockquote{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:24px;line-height:1.08}
-.travel-grid{grid-template-columns:repeat(3,1fr);gap:10px}.travel{min-height:0;aspect-ratio:1.55/1;background:#e8e8e8!important;border:0}.travel:before{background:linear-gradient(140deg,#d0d0d0,#eeeeee 58%,#bdbdbd)!important}.travel .label{background:#fff;color:#111;padding:10px 4px;position:absolute;left:0;right:0;bottom:-65px;text-align:center}.travel{margin-bottom:72px}.travel h3{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:15px;margin:0}.travel p{font-size:11px;margin:3px 0 0}.memory-frame{background:#ececec;border:0}.memory-inner{border:0}.memory-note{border-left:0;border-top:1px solid #111;border-bottom:1px solid #111;padding:14px 0;font-size:18px;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}.newsletter{background:#f4f4f4!important}.signup input{background:#fff;border-color:#111}.signup button{background:#111}
-
-.page-hero,.page-hero.coral,.page-hero.blue,.page-hero.lav,.page-hero.sky,.page-hero.yellow,.page-hero.pink,.page-hero.wine{background:#fff!important;color:#111!important;padding:48px 0 34px;text-align:center;border-bottom:0}.page-hero .wrap{max-width:850px}.page-hero h1{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:clamp(38px,4.3vw,60px);line-height:1;letter-spacing:-.055em;font-weight:700;margin:10px 0 14px}.page-hero p{font-size:16px;line-height:1.25;max-width:680px;margin:0 auto}.article-list{max-width:1040px;margin:0 auto}.article-item{padding:30px 0;border-top:1px solid #111}.article-item h2{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:clamp(24px,2.1vw,34px);line-height:1.05;letter-spacing:-.045em}.article-item p{font-size:15px;max-width:760px}.card,.contact-box{border:1px solid #111;background:#fff!important}.card h3,.contact-box h3{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:24px;letter-spacing:-.04em}.grid-3{gap:10px}.grid-2{gap:10px}
-.footer{background:#0a0a0a;color:#fff;padding-top:48px}.footer-brand{font-family:Arial Black,"Helvetica Neue",Arial,sans-serif;font-size:clamp(34px,3.4vw,52px);letter-spacing:-.06em}.footer h4{font-size:11px}.footer a{font-size:13px}.footer-bottom{border-color:#444;font-size:10px}
-
-@media(max-width:980px){.wrap{width:min(var(--max),calc(100% - 36px))}.header-row{min-height:70px}.nav .wrap{justify-content:flex-start}.home-features,.story-grid,.shelf,.travel-grid{grid-template-columns:repeat(2,1fr)}.split-band{grid-template-columns:1fr}.consult{border-right:0;border-bottom:1px solid #111}.hero-copy{padding-top:38px}}
-@media(max-width:640px){.wrap{width:calc(100% - 24px)}.header-row{grid-template-columns:auto 1fr auto;gap:10px}.brand{font-size:22px}.header-actions .social-icons a:nth-child(-n+2){display:none}.nav .wrap{padding:11px 0;font-size:11px}.hero-copy{padding:34px 0 8px}.hero h1,.display{font-size:36px}.hero p{font-size:15px}.home-topics{gap:12px;font-size:11px;flex-wrap:wrap}.home-features,.story-grid,.shelf,.travel-grid{grid-template-columns:1fr}.section{padding:44px 0}.section-head{align-items:flex-start}.section-head h2{font-size:30px}.story-copy h3{font-size:16px}.club-grid,.dna-grid,.memory-grid,.newsletter-grid{grid-template-columns:1fr}.giant12{display:none}.mini-list{grid-template-columns:1fr}.mini-list div{border-right:0;border-bottom:1px solid #ddd}.consult,.service-list{padding:38px 22px}.page-hero{padding:38px 0 26px}.page-hero h1{font-size:38px}.travel{margin-bottom:68px}}
-
-
-/* DNA dos Contratos — ajustes de campanha Black Friday / 4ª turma */
-.dna-sales-hero{background:#0c0c0c;color:#fff;border-bottom:1px solid #2a2a2a}
-.dna-sales-hero .wrap{display:grid;grid-template-columns:1.02fr .98fr;min-height:720px;align-items:stretch}
-.dna-sales-image{min-height:720px;background:#111;overflow:hidden;position:relative;border-right:1px solid #2a2a2a}
-.dna-sales-image img{width:100%;height:100%;object-fit:cover;object-position:center top}
-.dna-sales-copy{padding:72px 58px;display:flex;flex-direction:column;justify-content:center;gap:22px}
-.dna-badge{display:inline-flex;align-items:center;width:max-content;padding:10px 15px;border:1px solid rgba(255,255,255,.6);border-radius:999px;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
-.dna-badge strong{color:#ff3b3b;margin-right:6px}
-.dna-sales-copy h1{font-family:Arial,Helvetica,sans-serif;font-size:clamp(48px,5.6vw,84px);line-height:.93;letter-spacing:-.055em;margin:0;max-width:760px}
-.dna-sales-copy p{font-size:clamp(18px,1.7vw,25px);line-height:1.28;color:#e1e1e1;max-width:680px;margin:0}
-.dna-sales-points{display:grid;gap:10px;margin:8px 0 4px;padding:0;list-style:none}
-.dna-sales-points li{display:flex;gap:10px;align-items:flex-start;font-size:16px;color:#eee}
-.dna-sales-points li:before{content:'✓';color:#d7b5c5;font-weight:900}
-.dna-sales-cta{display:inline-flex;align-items:center;justify-content:center;width:max-content;min-height:54px;padding:0 24px;background:#fff;color:#111;border:1px solid #fff;border-radius:4px;font-size:13px;font-weight:900;letter-spacing:.04em;text-transform:uppercase}
-.dna-sales-cta:hover{background:#ececec}
-.offer-wrap{background:#0f0f0f;color:#fff;border-bottom:1px solid #2b2b2b;padding:76px 0}
-.offer-card{max-width:1080px;margin:0 auto;background:#111;border:1px solid #2b2b2b;border-radius:24px;padding:28px 32px 30px;box-shadow:0 18px 60px rgba(0,0,0,.16)}
-.offer-label{background:#5c213b;color:#fff;text-align:center;padding:14px 18px;border-radius:10px;font-size:15px;text-transform:uppercase;letter-spacing:.06em}
-.offer-price{text-align:center;padding:28px 0 18px}
-.offer-price .from{font-size:21px;color:#c8c8c8;margin-bottom:12px}.offer-price .from s{opacity:.9}
-.offer-price .installments{font-size:clamp(34px,4.6vw,56px);font-weight:900;line-height:1.05}.offer-price .installments span{font-size:.62em;font-weight:800}
-.offer-save{display:inline-block;margin-top:18px;padding:8px 16px;border-radius:999px;background:#0d2e18;color:#25c65f;font-weight:800;font-size:18px}
-.offer-access{font-size:22px;text-align:center;color:#e2e2e2;margin-top:22px}
-.offer-divider{border:0;border-top:1px solid #3a3a3a;margin:28px 0}
-.offer-includes h3{font-size:23px;margin:0 0 16px}.offer-includes ul{list-style:none;margin:0;padding:0;display:grid;gap:14px}.offer-includes li{font-size:18px;line-height:1.35;padding-left:30px;position:relative}.offer-includes li:before{content:'✓';position:absolute;left:0;top:0;color:#d7b5c5;font-weight:900}
-.offer-button{display:flex;align-items:center;justify-content:center;width:100%;min-height:66px;background:#fff;color:#111;border-radius:12px;margin-top:28px;font-size:20px;font-weight:900;text-transform:uppercase;letter-spacing:.02em}
-.offer-foot{text-align:center;color:#bdbdbd;font-size:15px;margin-top:14px}
-.offer-note{text-align:center;color:#bdbdbd;font-size:13px;margin-top:10px}
-@media(max-width:900px){.dna-sales-hero .wrap{grid-template-columns:1fr;min-height:auto}.dna-sales-image{min-height:560px;border-right:0;border-bottom:1px solid #2a2a2a}.dna-sales-copy{padding:44px 22px 50px}.offer-wrap{padding:50px 0}.offer-card{border-radius:18px;padding:22px 20px 24px}}
-@media(max-width:560px){.dna-sales-image{min-height:470px}.dna-sales-copy h1{font-size:46px}.offer-access{font-size:19px}.offer-includes li{font-size:16px}.offer-button{font-size:16px;min-height:60px}}
-
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DNA dos Contratos | 4ª Turma</title>
+<meta name="description" content="DNA dos Contratos — formação para advogados que querem construir uma atuação contratual consultiva. 4ª turma, 24 meses de acesso.">
+<style>
+:root{--bg:#0e0e10;--paper:#f5f1eb;--ink:#111;--wine:#5b1f39;--wine2:#7b294d;--red:#c4232a;--green:#22c55e;--muted:#b9b7b5;--line:#2b2b2f;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:#f7f5f2;line-height:1.5}a{color:inherit}img{max-width:100%;display:block}
+.wrap{width:min(1180px,92vw);margin:auto}.kicker{font-size:13px;text-transform:uppercase;letter-spacing:.14em;font-weight:800;color:#d6c6cc}h1,h2,h3{line-height:1.04;margin:0 0 18px}h1{font-family:Georgia,serif;font-size:clamp(46px,8vw,96px);font-weight:700}h2{font-family:Georgia,serif;font-size:clamp(34px,5vw,60px)}h3{font-size:22px}p{margin:0 0 18px}
+.topbar{background:var(--wine);padding:11px;text-align:center;font-weight:800;letter-spacing:.08em;font-size:13px;text-transform:uppercase;position:sticky;top:0;z-index:50}
+.hero{min-height:88vh;display:grid;grid-template-columns:1.05fr .95fr;border-bottom:1px solid var(--line)}.hero-copy{padding:72px 7vw 64px;display:flex;flex-direction:column;justify-content:center}.hero-image{background:#171719;min-height:600px}.hero-image img{width:100%;height:100%;object-fit:cover}
+.hero p.lead{font-size:clamp(19px,2.2vw,28px);max-width:780px;color:#e9e3e5}.badge{display:inline-flex;align-self:flex-start;background:#fff;color:#111;border-radius:999px;padding:8px 13px;font-weight:900;margin:16px 0 24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;background:#fff;color:#111;border:1px solid #fff;padding:16px 24px;border-radius:4px;font-weight:900;text-transform:uppercase;letter-spacing:.03em;transition:.2s}.btn:hover{transform:translateY(-2px)}.btn.wine{background:var(--wine2);color:#fff;border-color:var(--wine2)}.btn.dark{background:#111;color:#fff}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.trust-strip{padding:22px 0;border-bottom:1px solid var(--line);background:#151517}.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;text-align:center}.trust-grid strong{font-size:28px;display:block}.trust-grid span{color:#bdb8ba;font-size:13px;text-transform:uppercase;letter-spacing:.08em}
+.section{padding:88px 0;border-bottom:1px solid var(--line)}.section.light{background:var(--paper);color:#111}.section-head{max-width:860px;margin-bottom:42px}.section-head p{font-size:20px;color:#c8c4c5}.light .section-head p{color:#4d4a49}
+.problem-grid,.service-grid,.axis-grid,.path-grid,.faq-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.problem,.service,.axis,.path{border:1px solid #2c2c31;padding:26px;border-radius:6px;background:#151517}.light .problem,.light .service,.light .axis,.light .path{border-color:#d5d0ca;background:#fff}.num{font-size:12px;letter-spacing:.1em;color:#9d9a99;font-weight:800;margin-bottom:22px}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#2d2d31;border:1px solid #2d2d31}.services div{background:#111;padding:25px;font-weight:800}
+.cta-line{margin-top:32px}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:28px}.quote{background:#fff;color:#111;padding:28px;border-radius:5px;min-height:220px;display:flex;flex-direction:column;justify-content:space-between}.quote blockquote{font:700 22px/1.28 Georgia,serif;margin:0}.quote small{font-weight:800;color:#6b6664;margin-top:24px}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.gallery img{width:100%;height:460px;object-fit:cover;border-radius:5px;border:1px solid #ddd;background:#eee}.gallery.two img{height:520px}
+.modules{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.module{padding:24px;border:1px solid #d5d0ca;background:#fff;min-height:190px}.module b{display:block;color:var(--wine);font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
+.offer{background:#0b0b0c;border:1px solid #333;border-radius:16px;padding:34px;max-width:920px;margin:0 auto;box-shadow:0 30px 80px rgba(0,0,0,.25)}.offer-band{background:var(--wine);text-align:center;padding:14px;border-radius:10px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}.price-old{font-size:25px;color:#c8c4c4;text-align:center;margin-top:26px}.price{font-size:clamp(38px,6vw,66px);font-weight:900;text-align:center;margin:12px 0}.save{display:table;margin:0 auto 22px;background:#11351c;color:#28d261;border-radius:999px;padding:8px 18px;font-weight:900}.access{text-align:center;font-size:24px;margin-bottom:28px}.included{border-top:1px solid #444;padding-top:28px}.included li{margin:12px 0;font-size:19px}.offer .btn{width:100%;font-size:20px;margin-top:20px}.cash{text-align:center;color:#aaa;margin-top:14px}
+.sticky{position:fixed;left:50%;transform:translateX(-50%);bottom:16px;z-index:60;width:min(720px,92vw);background:#fff;color:#111;border-radius:999px;text-decoration:none;font-weight:900;text-align:center;padding:14px 22px;box-shadow:0 12px 50px rgba(0,0,0,.35)}
+footer{padding:40px 0 100px;color:#9d9998;text-align:center}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.hero-image{min-height:520px;order:-1}.hero-copy{padding:48px 6vw}.trust-grid{grid-template-columns:repeat(2,1fr)}.quotes{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}.services{grid-template-columns:repeat(2,1fr)}.modules{grid-template-columns:1fr 1fr}}
+@media(max-width:580px){.problem-grid,.service-grid,.axis-grid,.path-grid,.faq-grid,.modules{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}.gallery img{height:330px}.hero-image{min-height:430px}.section{padding:60px 0}}
 </style>
-<style id="service95-refinement">
-/* Refinamento editorial v5: hierarquia mais compacta e ritmo de revista */
-.hero-grid{min-height:560px}
-.hero-copy{padding-top:42px;padding-bottom:38px}
-.hero h1,.display{font-size:clamp(46px,6.2vw,98px);line-height:.92;letter-spacing:-.048em;margin:16px 0 22px}
-.hero p{font-size:clamp(18px,1.55vw,24px);line-height:1.2;max-width:650px}
-.hero-art{min-height:560px}
-.portrait-mark{font-size:clamp(92px,13vw,220px)}
-.section{padding:68px 0}
-.section-head h2{font-size:clamp(38px,4.7vw,68px);line-height:.94;letter-spacing:-.045em}
-.consult h2,.club h2,.dna h2,.memory h2,.newsletter h2{font-size:clamp(42px,5vw,76px);line-height:.93;letter-spacing:-.045em}
-.service-list a{font-size:clamp(24px,2.35vw,38px)}
-.story-copy h3{font-size:clamp(23px,1.9vw,34px);line-height:1.02}
-.giant12{font-size:clamp(210px,30vw,470px)}
-.page-hero{padding:60px 0 44px}
-.page-hero h1{font-size:clamp(52px,7.2vw,104px);line-height:.9;letter-spacing:-.052em}
-.article-item h2{font-size:clamp(28px,2.7vw,43px);line-height:1}
-.card h3{font-size:30px}
-.contact-box h3{font-size:32px}
-.footer-brand{font-size:clamp(40px,4.2vw,68px);line-height:.9}
-.stat strong{font-size:48px}
-/* Separador autoral: selo DA, no lugar do símbolo em forma de estrela */
-.ticker-track{gap:22px;padding:11px 0;letter-spacing:.075em}
-.ticker-track span{display:inline-flex;align-items:center;gap:22px}
-.ticker-track span:after{content:'DA';margin-left:0;width:21px;height:21px;border:1px solid var(--lime);border-radius:50%;display:inline-grid;place-items:center;color:var(--lime);font-size:7px;line-height:1;font-weight:900;letter-spacing:-.03em;transform:rotate(-8deg);font-family:Arial,Helvetica,sans-serif}
-/* Mais próximo da cadência editorial do Service95: menos escala monumental, mais módulos */
-.kicker,.tag,.nav .wrap,.topline{letter-spacing:.105em}
-.cta{min-height:46px;padding:0 18px}
-@media(max-width:980px){
-  .hero-grid{min-height:auto}.hero-copy{min-height:440px}.hero-art{min-height:470px}
-  .hero h1,.display{font-size:clamp(48px,9vw,78px)}
-  .page-hero h1{font-size:clamp(50px,10vw,82px)}
-}
-@media(max-width:640px){
-  .hero-copy{min-height:390px;padding-top:32px;padding-bottom:30px}
-  .hero h1,.display{font-size:clamp(43px,13vw,58px);line-height:.95}
-  .hero p{font-size:18px}
-  .hero-art{min-height:390px}
-  .section{padding:48px 0}
-  .section-head h2{font-size:clamp(36px,11vw,52px)}
-  .consult h2,.club h2,.dna h2,.memory h2,.newsletter h2{font-size:clamp(38px,11vw,54px)}
-  .page-hero h1{font-size:clamp(46px,13vw,62px)}
-  .giant12{font-size:220px}
-  .ticker-track{gap:18px}.ticker-track span{gap:18px}
-}
-</style>
-</head><body><div class="topline">Advocacia contratual · livros · repertório · vida</div><header class="header"><div class="wrap header-row"><button class="menu-btn" onclick="toggleMenu(true)">☰ Menu</button><a class="brand" href="index.html">Daniella Almada</a><div class="header-actions"><div class="social-icons" aria-label="Redes sociais">
-<a href="https://www.instagram.com/daniellaalmadaandrade/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5.2"></rect><circle cx="12" cy="12" r="4.1"></circle><circle cx="17.6" cy="6.5" r="1" class="icon-fill"></circle></svg></a>
-<a href="https://www.tiktok.com/@daniellaalmada" target="_blank" rel="noopener noreferrer" aria-label="TikTok" title="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 3.5v11.1a4.6 4.6 0 1 1-3.5-4.46"></path><path d="M14.2 3.5c.7 2.7 2.4 4.2 5.1 4.7"></path></svg></a>
-<a href="https://www.youtube.com/@daniellaalmadaandrade" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="6" width="19" height="12" rx="3.5"></rect><path d="M10 9.3l5 2.7-5 2.7z" class="icon-fill"></path></svg></a>
-<a href="https://wa.me/5532991056226" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 11.8a8.3 8.3 0 0 1-12.25 7.3L3.7 20.3l1.18-4.17A8.3 8.3 0 1 1 20.3 11.8z"></path><path d="M8.25 7.8c.2-.45.45-.46.7-.47h.6c.2 0 .42.03.55.35.14.33.55 1.34.6 1.44.05.1.08.22.01.35-.06.14-.1.22-.2.34-.1.12-.21.27-.3.36-.1.1-.2.21-.08.42.12.2.54.9 1.16 1.45.8.72 1.47.95 1.68 1.06.2.1.33.09.45-.05.12-.14.52-.61.66-.82.14-.2.28-.17.47-.1.2.07 1.24.59 1.45.69.2.1.34.15.39.24.05.09.05.54-.13 1.06-.18.52-1.03 1-1.42 1.05-.37.05-.84.07-1.36-.09-.31-.1-.72-.23-1.23-.45-.52-.22-2.3-.84-3.9-2.9-1.35-1.73-1.43-2.98-1.29-3.45.14-.46.77-1.48 1.24-1.5z" class="icon-fill"></path></svg></a>
-</div></div></div><nav class="nav"><div class="wrap"><a href="index.html">Início</a><a href="atendimento.html">Atendimento</a><a href="artigos.html">Artigos</a><a href="historias.html">Histórias</a><a href="livros.html">Livros</a><a href="clube-dos-doze.html">Clube dos Doze</a><a href="dna-dos-contratos.html">DNA dos Contratos</a><a href="viagens.html">Viagens</a><a href="meu-pai.html">Meu Pai</a><a href="contato.html">Contato</a></div></nav></header><div class="mobile-drawer" id="drawer"><div class="drawer-head"><strong>DANIELLA ALMADA</strong><button class="drawer-close" onclick="toggleMenu(false)">Fechar ×</button></div><div class="drawer-links"><a href="atendimento.html">Atendimento</a><a href="artigos.html">Artigos</a><a href="historias.html">Histórias</a><a href="livros.html">Livros</a><a href="clube-dos-doze.html">Clube dos Doze</a><a href="dna-dos-contratos.html">DNA dos Contratos</a><a href="viagens.html">Viagens</a><a href="meu-pai.html">Meu Pai</a><a href="contato.html">Contato</a></div></div><section class="dna-sales-hero"><div class="wrap"><div class="dna-sales-image"><img src="dna-dos-contratos-topo.jpg" alt="Daniella Almada — DNA dos Contratos"></div><div class="dna-sales-copy"><div class="dna-badge"><strong>4ª TURMA</strong> · BLACK FRIDAY</div><div class="kicker">Formação profissional para advogados</div><h1>DNA dos Contratos</h1><p>Para advogados que querem atuar como contratualistas, construir uma rotina consultiva e sair da dependência exclusiva do fórum.</p><ul class="dna-sales-points"><li>24 meses de acesso à formação completa</li><li>Módulo de Análise Contratual com contratos variados</li><li>Aulas de elaboração, interpretação e negociação contratual</li></ul><a class="dna-sales-cta" href="#oferta">Ver condição da 4ª turma</a></div></div></section><section class="section dna"><div class="wrap dna-grid"><div><div class="kicker">A formação</div><h2>Técnica para escrever. Negociação para decidir. Estrutura para viver disso.</h2><p>O DNA dos Contratos organiza a atuação do contratualista em três dimensões que precisam funcionar juntas.</p><div class="mini-list"><div>Técnica contratual</div><div>Raciocínio negocial</div><div>Estrutura comercial</div><div>Modelos aplicados</div></div></div><div><div class="dna-stats"><div class="stat"><strong>150+</strong><span>alunos</span></div><div class="stat"><strong>3</strong><span>eixos</span></div><div class="stat"><strong>24m</strong><span>acesso</span></div><div class="stat"><strong>1</strong><span>método integrado</span></div></div><div class="quote-card"><blockquote>“Passei a analisar cada documento com método e segurança.”</blockquote><span>Aluna da formação</span></div></div></div></section><section class="section"><div class="wrap"><div class="section-head"><div><div class="kicker">Conteúdo</div><h2>Do contrato à prática profissional.</h2></div></div><div class="cards"><article class="card"><h3>Interpretação e boa-fé</h3><p>Leitura dos princípios e dispositivos que realmente orientam a redação e a execução do contrato.</p></article><article class="card"><h3>Cláusulas e riscos</h3><p>Penalidades, reajuste, juros, rescisão, garantias, vícios, evicção, arbitragem e assinatura eletrônica.</p></article><article class="card"><h3>Negociação e posicionamento</h3><p>Como conversar com o cliente, estruturar a entrega e apresentar o serviço consultivo.</p></article></div></div></section><section class="offer-wrap" id="oferta"><div class="wrap"><div class="offer-card"><div class="offer-label">Black Friday · DNA dos Contratos · 4ª turma</div><div class="offer-price"><div class="from">De <s>R$ 1.597,00</s> por apenas</div><div class="installments"><span>12× de</span> R$ 83,08*</div><div class="offer-save">ECONOMIZE R$ 600,00</div><div class="offer-access">24 meses de acesso à formação completa</div></div><hr class="offer-divider"><div class="offer-includes"><h3>Sua matrícula inclui:</h3><ul><li>24 meses de acesso ao curso</li><li>Módulo de Análise Contratual com análise de contratos variados</li><li>Aulas de elaboração, interpretação e negociação contratual</li><li>Modelos e materiais de apoio</li></ul></div><a class="offer-button" href="#oferta" aria-label="Condição Black Friday do DNA dos Contratos">Quero aproveitar a Black Friday</a><div class="offer-foot">R$ 997,00 à vista · Economia de R$ 600,00</div><div class="offer-note">*Parcelamento sujeito às condições da plataforma de pagamento.</div></div></div></section><footer class="footer"><div class="wrap footer-grid"><div class="footer-brand">Daniella<br>Almada</div><div><h4>Explore</h4><a href="artigos.html">Artigos</a><a href="historias.html">Histórias</a><a href="livros.html">Livros</a><a href="viagens.html">Viagens</a><a href="meu-pai.html">Meu Pai</a></div><div><h4>Projetos</h4><a href="clube-dos-doze.html">Clube dos Doze</a><a href="dna-dos-contratos.html">DNA dos Contratos</a><a href="atendimento.html">Atendimento jurídico</a></div><div><h4>Contato</h4><div class="social-icons" aria-label="Redes sociais">
-<a href="https://www.instagram.com/daniellaalmadaandrade/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5.2"></rect><circle cx="12" cy="12" r="4.1"></circle><circle cx="17.6" cy="6.5" r="1" class="icon-fill"></circle></svg></a>
-<a href="https://www.tiktok.com/@daniellaalmada" target="_blank" rel="noopener noreferrer" aria-label="TikTok" title="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 3.5v11.1a4.6 4.6 0 1 1-3.5-4.46"></path><path d="M14.2 3.5c.7 2.7 2.4 4.2 5.1 4.7"></path></svg></a>
-<a href="https://www.youtube.com/@daniellaalmadaandrade" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="6" width="19" height="12" rx="3.5"></rect><path d="M10 9.3l5 2.7-5 2.7z" class="icon-fill"></path></svg></a>
-<a href="https://wa.me/5532991056226" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 11.8a8.3 8.3 0 0 1-12.25 7.3L3.7 20.3l1.18-4.17A8.3 8.3 0 1 1 20.3 11.8z"></path><path d="M8.25 7.8c.2-.45.45-.46.7-.47h.6c.2 0 .42.03.55.35.14.33.55 1.34.6 1.44.05.1.08.22.01.35-.06.14-.1.22-.2.34-.1.12-.21.27-.3.36-.1.1-.2.21-.08.42.12.2.54.9 1.16 1.45.8.72 1.47.95 1.68 1.06.2.1.33.09.45-.05.12-.14.52-.61.66-.82.14-.2.28-.17.47-.1.2.07 1.24.59 1.45.69.2.1.34.15.39.24.05.09.05.54-.13 1.06-.18.52-1.03 1-1.42 1.05-.37.05-.84.07-1.36-.09-.31-.1-.72-.23-1.23-.45-.52-.22-2.3-.84-3.9-2.9-1.35-1.73-1.43-2.98-1.29-3.45.14-.46.77-1.48 1.24-1.5z" class="icon-fill"></path></svg></a>
-</div></div></div><div class="wrap footer-bottom"><span>© 2026 Daniella Almada</span><span>Conteúdo informativo. Cada situação jurídica exige análise individual.</span></div></footer><script>function toggleMenu(open){document.getElementById('drawer').classList.toggle('open',open);document.body.style.overflow=open?'hidden':''}document.addEventListener('keydown',e=>{if(e.key==='Escape')toggleMenu(false)});</script><script src="dna-ajustes-v16.js?v=16"></script></body></html>
+</head>
+<body>
+<div class="topbar">BLACK FRIDAY · 4ª TURMA · INSCRIÇÕES ABERTAS</div>
+
+<header class="hero">
+  <div class="hero-copy">
+    <div class="kicker">DNA dos Contratos · 4ª turma</div>
+    <span class="badge">24 meses de acesso</span>
+    <h1>Você não precisa construir sua carreira esperando o processo andar.</h1>
+    <p class="lead">Aprenda a transformar contratos em uma área consultiva dentro do seu escritório, com serviços que você sabe executar, apresentar, precificar e cobrar.</p>
+    <div class="hero-actions">
+      <a class="btn wine" href="https://pay.hotmart.com/P103421770X?checkoutMode=2&off=i0qcmbyf">Quero entrar para o DNA →</a>
+      <a class="btn" href="#depoimentos">Ver resultados de alunos</a>
+    </div>
+    <p style="margin-top:18px;color:#aaa">Técnica contratual, prática, relacionamento com o cliente, precificação e construção comercial.</p>
+  </div>
+  <div class="hero-image"><img src="assets/dna-topo.jpg" alt="Daniella Almada — DNA dos Contratos"></div>
+</header>
+
+<div class="trust-strip"><div class="wrap trust-grid">
+<div><strong>150+</strong><span>alunos</span></div>
+<div><strong>4ª</strong><span>turma</span></div>
+<div><strong>24 meses</strong><span>de acesso</span></div>
+<div><strong>R$ 997</strong><span>à vista</span></div>
+</div></div>
+
+<section class="section">
+<div class="wrap">
+<div class="section-head"><div class="kicker">A rotina de muitos advogados</div><h2>Você trabalha hoje por honorários que recebeu anos atrás.</h2>
+<p>Um processo pode durar três, quatro, cinco anos. O cliente continua. As mensagens continuam. As dúvidas continuam. O trabalho continua.</p></div>
+<div class="problem-grid">
+<div class="problem"><div class="num">01</div><h3>Sem previsibilidade</h3><p>Você trabalha muito, mas continua sem saber quanto o escritório vai faturar no próximo mês.</p></div>
+<div class="problem"><div class="num">02</div><h3>Atendimento sem nova contratação</h3><p>Clientes antigos continuam consumindo horas de atendimento sem gerar uma nova receita.</p></div>
+<div class="problem"><div class="num">03</div><h3>Trabalho que não vira honorário</h3><p>Você orienta, analisa documentos e resolve problemas sem transformar isso em serviço contratado.</p></div>
+<div class="problem"><div class="num">04</div><h3>Insegurança contratual</h3><p>Quando aparece um contrato, surge a dúvida: o que cobrar, o que perguntar, o que analisar e por onde começar?</p></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="wrap">
+<div class="section-head"><div class="kicker">Uma frente consultiva</div><h2>Existe muito trabalho jurídico antes de uma discussão chegar ao processo.</h2>
+<p>Uma demanda chega. Você entende o problema, define a entrega, estabelece o prazo e apresenta os honorários.</p></div>
+<div class="services">
+<div>Elaboração de contratos</div><div>Revisão contratual</div><div>Análise de riscos</div><div>Consultoria</div>
+<div>Negociação</div><div>Notificações</div><div>Estruturação de negócios</div><div>Acompanhamento contratual</div>
+</div>
+<div class="cta-line"><a class="btn wine" href="https://pay.hotmart.com/P103421770X?checkoutMode=2&off=i0qcmbyf">Quero aprender a trabalhar com contratos →</a></div>
+</div>
+</section>
+
+<section class="section light" id="depoimentos">
+<div class="wrap">
+<div class="section-head"><div class="kicker">Quem entrou começou a aplicar</div><h2>O DNA já está produzindo mudanças na rotina profissional dos alunos.</h2><p>Resultados enviados espontaneamente por alunos depois de aplicar o conteúdo.</p></div>
+<div class="quotes">
+<div class="quote"><blockquote>“Só quero dizer que já tive o dobro de retorno do que investi no curso. É só o começo!”</blockquote><small>Mensagem de aluna do DNA</small></div>
+<div class="quote"><blockquote>“Comecei a aplicar o que aprendi no meu trabalho. Meu chefe se impressionou comigo, tive um aumento e uma promoção.”</blockquote><small>Mensagem de aluna do DNA</small></div>
+<div class="quote"><blockquote>“Seu curso me ajudou a me recolocar no mercado. Comecei com revisões contratuais e depois surgiu uma oportunidade na área.”</blockquote><small>Mensagem de aluna do DNA</small></div>
+</div>
+<div class="gallery">
+<img loading="lazy" src="assets/depoimento-01.png" alt="Depoimento de aluno do DNA dos Contratos"><img loading="lazy" src="assets/depoimento-02.png" alt="Depoimento de aluno do DNA dos Contratos"><img loading="lazy" src="assets/depoimento-03.png" alt="Depoimento de aluno do DNA dos Contratos"><img loading="lazy" src="assets/depoimento-04.png" alt="Depoimento de aluno do DNA dos Contratos"><img loading="lazy" src="assets/depoimento-05.png" alt="Depoimento de aluno do DNA dos Contratos"><img loading="lazy" src="assets/depoimento-06.png" alt="Depoimento de aluno do DNA dos Contratos"><img loading="lazy" src="assets/depoimento-07.png" alt="Depoimento de aluno do DNA dos Contratos"><img loading="lazy" src="assets/depoimento-08.png" alt="Depoimento de aluno do DNA dos Contratos">
+</div>
+<div class="cta-line" style="text-align:center"><a class="btn dark" href="https://pay.hotmart.com/P103421770X?checkoutMode=2&off=i0qcmbyf">Quero ser a próxima história →</a></div>
+</div>
+</section>
+
+<section class="section light">
+<div class="wrap">
+<div class="section-head"><div class="kicker">O DNA dos Contratos</div><h2>Você precisa saber contratos. Mas também precisa saber trabalhar com eles.</h2><p>Por isso a formação foi construída em três eixos que acompanham a realidade da atuação profissional.</p></div>
+<div class="axis-grid">
+<div class="path"><div class="num">01</div><h3>Técnica contratual</h3><p>Formação, vícios, evicção, extinção, responsabilidade civil, estrutura, cláusulas, análise e interpretação.</p></div>
+<div class="path"><div class="num">02</div><h3>Visão negocial</h3><p>Operação, interesses das partes, distribuição de riscos, negociação e relação com o cliente.</p></div>
+<div class="path"><div class="num">03</div><h3>Construção comercial</h3><p>Escopo, proposta, honorários, precificação, apresentação do serviço e marketing jurídico.</p></div>
+<div class="path"><div class="num">RESULTADO</div><h3>Autonomia profissional</h3><p>Menos dependência de modelos prontos e mais capacidade de decidir, justificar e cobrar pelo trabalho realizado.</p></div>
+</div>
+</div>
+</section>
+
+<section class="section light">
+<div class="wrap">
+<div class="section-head"><div class="kicker">O que você vai estudar</div><h2>Do fundamento à atuação profissional.</h2><p>O DNA foi organizado para desenvolver raciocínio contratual, compreensão prática e capacidade de transformar conhecimento em serviço.</p></div>
+<div class="modules">
+<div class="module"><b>01</b><h3>O que é um contrato</h3><p>Função, natureza e lógica das relações contratuais.</p></div><div class="module"><b>02</b><h3>Formação dos contratos</h3><p>Formação da relação, efeitos e negócio jurídico.</p></div><div class="module"><b>03</b><h3>Vícios redibitórios e evicção</h3><p>Riscos relacionados ao objeto e responsabilidade das partes.</p></div><div class="module"><b>04</b><h3>Extinção contratual</h3><p>Resolução, rescisão, distrato e inadimplemento.</p></div><div class="module"><b>05</b><h3>Responsabilidade civil</h3><p>Responsabilidade, dano e alocação de riscos.</p></div><div class="module"><b>06</b><h3>Estrutura dos Contratos</h3><p>Cláusulas, estrutura e elementos que transformam raciocínio jurídico em documento funcional.</p></div><div class="module"><b>07</b><h3>Tratativas com o cliente</h3><p>Atendimento, levantamento de informações e compreensão da operação.</p></div><div class="module"><b>08</b><h3>Comercial</h3><p>Organização e apresentação do serviço contratual.</p></div><div class="module"><b>09</b><h3>Precificação</h3><p>Critérios para calcular e apresentar honorários.</p></div><div class="module"><b>10</b><h3>Modelos contratuais</h3><p>Modelos como repertório e instrumento de trabalho.</p></div><div class="module"><b>11</b><h3>Análises Contratuais</h3><p>Análise de contratos variados, identificação de fragilidades e desenvolvimento do raciocínio de revisão.</p></div><div class="module"><b>12</b><h3>Contratos em espécie</h3><p>Aplicação do raciocínio em contratos específicos.</p></div><div class="module"><b>13</b><h3>Interpretação dos contratos</h3><p>Interpretação de cláusulas e comportamento das partes.</p></div><div class="module"><b>BÔNUS</b><h3>Marketing Jurídico</h3><p>Comunicação e apresentação da atuação profissional ao mercado.</p></div>
+</div>
+</div>
+</section>
+
+<section class="section" id="mais-depoimentos">
+<div class="wrap">
+<div class="section-head"><div class="kicker">Mais mensagens dos alunos</div><h2>Quem aplica começa a enxergar contratos de outro jeito.</h2><p>Provas sociais reais recebidas ao longo das turmas do DNA.</p></div>
+<div class="gallery">
+<img loading="lazy" src="assets/depoimento-09.png" alt="Depoimento de aluno do DNA dos Contratos"><img loading="lazy" src="assets/depoimento-10.png" alt="Depoimento de aluno do DNA dos Contratos"><img loading="lazy" src="assets/depoimento-11.png" alt="Depoimento de aluno do DNA dos Contratos"><img loading="lazy" src="assets/depoimento-12.png" alt="Depoimento de aluno do DNA dos Contratos"><img loading="lazy" src="assets/depoimento-13.png" alt="Depoimento de aluno do DNA dos Contratos"><img loading="lazy" src="assets/depoimento-14.png" alt="Depoimento de aluno do DNA dos Contratos">
+</div>
+<div class="cta-line"><a class="btn wine" href="https://pay.hotmart.com/P103421770X?checkoutMode=2&off=i0qcmbyf">Quero entrar para a 4ª turma →</a></div>
+</div>
+</section>
+
+<section class="section light">
+<div class="wrap">
+<div class="section-head"><div class="kicker">Seu próximo passo</div><h2>Há espaço para contratos em diferentes momentos da sua carreira.</h2></div>
+<div class="path-grid">
+<div class="path"><h3>Quero começar</h3><p>Você constrói a base técnica e aprende a lógica necessária para analisar e elaborar contratos.</p></div>
+<div class="path"><h3>Já faço contratos</h3><p>Desenvolva autonomia para compreender riscos, estrutura e função das cláusulas.</p></div>
+<div class="path"><h3>Quero cobrar melhor</h3><p>Precificação, escopo, proposta e apresentação do serviço fazem parte da formação.</p></div>
+<div class="path"><h3>Quero ampliar a atuação</h3><p>Organize contratos como uma frente consultiva dentro do escritório, sem depender exclusivamente do contencioso.</p></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="wrap">
+<div class="section-head"><div class="kicker">Daniella Almada</div><h2>Uma formação construída a partir da prática contratual.</h2>
+<p>Daniella Almada é advogada contratualista e criou o DNA dos Contratos para organizar em uma formação o raciocínio utilizado na elaboração, revisão e análise de contratos.</p></div>
+</div>
+</section>
+
+<section class="section" id="oferta">
+<div class="wrap">
+<div class="offer">
+<div class="offer-band">BLACK FRIDAY · DNA DOS CONTRATOS · 4ª TURMA</div>
+<div class="price-old">De <s>R$ 1.597,00</s> por apenas</div>
+<div class="price">12x de R$ 83,08*</div>
+<div class="save">ECONOMIZE R$ 600,00</div>
+<div class="access">24 meses de acesso à formação completa</div>
+<div class="included">
+<h3>Sua matrícula inclui:</h3>
+<ul>
+<li>24 meses de acesso ao curso</li>
+<li>Módulo de Análise Contratual com análise de contratos variados</li>
+<li>Aulas de elaboração, interpretação e negociação contratual</li>
+<li>Tratativas com o cliente, comercial e precificação</li>
+<li>Modelos e materiais de apoio</li>
+<li>Bônus de Marketing Jurídico</li>
+</ul>
+</div>
+<a class="btn" href="https://pay.hotmart.com/P103421770X?checkoutMode=2&off=i0qcmbyf">QUERO APROVEITAR A BLACK FRIDAY</a>
+<div class="cash">R$ 997,00 à vista · Economia de R$ 600,00 · Pagamento processado pela Hotmart</div>
+</div>
+</div>
+</section>
+
+<section class="section light">
+<div class="wrap">
+<div class="section-head"><div class="kicker">Dúvidas frequentes</div><h2>Antes de entrar.</h2></div>
+<div class="faq-grid">
+<div class="path"><h3>Preciso já atuar com contratos?</h3><p>Não. A formação atende quem está iniciando e também quem já trabalha com contratos e quer desenvolver mais autonomia.</p></div>
+<div class="path"><h3>O curso entrega modelos?</h3><p>Sim. O DNA possui modelos e materiais de apoio, além das aulas para ensinar análise, estrutura e adaptação.</p></div>
+<div class="path"><h3>Vou aprender a cobrar pelo trabalho?</h3><p>Existe módulo específico de precificação, além de conteúdo sobre comercial e tratativas com o cliente.</p></div>
+<div class="path"><h3>Existem análises práticas?</h3><p>Sim. Há módulo dedicado a análises contratuais, incluindo análise de contratos variados.</p></div>
+<div class="path"><h3>Por quanto tempo tenho acesso?</h3><p>O acesso é de 24 meses.</p></div>
+<div class="path"><h3>Quais formas de pagamento?</h3><p>A Hotmart disponibiliza as modalidades disponíveis no checkout, incluindo cartão e Pix.</p></div>
+</div>
+<div class="cta-line" style="text-align:center"><a class="btn dark" href="https://pay.hotmart.com/P103421770X?checkoutMode=2&off=i0qcmbyf">Quero garantir minha vaga →</a></div>
+</div>
+</section>
+
+<footer><div class="wrap">© DNA dos Contratos. Todos os direitos reservados.</div></footer>
+<a class="sticky" href="https://pay.hotmart.com/P103421770X?checkoutMode=2&off=i0qcmbyf">4ª TURMA · QUERO ENTRAR NO DNA</a>
+</body>
+</html>
